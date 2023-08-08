@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " PBP ",
+    "PYEYP",
+    "PCPCP",
+    " C C "
+  ],
+  "key": {
+    "B": {
+      "item": "create:copper_backtank"
+    },
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "C": {
+      "item": "create:chute"
+    },
+    "Y": {
+      "item": "create:precision_mechanism"
+    },
+    "P": {
+      "tag": "forge:plates/brass"
+    }
+  },
+  "result": {
+    "item": "create_jetpack:jetpack"
+  }
+}

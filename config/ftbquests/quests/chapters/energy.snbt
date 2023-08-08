@@ -1,0 +1,89 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy"
+	group: "4AA931E23612708F"
+	icon: "createaddition:copper_wire"
+	id: "33BFF837A4141FAC"
+	order_index: 1
+	quest_links: [{
+		id: "09B94232AEC3A9D8"
+		linked_quest: "09447DA319D56D63"
+		x: -6.0d
+		y: 2.0d
+	}]
+	quests: [
+		{
+			dependencies: ["09447DA319D56D63"]
+			id: "703F33352245ADCB"
+			subtitle: "Connectors are used to connect wires"
+			tasks: [{
+				id: "50C2F31DA35DB721"
+				item: "createaddition:connector"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09447DA319D56D63"]
+			id: "7C16E043190CE4F3"
+			subtitle: "All wires have identical stats"
+			tasks: [{
+				id: "29F13A115BD0A0D0"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["09447DA319D56D63"]
+			id: "233FAAD6843C6695"
+			subtitle: "All wires have identical stats"
+			tasks: [{
+				id: "1B0DC2F051B9D158"
+				item: "createaddition:gold_spool"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7C16E043190CE4F3"]
+			id: "4DA6D07760D61E65"
+			subtitle: "All wires have identical stats"
+			tasks: [{
+				id: "2432E9F9CD98F0ED"
+				item: "createaddition:festive_spool"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09447DA319D56D63"]
+			id: "294ACA7D635E1668"
+			subtitle: "holds large amounts of energy"
+			tasks: [{
+				id: "64431F3D29304504"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			id: "5F37048C2D0A49FF"
+			subtitle: "Teseract can transport fluids, energy and items at a fast rate"
+			tasks: [{
+				id: "2F91E2F0A89C9C88"
+				item: "tesseract:tesseract"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+	]
+	title: "Energy and Wireless"
+}

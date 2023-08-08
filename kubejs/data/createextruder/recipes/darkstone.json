@@ -1,0 +1,15 @@
+{
+    "type": "create_mechanical_extruder:extruding",
+    "ingredients": [
+        {
+            "fluid": "kubejs:magic",
+            "amount": 1000
+        }
+    ],
+    "catalyst": {
+        "item": "minecraft:blackstone"
+    },
+  "result": {
+    "item": "forbidden_arcanus:darkstone"
+  }
+}

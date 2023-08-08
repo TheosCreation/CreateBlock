@@ -1,0 +1,13 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {
+        "item": "minecraft:end_stone"
+      }
+    ],
+    "results": [
+      {
+        "item": "kubejs:crushed_end_stone"
+      }
+    ]
+  }

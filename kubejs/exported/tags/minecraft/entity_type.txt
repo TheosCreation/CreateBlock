@@ -1,0 +1,300 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jul 25, 2023, 11:22:48 AM
+
+#botania:cocoon/common
+- minecraft:pig (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:cow (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:chicken (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:rabbit (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:sheep (from Botania-1.19.2-440-FORGE.jar)
+
+#carryon:stacking_blacklist
+
+#botania:cocoon/rare_aquatic
+- minecraft:dolphin (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:glow_squid (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:axolotl (from Botania-1.19.2-440-FORGE.jar)
+
+#ars_nouveau:jar_blacklist
+- #ars_nouveau:familiar (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#botania:cocoon/rare
+- minecraft:horse (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:donkey (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:wolf (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:ocelot (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:cat (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:parrot (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:llama (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:fox (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:panda (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:turtle (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:goat (from Botania-1.19.2-440-FORGE.jar)
+- quark:frog? (from Botania-1.19.2-440-FORGE.jar)
+
+#ars_elemental:aquatic
+- minecraft:axolotl (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:frog (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:drowned (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#forge:chickens
+- minecraft:chicken (from VTweaks-1.19.2-4.0.7.jar)
+
+#botania:shaded_mesa_blacklist
+- minecraft:ender_dragon (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:wither (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:item_frame (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:glow_item_frame (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:end_crystal (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:painting (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:command_block_minecart (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:marker (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:area_effect_cloud (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:evoker_fangs (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:leash_knot (from Botania-1.19.2-440-FORGE.jar)
+- botania:corporea_spark (from Botania-1.19.2-440-FORGE.jar)
+- botania:doppleganger (from Botania-1.19.2-440-FORGE.jar)
+- botania:flame_ring (from Botania-1.19.2-440-FORGE.jar)
+- botania:magic_landmine (from Botania-1.19.2-440-FORGE.jar)
+- botania:magic_missile (from Botania-1.19.2-440-FORGE.jar)
+- botania:mana_burst (from Botania-1.19.2-440-FORGE.jar)
+- botania:pink_wither (from Botania-1.19.2-440-FORGE.jar)
+- botania:spark (from Botania-1.19.2-440-FORGE.jar)
+- botania:player_mover (from Botania-1.19.2-440-FORGE.jar)
+
+#ars_nouveau:lingering_blacklist
+- ars_nouveau:an_lightning (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:linger (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wall (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#minecraft:powder_snow_walkable_mobs
+- minecraft:rabbit (from Default)
+- minecraft:endermite (from Default)
+- minecraft:silverfish (from Default)
+- minecraft:fox (from Default)
+
+#farmersdelight:dog_food_users
+- minecraft:wolf (from FarmersDelight-1.19-1.2.1.jar)
+
+#ars_nouveau:jar_release_blacklist
+- minecraft:ender_dragon (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#botania:cocoon/common_aquatic
+- minecraft:cod (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:salmon (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:tropical_fish (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:pufferfish (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:squid (from Botania-1.19.2-440-FORGE.jar)
+- minecraft:frog (from Botania-1.19.2-440-FORGE.jar)
+- quark:crab? (from Botania-1.19.2-440-FORGE.jar)
+
+#minecraft:impact_projectiles
+- #minecraft:arrows (from Default)
+- minecraft:snowball (from Default)
+- minecraft:fireball (from Default)
+- minecraft:small_fireball (from Default)
+- minecraft:egg (from Default)
+- minecraft:trident (from Default)
+- minecraft:dragon_fireball (from Default)
+- minecraft:wither_skull (from Default)
+
+#minecraft:beehive_inhabitors
+- minecraft:bee (from Default)
+
+#forge:creepers
+- minecraft:creeper (from VTweaks-1.19.2-4.0.7.jar)
+
+#minecraft:skeletons
+- minecraft:skeleton (from Default)
+- minecraft:stray (from Default)
+- minecraft:wither_skeleton (from Default)
+
+#ars_nouveau:drygmy_blacklist
+- minecraft:iron_golem (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#forbidden_arcanus:quantum_catcher_blacklisted
+- minecraft:wither (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:ender_dragon (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:elder_guardian (from forbidden_arcanus-1.19.2-2.1.3.jar)
+
+#minecraft:arrows
+- minecraft:arrow (from Default)
+- minecraft:spectral_arrow (from Default)
+
+#ars_nouveau:an_hostile
+- ars_nouveau:wilden_hunter (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_guardian (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_stalker (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#ars_nouveau:magic_find
+- ars_nouveau:starbuncle (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:drygmy (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:whirlisprig (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:bookwyrm (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wixie (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:gift_starby (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_guardian (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_boss (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_stalker (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_hunter (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_elemental:siren_entity (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#ftbchunks:entity_interact_whitelist
+- corpse:corpse? (from ftb-chunks-forge-1902.3.21-build.266.jar)
+
+#forge:bosses
+- ars_nouveau:wilden_boss (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:ender_dragon (from forge-1.19.2-43.2.8-universal.jar)
+- minecraft:wither (from forge-1.19.2-43.2.8-universal.jar)
+
+#ars_nouveau:jar_whitelist
+- create:contraption? (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:item (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:end_crystal (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:boat (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:chest_boat (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:arrow (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:snowball (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:egg (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:ender_pearl (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:eye_of_ender (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:potion (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:armor_stand (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:lightning_bolt (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:an_lightning (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:trident (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned (from Default)
+- minecraft:guardian (from Default)
+- minecraft:elder_guardian (from Default)
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray (from Default)
+- minecraft:polar_bear (from Default)
+- minecraft:snow_golem (from Default)
+- minecraft:wither (from Default)
+
+#ars_nouveau:spell_can_hit
+
+#carryon:stacking_whitelist
+
+#ars_nouveau:familiar
+- ars_nouveau:familiar_starbuncle (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_whirlisprig (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_wixie (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_drygmy (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_bookwyrm (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_elemental:firenando_familiar (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- ars_elemental:siren_familiar (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#ars_elemental:insect
+- minecraft:silverfish (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#ars_nouveau:animal_summon_blacklist
+- ars_nouveau:gift_starby (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#ars_elemental:fiery
+- minecraft:ender_dragon (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#ars_elemental:aerial
+- minecraft:phantom (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:wither (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:bat (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:allay (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:ender_dragon (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:parrot (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:ghast (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:vex (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- minecraft:bee (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- ars_nouveau:wilden_stalker (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+- ars_nouveau:wilden_boss (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#minecraft:frog_food
+- minecraft:slime (from Default)
+- minecraft:magma_cube (from Default)
+
+#c:bosses
+- botania:doppleganger (from Botania-1.19.2-440-FORGE.jar)
+
+#farmersdelight:horse_feed_users
+- minecraft:horse (from FarmersDelight-1.19-1.2.1.jar)
+- minecraft:skeleton_horse (from FarmersDelight-1.19-1.2.1.jar)
+- minecraft:zombie_horse (from FarmersDelight-1.19-1.2.1.jar)
+- minecraft:donkey (from FarmersDelight-1.19-1.2.1.jar)
+- minecraft:mule (from FarmersDelight-1.19-1.2.1.jar)
+- minecraft:llama (from FarmersDelight-1.19-1.2.1.jar)
+
+#forbidden_arcanus:black_hole_affected
+- minecraft:item (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:experience_orb (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:arrow (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:spectral_arrow (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- forbidden_arcanus:boom_arrow (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- forbidden_arcanus:draco_arcanus_arrow (from forbidden_arcanus-1.19.2-2.1.3.jar)
+
+#minecraft:raiders
+- minecraft:evoker (from Default)
+- minecraft:pillager (from Default)
+- minecraft:ravager (from Default)
+- minecraft:vindicator (from Default)
+- minecraft:illusioner (from Default)
+- minecraft:witch (from Default)
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish (from Default)
+- minecraft:pufferfish (from Default)
+- minecraft:salmon (from Default)
+- minecraft:cod (from Default)
+- minecraft:squid (from Default)
+- minecraft:glow_squid (from Default)
+- minecraft:tadpole (from Default)
+
+#ars_nouveau:disintegration_whitelist
+
+#carryon:entity_whitelist
+
+#ftbquests:no_loot_crates
+
+#ars_nouveau:berry_blacklist
+- ars_nouveau:starbuncle (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:whirlisprig (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:fox (from ars_nouveau-1.19.2-3.17.9.jar)
+- minecraft:bee (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider (from Default)
+- minecraft:blaze (from Default)
+- minecraft:magma_cube (from Default)
+
+#carryon:entity_blacklist
+- ars_nouveau:whirlisprig (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_whirlisprig (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_drygmy (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_wixie (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_bookwyrm (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:wilden_boss (from ars_nouveau-1.19.2-3.17.9.jar)
+- ars_nouveau:familiar_starbuncle (from ars_nouveau-1.19.2-3.17.9.jar)
+
+#ars_elemental:undead
+- minecraft:ghast (from ars_elemental-1.19.2-0.5.9.1.2.jar)
+
+#forbidden_arcanus:spawns_lost_soul_chance
+- minecraft:player (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:villager (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:wandering_trader (from forbidden_arcanus-1.19.2-2.1.3.jar)
+
+#ars_nouveau:disintegration_blacklist
+
+#forbidden_arcanus:spawns_corrupt_lost_soul_chance
+- #minecraft:skeletons (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:zombie (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:zombie_villager (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:witch (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:drowned (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:pillager (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:illusioner (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:vindicator (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:husk (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:piglin (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:piglin_brute (from forbidden_arcanus-1.19.2-2.1.3.jar)
+- minecraft:evoker (from forbidden_arcanus-1.19.2-2.1.3.jar)

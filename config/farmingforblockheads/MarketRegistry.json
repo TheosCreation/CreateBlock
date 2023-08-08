@@ -1,0 +1,237 @@
+{
+  "customCategories": {
+    "wooden_stuff": {
+      "name": "Flowers",
+      "icon": {
+        "item": "minecraft:dandelion"
+      }
+    }
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "minecraft:dandelion"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:poppy"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:blue_orchid"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:allium"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:red_tulip"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:orange_tulip"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:white_tulip"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:pink_tulip"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:lily_of_the_valley"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:peony"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:lilac"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:rose_bush"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:oxeye_daisy"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "minecraft:sunflower"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:yellow_orchid"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "flowers"
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:growing_edelwood"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:aurum_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:growing_edelwood"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:cherry_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "quark:ancient_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:red_archwood_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:green_archwood_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:purple_archwood_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:blue_archwood_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    },
+    {
+      "output": {
+        "item": "ars_elemental:yellow_archwood_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    }
+  ]
+}

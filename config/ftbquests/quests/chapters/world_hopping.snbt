@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "world_hopping"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "minecraft:textures/block/nether_portal.png"
+		}
+	}
+	id: "5C3449C5F42C2A48"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2A8220D0E1D47056"]
+			id: "015BC3FCB168998F"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "7E969B91EB428FB5"
+				title: "Visiting the Finale, The End"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A5F94720CCC4836"]
+			id: "4C8D1E0AFF2310A9"
+			rewards: [{
+				id: "72B4570505C7C0E6"
+				item: "minecraft:sculk_sensor"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "51544E360D6B39F0"
+				title: "Visiting the Serene Nether"
+				type: "dimension"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: ["You only need 10 obsidian blocks to make a portal."]
+			id: "7A5F94720CCC4836"
+			rewards: [{
+				count: 4
+				id: "26606352B5F6774A"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Hint: Use lava to make obsidian or make fel pumpkins to get blazes"
+			tasks: [{
+				count: 10L
+				id: "529DE2DD7DEDA43E"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C8D1E0AFF2310A9"]
+			description: [
+				"For more information regarding making or moving an End Portal:"
+				"1. Open your Create Block guidebook."
+				"2. Go to \\\"Getting Started\\\" > \\\"Tips \\& Tricks\\\" > \\\"End Portal\\\""
+			]
+			id: "2A8220D0E1D47056"
+			rewards: [{
+				count: 6
+				id: "636F1E664930F9FA"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "72048D96EF736319"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C8D1E0AFF2310A9"]
+			description: ["Nether Quartz can be used to make a quartz mesh for the create sifter"]
+			id: "3E8A431098F5FCEA"
+			tasks: [{
+				id: "337B68E87718AC2C"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C8D1E0AFF2310A9"]
+			id: "4548349093E0BE44"
+			rewards: [
+				{
+					count: 8
+					id: "79FC9E9E6EC59BC7"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "271EF611371BB085"
+					item: "forbidden_arcanus:soul"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "7368C6803D3C8AAA"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+	]
+	title: "World Hopping"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "kubejs:crushed_end_stone"
+    }
+  ]
+}
