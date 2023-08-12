@@ -327,19 +327,16 @@ ServerEvents.recipes(event => {
         }, 
         '#minecraft:leaves': {
             'createsifter:string_mesh': [
-                ['minecraft:dirt', 0.3],
                 ['minecraft:apple', 0.05],
                 ['minecraft:golden_apple', 0.003]
             ],
             'createsifter:andesite_mesh': [
-                ['minecraft:dirt', 0.35],
                 ['minecraft:apple', 0.1],
                 ['minecraft:apple', 0.05],
                 ['minecraft:golden_apple', 0.006],
                 ['minecraft:golden_apple', 0.003]
             ],
             'createsifter:zinc_mesh': [
-                ['minecraft:dirt', 0.4],
                 ['minecraft:apple', 0.2],
                 ['minecraft:apple', 0.1],
                 ['minecraft:apple', 0.05],
@@ -348,7 +345,6 @@ ServerEvents.recipes(event => {
                 ['minecraft:golden_apple', 0.003]
             ],
             'createsifter:brass_mesh': [
-                ['minecraft:dirt', 0.45],
                 ['minecraft:apple', 0.4],
                 ['minecraft:apple', 0.2],
                 ['minecraft:apple', 0.1],
@@ -357,7 +353,6 @@ ServerEvents.recipes(event => {
                 ['minecraft:golden_apple', 0.004]
             ],
             'kubejs:diamond_mesh': [
-                ['minecraft:dirt', 0.5],
                 ['minecraft:apple', 0.5],
                 ['minecraft:apple', 0.3],
                 ['minecraft:apple', 0.15],
@@ -366,7 +361,6 @@ ServerEvents.recipes(event => {
                 ['minecraft:golden_apple', 0.006]
             ],
             'kubejs:netherite_mesh': [
-                ['minecraft:dirt', 0.55],
                 ['minecraft:apple', 0.6],
                 ['minecraft:apple', 0.4],
                 ['minecraft:apple', 0.2],
@@ -375,26 +369,6 @@ ServerEvents.recipes(event => {
                 ['minecraft:golden_apple', 0.008]
             ]
         },
-        '#minecraft:saplings': {
-            'createsifter:string_mesh': [
-                ['minecraft:dirt', 0.1]
-            ],
-            'createsifter:andesite_mesh': [
-                ['minecraft:dirt', 0.15]
-            ],
-            'createsifter:zinc_mesh': [
-                ['minecraft:dirt', 0.2]
-            ],
-            'createsifter:brass_mesh': [
-                ['minecraft:dirt', 0.25]
-            ],
-            'kubejs:diamond_mesh': [
-                ['minecraft:dirt', 0.3]
-            ],
-            'kubejs:netherite_mesh': [
-                ['minecraft:dirt', 0.35]
-            ]
-        }, 
         'minecraft:red_sand': {
             'kubejs:diamond_mesh': [
                 ['minecraft:heart_of_the_sea', 0.005, true]

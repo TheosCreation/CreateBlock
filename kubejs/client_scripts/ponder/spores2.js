@@ -6,7 +6,7 @@ Ponder.registry(ponder => {
             (scene, util) => {
                 const netherackPos = util.grid.at(2, 0, 2);
                 scene.showBasePlate();
-                scene.world.setBlocks([0, 0, 0, 4, 0, 4], "minecraft:netherack", false);
+                scene.world.setBlocks([0, 0, 0, 4, 0, 4], "minecraft:netherrack", false);
                 scene.addKeyframe();
                 scene.showControls(20, [3, 1, 3], "down")
                     .withItem("kubejs:crimson_nylium_spores")

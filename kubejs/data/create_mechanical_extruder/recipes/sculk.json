@@ -1,0 +1,10 @@
+{
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [],
+  "catalyst": {
+    "item": "minecraft:sculk_catalyst"
+  },
+  "result": {
+    "item": "minecraft:sculk"
+  }
+}

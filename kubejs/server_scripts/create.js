@@ -13,6 +13,35 @@ ServerEvents.recipes(event => {
 	//washing dark rune to get normal rune
 	event.recipes.create.splashing('forbidden_arcanus:rune', 'forbidden_arcanus:dark_rune')
 
+	event.recipes.create.haunting('minecraft:charcoal', 'minecraft:coal')
+	event.recipes.create.haunting('minecraft:echo_shard', 'minecraft:amethyst_shard')
+
+	event.recipes.create.compacting(Fluid.of('kubejs:magic', 100), 'ars_nouveau:source_berry')
+	event.recipes.create.compacting(Fluid.of('kubejs:rainbow', 1000), 'create:chromatic_compound').superheated()
+	event.recipes.create.compacting([Fluid.of('water', 10), 'dead_bush'], ['#minecraft:saplings', '#minecraft:saplings'])
+	event.recipes.create.compacting('minecraft:ice', [Fluid.of('water', 1000), 'minecraft:snowball'])
+	event.recipes.create.compacting('minecraft:packed_ice', [Fluid.of('water', 200), 'minecraft:ice'])
+	event.recipes.create.compacting('minecraft:blue_ice', [Fluid.of('water', 200), 'minecraft:blue_dye', 'minecraft:packed_ice'])
+	event.recipes.create.compacting('minecraft:packed_mud', ['2x minecraft:mud', 'farmersdelight:straw'])
+	event.recipes.create.compacting('minecraft:packed_mud', ['minecraft:mud', 'minecraft:wheat'])
+	event.recipes.create.compacting('forbidden_arcanus:arcane_crystal', 'forbidden_arcanus:arcane_crystal_dust')
+
+	event.recipes.create.mixing('create:chromatic_compound', ['3x minecraft:glowstone_dust', '3x create:powdered_obsidian', 'create:polished_rose_quartz']).superheated()
+
+	event.recipes.create.mechanical_crafting('toms_storage:ts.crafting_terminal', [
+		' T ',
+		'CCC',
+		'CCC',
+		'CCC',
+		'SML'
+	], {
+		C: 'create:mechanical_crafter',
+		S: 'create:sturdy_sheet',
+		L: 'create:linked_controller',
+		M: 'create:precision_mechanism',
+		T: 'toms_storage:ts.storage_terminal'
+	})
+
 	event.custom({
 		type: "create:sequenced_assembly",
 		ingredient: {
