@@ -1,0 +1,10 @@
+{
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [],
+  "catalyst": {
+    "item": "farmersdelight:organic_compost"
+  },
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}
