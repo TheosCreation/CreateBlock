@@ -1,3 +1,6 @@
+mythicbotany:alfheim_hills
+mythicbotany:alfheim_lakes
+mythicbotany:alfheim_plains
 ars_nouveau:archwood_forest
 minecraft:badlands
 minecraft:bamboo_jungle
@@ -15,6 +18,7 @@ minecraft:deep_frozen_ocean
 minecraft:deep_lukewarm_ocean
 minecraft:deep_ocean
 minecraft:desert
+mythicbotany:dreamwood_forest
 minecraft:dripstone_caves
 minecraft:end_barrens
 minecraft:end_highlands
@@ -28,6 +32,7 @@ minecraft:frozen_ocean
 minecraft:frozen_peaks
 minecraft:frozen_river
 quark:glimmering_weald
+mythicbotany:golden_fields
 minecraft:grove
 minecraft:ice_spikes
 minecraft:jagged_peaks
