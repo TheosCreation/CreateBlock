@@ -35,5 +35,8 @@
   "kubejs.ponder.hephaestus_forge_setup.text_5": "Construct This Structure Near Your Forge.",
   "createblock.ponder.chromatic_dust.header": "Making Chromatic Dust",
   "createblock.ponder.chromatic_dust.text_1": "Chromatic Dust can be created by a process called Soaking",
-  "createblock.ponder.chromatic_dust.text_2": "Pl"
+  "createblock.ponder.chromatic_dust.text_2": "Pl",
+  "createblock.ponder.crimson_nylium_spores.header": "Using Crimson Nylium Spores",
+  "createblock.ponder.mycelium_spores.header": "Using Mycelium Spores",
+  "createblock.ponder.warped_nylium_spores.header": "Using Warped Nylium Spores"
 }

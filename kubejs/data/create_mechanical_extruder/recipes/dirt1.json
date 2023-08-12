@@ -1,0 +1,10 @@
+{
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [],
+  "catalyst": {
+    "item": "farmersdelight:rich_soil"
+  },
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}
