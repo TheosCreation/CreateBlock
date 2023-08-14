@@ -6,13 +6,10 @@
             "amount": 1000
         },
         {
-            "fluid": "minecraft:water",
+            "block": "minecraft:packed_ice",
             "amount": 1000
         }
     ],
-    "catalyst": {
-        "item": "minecraft:deepslate"
-    },
     "result": {
         "item": "minecraft:cobbled_deepslate"
     }

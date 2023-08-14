@@ -16,6 +16,9 @@ ServerEvents.recipes(event => {
 	event.recipes.create.haunting('minecraft:charcoal', 'minecraft:coal')
 	event.recipes.create.haunting('minecraft:echo_shard', 'minecraft:amethyst_shard')
 
+	event.recipes.create.milling('4x minecraft:snowball', 'minecraft:snow_block')
+	event.recipes.create.crushing('4x minecraft:snowball', 'minecraft:snow_block')
+
 	event.recipes.create.compacting(Fluid.of('kubejs:magic', 100), 'ars_nouveau:source_berry')
 	event.recipes.create.compacting(Fluid.of('kubejs:rainbow', 1000), 'create:chromatic_compound').superheated()
 	event.recipes.create.compacting([Fluid.of('water', 10), 'dead_bush'], ['#minecraft:saplings', '#minecraft:saplings'])

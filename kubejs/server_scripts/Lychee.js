@@ -42,4 +42,38 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+    event.custom({
+        "type": "lychee:block_crushing",
+        "item_in": {
+            "item": "create:chromatic_compound"
+        },
+        "post": [
+            {
+                "type": "drop_item",
+                "item": "kubejs:chromatic_shard",
+                "contextual": {
+                    "type": "chance",
+                    "chance": 1
+                }
+            }
+        ]
+    })
+    /*
+    event.custom({
+        "type": "lychee:lightning_channeling",
+        "item_in": {
+            "item": "create:chromatic_compound"
+        },
+        "post": [
+            {
+                "type": "drop_item",
+                "item": "kubejs:chromatic_shard",
+                "contextual": {
+                    "type": "chance",
+                    "chance": 1
+                }
+            }
+        ]
+    })
+    */
 })

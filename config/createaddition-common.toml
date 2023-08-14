@@ -5,10 +5,10 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM, value is the FE/t generated and consumed is at 256rpm).
 	#Range: > 0
-	fe_at_max_rpm = 16384
+	fe_at_max_rpm = 24576
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
-	max_stress = 16384
+	max_stress = 24576
 
 #Electric Motor
 [electric_motor]
@@ -52,19 +52,19 @@
 	connector_ignore_face_check = true
 	#Small Connector max input in FE/t (Energy transfer).
 	#Range: > 0
-	small_connector_max_input = 1024
+	small_connector_max_input = 16000
 	#Small Connector max output in FE/t (Energy transfer).
 	#Range: > 0
-	small_connector_max_output = 1024
+	small_connector_max_output = 16000
 	#Small Connector max wire length in blocks.
 	#Range: 0 ~ 256
 	small_connector_wire_length = 16
 	#Large Connector max input in FE/t (Energy transfer).
 	#Range: > 0
-	large_connector_max_input = 4096
+	large_connector_max_input = 64000
 	#Large Connector max output in FE/t (Energy transfer).
 	#Range: > 0
-	large_connector_max_output = 4096
+	large_connector_max_output = 64000
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
 	large_connector_wire_length = 32
@@ -93,16 +93,16 @@
 [portable_energy_interface]
 	#PEI max input in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_input = 256000
+	pei_max_input = 64000
 	#PEI max output in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_output = 256000
+	pei_max_output = 64000
 
 #Tesla Coil
 [tesla_coil]
 	#Tesla Coil max input in FE/t (Energy transfer).
 	#Range: > 0
-	tesla_coil_max_input = 256000
+	tesla_coil_max_input = 64000
 	#Tesla Coil charge rate in FE/t.
 	#Range: > 0
 	tesla_coil_charge_rate = 4096
