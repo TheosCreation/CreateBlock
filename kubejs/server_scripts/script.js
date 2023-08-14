@@ -8,6 +8,13 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'minecraft:flint', type: 'create:milling' })
 	event.remove({ id: 'ae2:charger/charged_certus_quartz_crystal'})
 	event.remove({ id: 'forbidden_arcanus:dark_rune'})
+	event.remove({ id: 'createaddition:crafting/large_connector_electrum'})
+	event.remove({ id: 'createaddition:crafting/electrum_ingot'})
+	event.remove({ id: 'createaddition:crafting/electrum_nugget'})
+	event.remove({ id: 'createaddition:crafting/electrum_spool'})
+	event.remove({ id: 'createaddition:rolling/electrum_ingot'})
+	event.remove({ id: 'createaddition:rolling/electrum_plate'})
+	event.remove({ id: 'createaddition:mixing/electrum'})
 	event.smithing(
 		'kubejs:netherite_mesh',  // arg 1: output
 		'kubejs:diamond_mesh', // arg 2: the item to be upgraded
