@@ -84,6 +84,18 @@
 			x: -6.0d
 			y: 3.5d
 		}
+		{
+			dependencies: ["09447DA319D56D63"]
+			id: "76AF51665FD12875"
+			subtitle: "Large Connectors have more capacity than regular connectors"
+			tasks: [{
+				id: "40072034C4D350EB"
+				item: "createaddition:large_connector"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
 	]
 	title: "Energy and Wireless"
 }
