@@ -1,10 +1,9 @@
 {
     "type": "create_mechanical_extruder:extruding",
     "ingredients": [
-        {
-      "fluid": "minecraft:water",
-      "amount": 1000
-    },
+      {
+        "item": "minecraft:packed_ice"
+      },
     {
       "fluid": "minecraft:lava",
       "amount": 1000

@@ -1,15 +1,14 @@
 {
     "type": "create_mechanical_extruder:extruding",
-    "ingredients": [
-        {
-            "fluid": "minecraft:lava",
-            "amount": 1000
-        },
-        {
-            "block": "minecraft:packed_ice",
-            "amount": 1000
-        }
-    ],
+  "ingredients": [
+    {
+      "item": "minecraft:packed_ice"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 1000
+    }
+  ],
     "result": {
         "item": "minecraft:cobbled_deepslate"
     }
