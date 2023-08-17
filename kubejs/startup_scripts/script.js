@@ -26,6 +26,9 @@ StartupEvents.registry('item', event => {
     event.create("diamond_mesh", "createsifter:mesh").displayName(`Diamond Mesh`).parentModel("kubejs:block/meshes/diamond_mesh").texture('kubejs:item/diamond_mesh')
     event.create("netherite_mesh", "createsifter:mesh").displayName(`Netherite Mesh`).parentModel("kubejs:block/meshes/netherite_mesh").texture('kubejs:item/netherite_mesh')
     event.create("quartz_mesh", "createsifter:mesh").displayName(`Quartz Mesh`).parentModel("kubejs:block/meshes/quartz_mesh").texture('kubejs:item/quartz_mesh')
+    event.create("worldshaper_cogwheel").displayName(`Worldshaper Cogwheel`).parentModel("kubejs:item/worldshaper_cogwheel")
+    event.create("worldshaper_barrel").displayName(`Worldshaper Barrel`).parentModel("kubejs:item/worldshaper_barrel")
+    event.create("worldshaper_handle").displayName(`Worldshaper Handle`).parentModel("kubejs:item/worldshaper_handle")
 
     event.create('chromatic_tube').displayName('Chromatic Tube').texture('kubejs:item/chromatic_tube').rarity('RARE')
     event.create('rad_star').displayName('Radiating Star').texture('kubejs:item/rad_star').rarity('RARE').glow(true)
@@ -38,6 +41,7 @@ StartupEvents.registry('item', event => {
     item("Incomplete Raw Advanced Processor");
     item("Incomplete Raw Improved Processor");
     item("Incomplete Raw Basic Processor");
+    item("Corruption Bottle");
 })
 StartupEvents.registry('fluid', event => {
     event.create('refined_fluid').displayName('Refined Essence')
