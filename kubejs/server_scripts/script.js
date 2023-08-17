@@ -15,11 +15,115 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'createaddition:rolling/electrum_ingot'})
 	event.remove({ id: 'createaddition:rolling/electrum_plate'})
 	event.remove({ id: 'createaddition:mixing/electrum'})
+	event.remove({ id: 'create_mechanical_extruder:extruding/stone'})
 	event.smithing(
 		'kubejs:netherite_mesh',  // arg 1: output
 		'kubejs:diamond_mesh', // arg 2: the item to be upgraded
 		'minecraft:netherite_ingot'   // arg 3: the upgraded item
 	)
+	let Blocks = ['Coal', 'Quartz', 'Lapis', 'Snow',  'Iron', 'Diamond', 'Gold', 'Emerald', 'Netherite', 'Copper', 'Honey']
+	Blocks.forEach(item => {
+		let name = item.toLowerCase().replace(/ /g, "_");
+		event.shaped('kubejs:' + name + '_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name + '_block'
+		})
+		event.shapeless('9x kubejs:' + name + '_1x', [
+			'kubejs:' + name + '_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name + '_block', [
+			'kubejs:' + name + '_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `_${i}x`, [
+					'kubejs:' + name + `_${i + 1}x`
+				]
+				)
+			}
+		}
+	})
+	let CreateBlocks = ['Brass', 'Zinc']
+	CreateBlocks.forEach(item => {
+		let name = item.toLowerCase().replace(/ /g, "_");
+		event.shaped('kubejs:' + name + '_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'create:' + name + '_block'
+		})
+		event.shapeless('9x kubejs:' + name + '_1x', [
+			'kubejs:' + name + '_2x'
+		]
+		)
+		event.shapeless('9x create:' + name + '_block', [
+			'kubejs:' + name + '_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `_${i}x`, [
+					'kubejs:' + name + `_${i + 1}x`
+				]
+				)
+			}
+		}
+	})
+	let Others = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Diorite', 'Granite', 'Obsidian', 'End Stone', 'Sand', 'Red Sand', 'Gravel', 'Dirt', 'Clay', 'Netherrack', 'Soul Sand', 'Glass', 'Glowstone']
+	Others.forEach(item => {
+		let name = item.toLowerCase().replace(/ /g, "_");
+		event.shaped('kubejs:' + name + '_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name
+		})
+		event.shapeless('9x kubejs:' + name + '_1x', [
+			'kubejs:' + name + '_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name, [
+			'kubejs:' + name + '_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `_${i}x`, [
+					'kubejs:' + name + `_${i + 1}x`
+				]
+				)
+			}
+		}
+
+	})
 	event.shaped('forbidden_arcanus:obsidian_with_iron', [
 		' I ',
 		'IOI',
