@@ -1,15 +1,15 @@
 {
     "type": "create_mechanical_extruder:extruding",
-    "ingredients": [
-        {
-            "fluid": "minecraft:lava",
-            "amount": 1000
-        },
-        {
-            "fluid": "minecraft:water",
-            "amount": 1000
-        }
-    ],
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 1000
+    }
+  ],
     "catalyst": {
         "item": "minecraft:nether_bricks"
     },

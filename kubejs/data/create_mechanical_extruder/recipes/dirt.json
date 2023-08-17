@@ -2,10 +2,10 @@
   "type": "create_mechanical_extruder:extruding",
   "ingredients": [
     {
-      "item": "farmersdelight:organic_compost"
+      "tag": "forge:dirtable"
     },
     {
-      "item": "farmersdelight:organic_compost"
+      "tag": "forge:dirtable"
     }
   ],
   "result": {
