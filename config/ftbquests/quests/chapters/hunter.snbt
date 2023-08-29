@@ -11,7 +11,7 @@
 		}
 	}
 	id: "000000000000003C"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -1004,7 +1004,7 @@
 					entity: "minecraft:guardian"
 					id: "6AE5563CD79CEC70"
 					type: "kill"
-					value: 50L
+					value: 10L
 				}
 			]
 			title: "Guardians of the Sea"
@@ -1021,7 +1021,7 @@
 				value: 3L
 			}]
 			title: "Novice Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
 			y: -7.0d
 		}
 		{
@@ -1035,7 +1035,7 @@
 				value: 10L
 			}]
 			title: "Apprentice Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
 			y: -8.5d
 		}
 		{
@@ -1049,7 +1049,56 @@
 				value: 20L
 			}]
 			title: "Journeyman Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "790A8F863CDAB18C"
+			rewards: [{
+				id: "0C2A83AE457724DA"
+				item: "minecraft:music_disc_5"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "7901F46E35C08B4C"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Novice Warden Hunter"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["790A8F863CDAB18C"]
+			id: "533991437F18802C"
+			rewards: [{
+				count: 4
+				id: "00F1870D3B5D39A7"
+				item: "witherproofed:sculk_metal"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "75B7BAE5FA138EB4"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Apprentice Warden Hunter"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["533991437F18802C"]
+			id: "4B06C1EC6D5AE383"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "4593B716DCA4A3A6"
+				type: "kill"
+				value: 20L
+			}]
+			title: "Journeyman Warden Hunter"
+			x: 1.0d
 			y: -10.0d
 		}
 	]

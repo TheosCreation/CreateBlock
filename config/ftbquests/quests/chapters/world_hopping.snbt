@@ -29,11 +29,6 @@
 		{
 			dependencies: ["7A5F94720CCC4836"]
 			id: "4C8D1E0AFF2310A9"
-			rewards: [{
-				id: "72B4570505C7C0E6"
-				item: "minecraft:sculk_sensor"
-				type: "item"
-			}]
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "51544E360D6B39F0"
@@ -89,39 +84,16 @@
 		}
 		{
 			dependencies: ["4C8D1E0AFF2310A9"]
-			description: ["Nether Quartz can be used to make a quartz mesh for the create sifter"]
-			id: "3E8A431098F5FCEA"
+			id: "13F11AFC5FDCF8F8"
+			optional: true
 			tasks: [{
-				id: "337B68E87718AC2C"
-				item: "minecraft:quartz"
-				type: "item"
+				icon: "minecraft:nether_bricks"
+				id: "4C7E41654E574984"
+				structure: "minecraft:fortress"
+				type: "structure"
 			}]
-			x: -1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["4C8D1E0AFF2310A9"]
-			id: "4548349093E0BE44"
-			rewards: [
-				{
-					count: 8
-					id: "79FC9E9E6EC59BC7"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					id: "271EF611371BB085"
-					item: "forbidden_arcanus:soul"
-					type: "item"
-				}
-			]
-			tasks: [{
-				count: 16L
-				id: "7368C6803D3C8AAA"
-				item: "minecraft:soul_sand"
-				type: "item"
-			}]
-			x: -1.0d
+			title: "Find a Nether Fortress"
+			x: -2.0d
 			y: 2.5d
 		}
 	]

@@ -14,11 +14,21 @@
 			y: -1.5d
 		}
 		{
-			id: "279E25B015D43CF7"
-			linked_quest: "3973E7F24EC718FE"
-			shape: "diamond"
-			size: 1.5d
-			x: 0.5d
+			id: "574D8E90ED102F9C"
+			linked_quest: "1F88BD35E7AF9EEE"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "1863A347F2E55EA1"
+			linked_quest: "2D9DC78C66027DF2"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "5CE38EAEB594682B"
+			linked_quest: "49B023DFB3D79DA7"
+			x: 2.0d
 			y: -0.5d
 		}
 	]
@@ -31,11 +41,11 @@
 				item: "forbidden_arcanus:arcane_crystal"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["3648C08503407002"]
+			dependencies: ["31A188A18CA4F2EF"]
 			id: "053C7AE1F39A8FF6"
 			tasks: [{
 				id: "39D7A6F1F7DE2920"
@@ -43,24 +53,6 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 3.5d
-		}
-		{
-			icon: "forbidden_arcanus:growing_edelwood"
-			id: "3648C08503407002"
-			tasks: [
-				{
-					id: "6165CDF1EC8DBFC2"
-					item: "forbidden_arcanus:edelwood_log"
-					type: "item"
-				}
-				{
-					id: "140585A8DFDF683C"
-					item: "forbidden_arcanus:growing_edelwood"
-					type: "item"
-				}
-			]
-			x: -8.5d
 			y: 3.5d
 		}
 		{
@@ -170,7 +162,7 @@
 		{
 			dependencies: [
 				"4A8320F850B32E7A"
-				"3973E7F24EC718FE"
+				"62C59D3A7839F430"
 			]
 			id: "15D40F15FF42EE93"
 			tasks: [{
@@ -348,14 +340,16 @@
 		}
 		{
 			dependencies: ["4D3A8C1AB18A02FA"]
+			description: ["&bTest Tube&r combined with a &bMystical Dagger&r will allow you to fill the &bTest Tube&r with blood when kill mobs"]
 			id: "5B9D1A6097FFD317"
+			subtitle: "BLOOD"
 			tasks: [{
 				id: "3D967C18735FFFB2"
 				item: "forbidden_arcanus:test_tube"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -0.5d
+			y: 3.5d
 		}
 		{
 			description: ["There should be a &bNipa Plant&r on the island and they grow arcane crystal dust specks. You can break the &bNipa Plant&r and take it back to your home island"]
@@ -369,6 +363,94 @@
 			title: "Find a Floating island"
 			x: -5.0d
 			y: -4.0d
+		}
+		{
+			id: "31A188A18CA4F2EF"
+			tasks: [{
+				id: "280284E0DF7D7C76"
+				item: "ae2:matter_ball"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"1F88BD35E7AF9EEE"
+				"49B023DFB3D79DA7"
+				"2D9DC78C66027DF2"
+			]
+			id: "62C59D3A7839F430"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:magic"
+				id: "1CD6B35D5D4D2093"
+				type: "fluid"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CBD1FE6D467389F"]
+			description: ["Keeps track of you aureal and corruption and display them to your screen"]
+			id: "25863D684062B2E9"
+			tasks: [{
+				id: "05B4F1464FAF4587"
+				item: "forbidden_arcanus:sanity_meter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5A756A1FE785D250"]
+			description: ["Detects Aureal entitys"]
+			id: "038E7346AF3ED888"
+			tasks: [{
+				id: "00B6C4C8D3A1A8E5"
+				item: "forbidden_arcanus:lens_of_veritatis"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0CBD1FE6D467389F"]
+			id: "6319F4FEC4AB0AF2"
+			tasks: [{
+				id: "49FBAD9484DF9E89"
+				item: "forbidden_arcanus:purifying_soap"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6319F4FEC4AB0AF2"]
+			description: [
+				"Obtained by droping Soap into Water"
+				""
+				"Will reduce your corruption when used"
+			]
+			id: "4CBF23EC2F35EAB1"
+			subtitle: "Reduce your Corruption"
+			tasks: [{
+				id: "15D673E4966A0060"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							"forbidden_arcanus:dry_timer": {
+								value: 0
+							}
+						}
+					}
+					id: "forbidden_arcanus:wet_purifying_soap"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
 		}
 	]
 	title: "Forbidden and Arcanus"
