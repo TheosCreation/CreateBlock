@@ -13,7 +13,7 @@
     "Nether": {
     
       // Should nether generate as in default world type? [default: false]
-      "Default": true
+      "Default": false
     },
     
     "Overworld": {
@@ -125,8 +125,12 @@
       "allow_list": true,
       "elements": [
         "minecraft:fortress",
-	"ae2:meteorite",
-	"forbidden_arcanus:nipa_floating"
+        "ae2:meteorite",
+        "forbidden_arcanus:nipa_floating",
+        "ars_nouveau:stalker_wilden_den",
+        "ars_nouveau:hunter_wilden_den",
+        "ars_nouveau:guardian_wilden_den",
+        "ars_elemental:starbuncle_shrine"
       ]
     }
   },

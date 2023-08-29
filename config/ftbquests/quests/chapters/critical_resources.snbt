@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "critical_resources"
+	group: ""
+	id: "26F86066AF1ADF0A"
+	order_index: 2
+	quest_links: [
+		{
+			id: "2A9914CAA5718755"
+			linked_quest: "023934755CDA0A62"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "744D8F0CBA82FA27"
+			linked_quest: "47399DD5DB45CC50"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "14F5CA8E4ACF6072"
+			linked_quest: "61B611F6982549C5"
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			id: "5E8D43B783B5EA12"
+			linked_quest: "13F11AFC5FDCF8F8"
+			x: -3.5d
+			y: -3.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"28C1C1FCDD2416B9"
+				"47399DD5DB45CC50"
+				"023934755CDA0A62"
+				"5DBA828F02E87462"
+				"13F11AFC5FDCF8F8"
+			]
+			id: "2301F9C60AFC3C78"
+			tasks: [{
+				id: "35F4D5F676611C94"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F4BC35FDEF04411"]
+			id: "5E839D67ED9E786A"
+			tasks: [{
+				id: "4F9C5A68FE89CC97"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "5DBA828F02E87462"
+			tasks: [{
+				id: "1D40E834F64C0FAA"
+				item: "kubejs:cracked_stone"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			id: "28C1C1FCDD2416B9"
+			tasks: [{
+				id: "47EFAF54B07B2F88"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6F6CA6202C84AC11"
+				"5E839D67ED9E786A"
+			]
+			id: "6D1C2F0BCA136C0E"
+			tasks: [{
+				id: "22F1ED8AD5D56EF4"
+				item: "forbidden_arcanus:soul"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61B611F6982549C5"]
+			id: "6F4BC35FDEF04411"
+			tasks: [{
+				id: "14D47E46D8741F15"
+				item: "forbidden_arcanus:soulless_sand"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"301B9EA1CFA3492A"
+				"2301F9C60AFC3C78"
+			]
+			id: "6F6CA6202C84AC11"
+			tasks: [{
+				id: "6F48C37D1D7C59B2"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:soul_extractor"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3BBE5C6CE45C867B"]
+			id: "301B9EA1CFA3492A"
+			tasks: [{
+				id: "51CE42E96395B5EF"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			id: "3BBE5C6CE45C867B"
+			tasks: [{
+				id: "4711E37881DADB92"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["41F20A90E5C2F78B"]
+			description: ["To obtain &bBudding Amethyst&r you must right click a &bDiamond Block&r with &bDark Matter&r it will turn into a &bWarping Block&r, when left in world it will transform into &aBudding Amethyst&r"]
+			id: "24A290CF1E1C1AE8"
+			tasks: [{
+				id: "7FC3D87D4190D547"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "41F20A90E5C2F78B"
+			tasks: [{
+				id: "5B2358FC78B7F043"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["24A290CF1E1C1AE8"]
+			id: "2E971245BD5C92A8"
+			tasks: [{
+				id: "107CBAA2AB8ABAC1"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Critical Resources"
+}

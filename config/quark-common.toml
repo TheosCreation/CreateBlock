@@ -50,7 +50,7 @@
 	Tools = true
 	Tweaks = true
 	World = true
-	Mobs = false
+	Mobs = true
 	Client = true
 	Experimental = false
 	Oddities = true
@@ -1286,12 +1286,12 @@
 
 [mobs]
 	Wraith = true
-	Toretoise = true
-	Stonelings = true
-	Shiba = true
-	Foxhound = true
-	Forgotten = true
-	Crabs = true
+	Toretoise = false
+	Stonelings = false
+	Shiba = false
+	Foxhound = false
+	Forgotten = false
+	Crabs = false
 
 	[mobs.wraith]
 		#List of sound sets to use with wraiths.

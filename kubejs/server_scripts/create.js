@@ -2,6 +2,14 @@ ServerEvents.recipes(event => {
 	//item application
 	event.recipes.create.item_application(['create:shadow_steel_casing'], [['#forge:stripped_wood', '#forge:stripped_logs'], 'create:shadow_steel'])
 	event.recipes.create.item_application(['create:refined_radiance_casing'], [['#forge:stripped_wood', '#forge:stripped_logs'], 'create:refined_radiance'])
+	event.recipes.create.item_application(['minecraft:soul_sand'], ['forbidden_arcanus:soulless_sand', 'forbidden_arcanus:soul'])
+	event.recipes.create.item_application(['minecraft:soul_soil'], ['kubejs:soulless_soil', 'forbidden_arcanus:soul'])
+	event.recipes.create.item_application(['kubejs:soulless_soil', 'forbidden_arcanus:soul'], ['minecraft:soul_soil', 'forbidden_arcanus:soul_extractor']).keepHeldItem()
+	event.recipes.create.item_application(['kubejs:soulless_soil'], ['#minecraft:dirt', 'quark:soul_bead'])
+	event.recipes.create.item_application(['forbidden_arcanus:soulless_sand', 'forbidden_arcanus:soul'], ['minecraft:soul_sand', 'forbidden_arcanus:soul_extractor']).keepHeldItem()
+	event.recipes.create.item_application(['forbidden_arcanus:soulless_sand'], ['#minecraft:sand', 'quark:soul_bead'])
+	event.recipes.create.item_application(['kubejs:warping_block'], ['minecraft:diamond_block', 'forbidden_arcanus:dark_matter'])
+	//event.recipes.create.item_application(['minecraft:netherrack'], ['kubejs:cracked_stone', 'minecraft:redstone'])
 	//emptying refined radiance into refined fluid
 	event.recipes.create.emptying([Fluid.of('kubejs:refined_fluid', 1000)], 'create:refined_radiance')
 	//filling nether star with refined essence into Radiating Star
@@ -15,11 +23,18 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.haunting('minecraft:charcoal', 'minecraft:coal')
 	event.recipes.create.haunting('minecraft:echo_shard', 'minecraft:amethyst_shard')
+	event.recipes.create.haunting('forbidden_arcanus:corrupt_soul', 'forbidden_arcanus:soul')
+	event.recipes.create.haunting('kubejs:soulless_soil', '#minecraft:dirt')
+	event.recipes.create.haunting('forbidden_arcanus:soulless_sand', '#minecraft:sand')
+
+	event.recipes.create.deploying('forbidden_arcanus:corrupted_pixie', ['forbidden_arcanus:corrupt_soul', 'forbidden_arcanus:arcane_crystal_dust'])
+	event.recipes.create.deploying('forbidden_arcanus:pixie', ['forbidden_arcanus:soul', 'forbidden_arcanus:arcane_crystal_dust'])
 
 	event.recipes.create.milling('4x minecraft:snowball', 'minecraft:snow_block')
 	event.recipes.create.crushing('4x minecraft:snowball', 'minecraft:snow_block')
 
-	event.recipes.create.compacting(Fluid.of('kubejs:magic', 100), 'ars_nouveau:source_berry')
+	event.recipes.create.compacting(Fluid.of('kubejs:sourceberry', 100), 'ars_nouveau:source_berry')
+	event.recipes.create.compacting(Fluid.of('kubejs:magebloom', 100), 'ars_nouveau:magebloom')
 	event.recipes.create.compacting(Fluid.of('kubejs:rainbow', 1000), 'create:chromatic_compound').superheated()
 	event.recipes.create.compacting([Fluid.of('water', 10), 'dead_bush'], ['#minecraft:saplings', '#minecraft:saplings'])
 	event.recipes.create.compacting('minecraft:ice', [Fluid.of('water', 1000), 'minecraft:snowball'])
@@ -30,6 +45,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.compacting('forbidden_arcanus:arcane_crystal', 'forbidden_arcanus:arcane_crystal_dust')
 
 	event.recipes.create.mixing('create:chromatic_compound', ['3x minecraft:glowstone_dust', '3x create:powdered_obsidian', 'create:polished_rose_quartz']).superheated()
+	event.recipes.create.mixing(Fluid.of('kubejs:magic', 1000), [Fluid.of('kubejs:sourceberry', 500), Fluid.of('kubejs:magebloom', 500), 'create:polished_rose_quartz', 'botania:mana_diamond'])
 
 	event.recipes.create.mechanical_crafting('toms_storage:ts.crafting_terminal', [
 		' T ',
@@ -519,4 +535,50 @@ ServerEvents.recipes(event => {
 			item: "kubejs:incomplete_machine_casing",
 		},
 	});
-})
+	event.custom({
+		type: "create:sequenced_assembly",
+		ingredient: {
+			item: 'create:experience_nugget',
+		},
+		loops: 10,
+		results: [
+			{
+				item: 'forbidden_arcanus:xpetrified_orb',
+			}
+		],
+		sequence: [
+			{
+				type: "create:pressing",
+				ingredients: [
+					{
+						item: 'create:experience_nugget',
+					},
+				],
+				results: [
+					{
+						item: 'create:experience_nugget',
+					},
+				],
+			}
+		],
+		transitionalItem: {
+			item: 'create:experience_nugget',
+		},
+	});
+	let IS = 'kubejs:incomplete_cracked_stone'
+	event.recipes.createSequencedAssembly([
+		Item.of('kubejs:cracked_stone'),
+	], 'minecraft:stone', [
+		event.recipes.createPressing(IS, IS),
+		event.recipes.createFilling(IS, [IS, Fluid.of('minecraft:lava', 1000)])
+	]).transitionalItem(IS).loops(1)
+	let IN = 'kubejs:incomplete_netherrack'
+	event.recipes.createSequencedAssembly([
+		Item.of('minecraft:netherrack'),
+	], 'kubejs:cracked_stone', [
+		event.recipes.createDeploying(IN, [IN, 'minecraft:gunpowder']),
+		event.recipes.createDeploying(IN, [IN, 'minecraft:glowstone_dust']),
+		event.recipes.createDeploying(IN, [IN, 'minecraft:redstone']),
+		event.recipes.createPressing(IN, IN)
+	]).transitionalItem(IN).loops(1)
+	})

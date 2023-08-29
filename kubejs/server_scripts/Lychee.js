@@ -58,6 +58,18 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+    event.custom({
+        "type": "lychee:item_exploding",
+        "item_in": {
+            "item": 'ae2:matter_ball'
+        },
+        "post": [
+            {
+                "type": "drop_item",
+                "item": 'forbidden_arcanus:dark_matter',
+            }
+        ]
+    })
     /*
     event.custom({
         "type": "lychee:lightning_channeling",

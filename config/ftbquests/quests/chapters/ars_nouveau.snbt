@@ -1187,18 +1187,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["1F88BD35E7AF9EEE"]
-			id: "3973E7F24EC718FE"
-			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:magic"
-				id: "1D4AF84CBDA6939B"
-				type: "fluid"
-			}]
-			x: -4.0d
-			y: 4.0d
-		}
-		{
 			id: "1F88BD35E7AF9EEE"
 			tasks: [{
 				id: "5D778C5B3CD07E2B"

@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/cube_column",
+	"textures": {
+		"bottom": "kubejs:block/bottom",
+		"side": "kubejs:block/sides",
+		"end": "kubejs:block/top"
+	}
+}
