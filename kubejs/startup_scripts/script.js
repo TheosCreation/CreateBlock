@@ -15,6 +15,10 @@ StartupEvents.registry('block', event => {
     event.create('crushed_netherrack').material('clay').hardness(0.5).displayName('Crushed Netherrack');
     event.create('crushed_end_stone').material('clay').hardness(0.5).displayName('Crushed End Stone');
     event.create('dust').material('sand').hardness(0.5).displayName('Dust');
+    event.create('cracked_stone').material('stone').displayName('Cracked Stone');
+    event.create('reactive_bricks').material('stone').displayName('Reactive Bricks');
+    event.create('soulless_soil').material('dirt').displayName('Soulless Soil');
+    event.create('warping_block').material('metal').displayName('Warping Block');
     //event.create('crushed_end_stone').texture('createsifter:block/crushed_end_stone').displayName('Crushed End Stone');
 })
 StartupEvents.registry('item', event => {
@@ -29,6 +33,8 @@ StartupEvents.registry('item', event => {
     event.create("worldshaper_cogwheel").displayName(`Worldshaper Cogwheel`).parentModel("kubejs:item/worldshaper_cogwheel")
     event.create("worldshaper_barrel").displayName(`Worldshaper Barrel`).parentModel("kubejs:item/worldshaper_barrel")
     event.create("worldshaper_handle").displayName(`Worldshaper Handle`).parentModel("kubejs:item/worldshaper_handle")
+    event.create('incomplete_cracked_stone').parentModel("minecraft:block/cube_all").displayName('Incomplete Cracked Stone').texture('all', 'kubejs:item/incomplete_cracked_stone');
+    event.create('incomplete_netherrack').parentModel("minecraft:block/cube_all").displayName('Incomplete Netherrack').texture('all', 'kubejs:item/incomplete_netherrack');
 
     event.create('chromatic_tube').displayName('Chromatic Tube').texture('kubejs:item/chromatic_tube').rarity('RARE')
     event.create('rad_star').displayName('Radiating Star').texture('kubejs:item/rad_star').rarity('RARE').glow(true)
@@ -55,6 +61,16 @@ StartupEvents.registry('fluid', event => {
         
 
     event.create('magic').displayName('Liquid Magic')
+        .stillTexture('kubejs:fluid/magic_still')
+        .flowingTexture('kubejs:fluid/magic_flowing')
+        .bucketColor(0xDA70D6)
+
+    event.create('sourceberry').displayName('Sourceberry Juice')
+        .stillTexture('kubejs:fluid/magic_still')
+        .flowingTexture('kubejs:fluid/magic_flowing')
+        .bucketColor(0xDA70D6)
+
+    event.create('magebloom').displayName('Magebloom Juice')
         .stillTexture('kubejs:fluid/magic_still')
         .flowingTexture('kubejs:fluid/magic_flowing')
         .bucketColor(0xDA70D6)

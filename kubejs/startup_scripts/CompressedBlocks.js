@@ -2,7 +2,8 @@
 Platform.mods.kubejs.name = 'Create Block'
 
 StartupEvents.registry('block', event => {
-    let StoneBlocks = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Coal', 'Quartz', 'Lapis', 'Diorite', 'Granite', 'Obsidian', 'Snow', 'End Stone']
+    //event.create('compressed_dirt_test').parentModel("kubejs:block/meshes/dirttest").displayName('Compressed Dirt test (1x)').material('dirt').hardness(2.5);
+    let StoneBlocks = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Coal', 'Quartz', 'Lapis', 'Diorite', 'Granite', 'Obsidian', 'Snow', 'End Stone', 'Tuff', 'Nether Bricks', 'Dripstone']
     StoneBlocks.forEach(item => {
         let name = item.toLowerCase().replace(/ /g, "_");
         for (let i = 1; i < 10; i++) {
@@ -77,6 +78,13 @@ StartupEvents.registry('block', event => {
         let name = item.toLowerCase().replace(/ /g, "_");
         for (let i = 1; i < 10; i++) {
             event.create(name + `_${i}x`).displayName('Compressed ' + item + ` (${i}x)`).material('glass').hardness(1.5).defaultCutout();
+        }
+    })
+    let Ice = ['Packed Ice']
+    Ice.forEach(item => {
+        let name = item.toLowerCase().replace(/ /g, "_");
+        for (let i = 1; i < 10; i++) {
+            event.create(name + `_${i}x`).displayName('Compressed ' + item + ` (${i}x)`).material('glass').hardness(1.5);
         }
     })
     let Glowstone = ['Glowstone']
