@@ -1,0 +1,123 @@
+{
+  "name": "skyvillages:skyvillage_houses",
+  "fallback": "skyvillages:skyvillage_terminator",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:librarian_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:house_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:weaponsmith_2",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:mason_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:alchemist_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:loom_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:cartographer_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:farm_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:farm_2",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:farm_3",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:fletcher_1",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:librarian_2",
+        "processors": "skyvillages:house_processor",
+    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "skyvillages:weaponsmith_1",
+        "processors": "skyvillages:house_processor",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,8 +1,0 @@
-
-#Obtainables settings
-[obtainables]
-	#Can Soul Scorched Metal be obtained?
-	enableSoulScorchedMetal = true
-	#Can Sculk Metal be obtained?
-	enableSculkMetal = true
-
