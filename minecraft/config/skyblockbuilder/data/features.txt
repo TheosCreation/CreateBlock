@@ -73,7 +73,6 @@ minecraft:fancy_oak_bees
 minecraft:fancy_oak_bees_0002
 minecraft:fancy_oak_bees_002
 minecraft:fancy_oak_bees_005
-ars_elemental:flashing_feature
 ars_nouveau:flourishing_feature
 minecraft:flower_default
 minecraft:flower_flower_forest
@@ -139,7 +138,6 @@ botania:mystical_flowers
 botania:mystical_mushrooms
 ars_nouveau:natural_blazing_feature
 ars_nouveau:natural_cascade_feature
-ars_elemental:natural_flashing_feature
 ars_nouveau:natural_flourishing_feature
 ars_nouveau:natural_vexing_feature
 minecraft:nether_sprouts
@@ -226,9 +224,7 @@ botania:pink_mystical_flower_patch
 minecraft:pointed_dripstone
 botania:purple_mystical_flower_patch
 ars_nouveau:random_common_archwood
-ars_elemental:random_common_flashing
 ars_nouveau:random_mixed
-ars_elemental:random_simple_flashing
 botania:red_mystical_flower_patch
 minecraft:rooted_azalea_tree
 minecraft:sculk_patch_ancient_city
