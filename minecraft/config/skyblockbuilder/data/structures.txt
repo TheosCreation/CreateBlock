@@ -5,6 +5,7 @@ minecraft:buried_treasure
 minecraft:desert_pyramid
 minecraft:end_city
 minecraft:fortress
+createblock:goal
 ars_nouveau:guardian_wilden_den
 ars_nouveau:hunter_wilden_den
 minecraft:igloo
