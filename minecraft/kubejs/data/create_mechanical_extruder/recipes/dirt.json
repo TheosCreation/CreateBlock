@@ -1,0 +1,14 @@
+{
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [
+    {
+      "tag": "forge:dirtable"
+    },
+    {
+      "tag": "forge:dirtable"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}

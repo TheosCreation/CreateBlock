@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "kubejs:dust"
+    }
+  ]
+}

@@ -1,0 +1,1223 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "2875C400D322ABA0"
+	icon: "ars_nouveau:archmage_spell_book"
+	id: "4A41252630A0A14A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The &bWorn Notebook&r is &eArs Nouveau&r's guidebook, teaching you everything in the mod."]
+			icon: "ars_nouveau:worn_notebook"
+			id: "62236A7CCEB10D6E"
+			rewards: [
+				{
+					id: "6A0097E45E505FDA"
+					item: "minecraft:writable_book"
+					type: "item"
+				}
+				{
+					id: "18E8638612281FAA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5F82212124407B66"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+			]
+			subtitle: "Magical Manual"
+			tasks: [{
+				id: "26636B356CD755A1"
+				title: "Worn Notebook"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62236A7CCEB10D6E"]
+			description: [
+				"&6Spellbooks&r are the focus for your spells. They are &6where spells are customized and cast from&r."
+				""
+				"The &bNovice Spell Book&r can support only Tier 1 Glyphs."
+			]
+			id: "3CFD3D99673DEE53"
+			rewards: [{
+				id: "79EF04624E18547A"
+				item: {
+					Count: 1b
+					id: "minecraft:splash_potion"
+					tag: {
+						Potion: "ars_nouveau:spell_damage_potion_long"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Make a Novice Spell Book"
+			tasks: [{
+				id: "7FFEEC93E4BE21D8"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76A23AB6136EDAFD"]
+			description: [
+				"The &bImbuement Chamber&r crafts items by &6infusing them with Source&r."
+				""
+				"For most recipes, Source has to be supplied through nearby Source Jars, but the recipe for &6Source Gems&r will generate Source all on its own."
+			]
+			id: "3ED0FD74FDB51074"
+			rewards: [
+				{
+					count: 16
+					id: "49A34F3EECD6AD12"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "64ED67FAAEE75068"
+					item: "ars_nouveau:blank_parchment"
+					type: "item"
+				}
+			]
+			subtitle: "Make an Imbuement Chamber"
+			tasks: [{
+				id: "662BDE8CEEBB03B2"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3CFD3D99673DEE53"]
+			description: [
+				"To make a spell, hold your Spellbook and use the &6Open Book&r key (default is 'C')."
+				""
+				"First, you need to define the &6form&r: how the spell finds its &6target&r. For example, touch, projectile, or touch."
+				""
+				"Next, pick the &6effect&r: what the spell &6does&r. For example, harming or breaking."
+				""
+				"Finally, you can optionally name the spell, then click &6Create&r. Now, you can cast the spell by right-clicking the Book!"
+			]
+			icon: "ars_nouveau:allow_scroll"
+			id: "4E643701811F132A"
+			min_width: 250
+			rewards: [
+				{
+					id: "71C020D671A24D0A"
+					item: "ars_nouveau:glyph_light"
+					type: "item"
+				}
+				{
+					id: "232AB6A2EF9225BC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "How to make custom spells"
+			tasks: [{
+				id: "533F75E23E836B06"
+				type: "checkmark"
+			}]
+			title: "Spellcraft 101"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CFD3D99673DEE53"]
+			description: [
+				"Upgrading into the more powerful &bMage's Spell Book&r allows access to &6Tier 2 Glyphs&r."
+				""
+				"It will also &6permanently increase your Mana and Mana Regen&r."
+			]
+			id: "31752E9EC234EDF5"
+			rewards: [
+				{
+					id: "0C56F0C10D73535A"
+					item: {
+						Count: 1b
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "ars_nouveau:mana_regen_potion_strong"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17836762A52BD440"
+					item: "ars_nouveau:source_berry_pie"
+					type: "item"
+				}
+			]
+			subtitle: "Make a Mage's Spell Book"
+			tasks: [{
+				id: "5787CE41D7D9CDBD"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31752E9EC234EDF5"]
+			description: [
+				"The &bArchmage Spell Book&r is the ultimate spell book, allowing access to &6Tier 3 Glyphs&r and upgrading your Mana further."
+				""
+				"One of the ingredients requires &6defeating the Wilden&r, a summonable boss."
+			]
+			id: "2603B8087C13A87E"
+			rewards: [
+				{
+					id: "1F115D25EB5144E0"
+					item: "ars_nouveau:amulet_of_mana_regen"
+					type: "item"
+				}
+				{
+					id: "767C52471546335F"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34E987AF392AD357"
+					item: "ars_nouveau:manipulation_essence"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "76873B38E7408BB3"
+					item: "ars_nouveau:greater_experience_gem"
+					type: "item"
+				}
+			]
+			subtitle: "Make an Archmage Spell Book"
+			tasks: [{
+				id: "75C0C642BE913103"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62236A7CCEB10D6E"]
+			description: ["You can get &bBlazing Archwood Saplings&r by &6sifting crushed netherack&r."]
+			id: "76A23AB6136EDAFD"
+			rewards: [
+				{
+					id: "17959A7D7B32B4C0"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "32C49DB3ED2D2025"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "33DA9683C5BEB120"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "4EE5732FB574E38C"
+					item: "ars_nouveau:glyph_fell"
+					type: "item"
+				}
+			]
+			subtitle: "Get a Blazing Archwood Sapling"
+			tasks: [{
+				id: "0176B09769EA4303"
+				item: "ars_nouveau:red_archwood_sapling"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3ED0FD74FDB51074"
+				"1F88BD35E7AF9EEE"
+			]
+			description: ["Placing &6Lapis&r or &6Amethyst&r in the Imbuement Chamber will create &bSource Gems&r, a powerful source of magic."]
+			id: "29BD6DA638779F8B"
+			rewards: [
+				{
+					count: 4
+					id: "00C7EA48D0D7A549"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "620522E83806D2EF"
+					item: "ars_nouveau:glyph_cut"
+					type: "item"
+				}
+			]
+			subtitle: "Make a Source Gem"
+			tasks: [{
+				id: "2D9ED1B644E26B44"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["29BD6DA638779F8B"]
+			description: [
+				"&6Source&r is the magical power that drives all spell energy in the mod."
+				""
+				"There are many ways to collect and use it, but it is always stored in &bSource Jars&r. "
+			]
+			id: "4F93CB2B27A6B18A"
+			rewards: [
+				{
+					id: "648D7658EC37AEF0"
+					item: "ars_nouveau:wilden_spike"
+					type: "item"
+				}
+				{
+					id: "27B5E18CDB862C0A"
+					item: "ars_nouveau:wilden_wing"
+					type: "item"
+				}
+				{
+					id: "735C9727D9393AB3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make a Source Jar"
+			tasks: [{
+				id: "68C1C99D3E78F255"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4F93CB2B27A6B18A"]
+			description: [
+				"&bSourcelinks&r &6generate Source&r in a variety of ways, depending on the specific Sourcelink."
+				""
+				"The Agronomic Sourcelink is a good early option. It generates Source &6when crops grow nearby&r. It works better if the crop is Magebloom or Sourceberry."
+			]
+			icon: "ars_nouveau:agronomic_sourcelink"
+			id: "163FB306E6176C79"
+			rewards: [
+				{
+					id: "4849DB05883E5146"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					id: "596DC4E3BE4FEC3F"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
+			subtitle: "Make a Sourcelink"
+			tasks: [{
+				id: "6FB91E937BDB1901"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:agronomic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:mycelial_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:vitalic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:volcanic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:alchemical_sourcelink"
+							}
+						]
+					}
+				}
+				title: "Sourcelinks"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["29BD6DA638779F8B"]
+			description: ["&bSourcestone&r is a nice decorative block, and is also used in several recipes."]
+			id: "15382B624A9A64F8"
+			rewards: [
+				{
+					count: 16
+					id: "2AA93DC4141BF8C9"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					id: "649AA924DFE7808A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make Sourcestone"
+			tasks: [{
+				id: "709773F6FDAAD159"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["15382B624A9A64F8"]
+			description: [
+				"&bArcane Pedestals&r are used for the &6Enchanting Apparatus&r, as well as the &6Ritual Brazier&r."
+				""
+				"You'll want at least 8."
+			]
+			id: "13AA07F242BE2FBD"
+			rewards: [{
+				count: 4
+				id: "246641DEF20DBA57"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			subtitle: "Make Arcane Pedestals"
+			tasks: [{
+				count: 4L
+				id: "0856B2C0E2A8833A"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13AA07F242BE2FBD"]
+			description: [
+				"The &bRitual Brazier&r is used to cast &6rituals&r, which perform a variety of functions. Some are semi-permanent, some are single-use."
+				""
+				"Rituals are started by inserting a &bRitual Tablet&r. Some rituals allow you to optionally &6throw additional items in&r to change how it works. Right-click the Brazier to start it when ready."
+			]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "1C47E1042EDEDF31"
+			rewards: [
+				{
+					id: "65BEDB5CBD67F5D9"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					id: "1672A6D26858B880"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+				{
+					id: "1DD507EF80E31C86"
+					item: "ars_nouveau:air_essence"
+					type: "item"
+				}
+				{
+					id: "73FE4D2126D39F32"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+				{
+					id: "7A84CE4BC8C970D5"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+				{
+					id: "30225619AC7A1272"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					id: "3AD7E6DD8D173790"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Make a Ritual Brazier"
+			tasks: [
+				{
+					id: "358891ADCE4A6EBB"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+				{
+					id: "446C3F9C8CA45824"
+					item: {
+						Count: 1b
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "eau:ritual"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "ars_nouveau:ritual_brazier"
+										}]
+									}
+								}
+							]
+						}
+					}
+					title: "Ritual Tablets"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13AA07F242BE2FBD"]
+			description: [
+				"The &bArcane Core&r is part of the &6Enchanting Apparatus&r multiblock."
+				""
+				"Additionally, it can force a Villager's profession into the &6Shady Wizard&r, which offers unique magical trades."
+			]
+			id: "2ADA7D6FDBBCC8E0"
+			rewards: [
+				{
+					id: "70333A228694AE7B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4477AD5B4C0EE1C4"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Make an Arcane Core"
+			tasks: [{
+				id: "600285BCEBEC9D3E"
+				item: "ars_nouveau:arcane_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2ADA7D6FDBBCC8E0"]
+			description: ["The &bEnchanting Apparatus&r, placed on top of the Arcane Core and with Arcane Pedestals nearby, is used to craft many items."]
+			id: "033BAE1703CCEEF7"
+			rewards: [
+				{
+					id: "03144210EC987939"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					id: "00DE2B71505E6522"
+					item: "ars_nouveau:bucket_of_source"
+					type: "item"
+				}
+				{
+					id: "461CC81424CE7F36"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make an Enchanting Apparatus"
+			tasks: [{
+				id: "1C64F82D1494EA91"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["033BAE1703CCEEF7"]
+			description: ["The &bDominion Wand&r is used to &6control Source Relays&r as well as &6automation-based summon creatures&r."]
+			id: "5317866A71AB865B"
+			rewards: [
+				{
+					id: "334540D73BBF5899"
+					item: "ars_nouveau:whirlisprig_charm"
+					type: "item"
+				}
+				{
+					id: "1A50A02E0F5B10FE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Magical Conductor"
+			tasks: [{
+				id: "6B0D032DD95A1595"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:dominion_wand"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["033BAE1703CCEEF7"]
+			description: ["&bMagebloom&r is a very magically powerful plant, which is created in the Enchanting Apparatus."]
+			id: "49B023DFB3D79DA7"
+			rewards: [
+				{
+					count: 4
+					id: "036A85A04FDDDECD"
+					item: "ars_nouveau:magebloom"
+					type: "item"
+				}
+				{
+					id: "252CFE09D589EB56"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make Magebloom Seeds"
+			tasks: [{
+				id: "49E73A24746748DC"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["49B023DFB3D79DA7"]
+			description: ["Magebloom can be harvested and then crafted into &bMagebloom Fiber&r, which is used in several recipes."]
+			id: "3B988B8D06F51C84"
+			rewards: [
+				{
+					count: 4
+					id: "7D0D731ABF2033E1"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+				{
+					id: "10A7CB9696BA12F3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Make Magebloom Fiber"
+			tasks: [{
+				id: "24C88367DB464330"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["76A23AB6136EDAFD"]
+			description: [
+				"The &bScribe's Table&r is one of the most important blocks within the mod. It is used to &6create Spell Glyphs&r, which allow you to make more spells."
+				""
+				"Right-click the Table with a &6Spell Book&r to open its GUI, then &6click the Glyph you want to craft&r."
+				""
+				"It'll tell you what ingredients are needed, then click &6Select&r when ready. &6Throw the ingredients&r on top of the Table, and the Glyph will be crafted."
+				""
+				"You can also &6enscribe Spells&r to be used in the &6Spell Turret&r. See the &6Worn Notebook&r for details."
+			]
+			id: "4B0280681F11E122"
+			min_width: 250
+			rewards: [
+				{
+					id: "419789FE7FB1CEE3"
+					item: "ars_nouveau:glyph_evaporate"
+					type: "item"
+				}
+				{
+					id: "29A26C5FA184682F"
+					type: "xp"
+					xp: 20
+				}
+			]
+			subtitle: "Make a Scribe's Table"
+			tasks: [{
+				id: "0B15B530E60A4B2D"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3CFD3D99673DEE53"
+				"4B0280681F11E122"
+			]
+			description: [
+				"Most of your &6basic spell components&r are &bTier 1&r."
+				""
+				"Right-click a Glyph to learn it."
+			]
+			id: "45B269FB21C93109"
+			rewards: [{
+				id: "7B522C77DCEFE2E4"
+				item: "ars_nouveau:glyph_summon_wolves"
+				type: "item"
+			}]
+			subtitle: "Tier 1 Glyphs"
+			tasks: [{
+				id: "39B99A8213B45C97"
+				item: "ars_nouveau:glyph_launch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"31752E9EC234EDF5"
+				"45B269FB21C93109"
+			]
+			description: ["More powerful &bGlyphs&r can only be cast by a &6Mage's Spell Book&r."]
+			id: "516B77C479CAA6DE"
+			rewards: [
+				{
+					id: "128FEE4CAAEB8CA0"
+					item: "ars_nouveau:glyph_invisibility"
+					type: "item"
+				}
+				{
+					id: "7B854805938583A8"
+					item: "ars_nouveau:glyph_heal"
+					type: "item"
+				}
+				{
+					id: "6C1521CB0419F811"
+					item: "ars_nouveau:glyph_dampen"
+					type: "item"
+				}
+			]
+			subtitle: "Tier 2 Glyphs"
+			tasks: [{
+				id: "6BAE281286005FD2"
+				item: "ars_nouveau:glyph_aoe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2603B8087C13A87E"
+				"516B77C479CAA6DE"
+			]
+			description: ["&bTop tier&r spell components can only be cast through an &bArchmage Spell Book&r."]
+			id: "10CA7CA928B52BB6"
+			rewards: [
+				{
+					id: "37954D044D6EE476"
+					item: "ars_nouveau:glyph_linger"
+					type: "item"
+				}
+				{
+					id: "1CC0AD38C630A10B"
+					item: "ars_nouveau:glyph_intangible"
+					type: "item"
+				}
+				{
+					id: "78E0EE25B30D6DC6"
+					item: "ars_nouveau:glyph_blink"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Tier 3 Glyphs"
+			tasks: [{
+				id: "3FE0268B9698BA75"
+				item: "ars_nouveau:glyph_orbit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C47E1042EDEDF31"]
+			description: [
+				"&bAmethyst Golems&r can be summoned using a &6Ritual of Awakening&r while near &6Budding Amethyst&r."
+				""
+				"Once summoned, use a &6Dominion Wand&r on them, then sneak right-click an inventory like a Chest or Barrel."
+				""
+				"The Golem will then &6automatically farm nearby Amethyst&r, and even converts Amethyst Blocks into Budding Amethyst!"
+			]
+			id: "20E94F203F824018"
+			rewards: [
+				{
+					id: "695A3EBBF7225491"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "2B1A2C4AC18E37B0"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+			]
+			subtitle: "Purpley boy"
+			tasks: [{
+				icon: "ars_nouveau:amethyst_golem_charm"
+				id: "0227215AB2BA209B"
+				observe_type: 5
+				timer: 0L
+				title: "Observe an Amethyst Golem"
+				to_observe: "ars_nouveau:amethyst_golem"
+				type: "observation"
+			}]
+			title: "Amethyst Golems"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5317866A71AB865B"]
+			description: [
+				"The &bStorage Lectern&r can be used to &6view, manage, and access multiple nearby inventories&r, within a 30 block radius."
+				""
+				"&bBookwyrms&r are required for the Lectern to function, as they are what actually connect the inventories to the Lectern. The more the Lectern has, the more inventories can be linked."
+				""
+				"First, use a Dominion Rod on the inventory you wish to connect to, then use it again on the Lectern. This will connect the two, allowing the Lectern to access that inventory."
+				""
+				"If you place an inventory adjacent to the Lectern, and &odo not bind it&r, it will act as an &6input&r."
+			]
+			icon: "ars_nouveau:storage_lectern"
+			id: "623ECDC05E1FEEE1"
+			min_width: 250
+			rewards: [{
+				id: "54AC8E668DF48EFA"
+				item: "ars_nouveau:bookwyrm_charm"
+				type: "item"
+			}]
+			subtitle: "The wyrms go in, the wyrms go out..."
+			tasks: [
+				{
+					id: "3EB7F2279CA1AB18"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+				{
+					id: "706DF5FA6F99A6EE"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:bookwyrm_charm"
+						tag: {
+							color: "blue"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mystical Storage"
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3B988B8D06F51C84"]
+			description: ["&bRunic Chalk&r allows you to draw symbols on the ground that &6cast a spell on whatever walks on it&r."]
+			id: "2884B65FB1EE3A44"
+			rewards: [
+				{
+					id: "613D63863AF73D1D"
+					item: "ars_nouveau:starbuncle_shards"
+					type: "item"
+				}
+				{
+					id: "0EE76A433F7CB569"
+					type: "xp"
+					xp: 30
+				}
+			]
+			subtitle: "Magic Landmines!"
+			tasks: [{
+				id: "440BB4E526CECA4B"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:runic_chalk"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4F93CB2B27A6B18A"
+				"4B0280681F11E122"
+			]
+			description: [
+				"&bSpell Turrets&r are &6automatic spell casters&r, enabling many a magical contraption."
+				""
+				"Insert a Spell Parchment, and the Turret will cast the spell when given a Redstone signal."
+				""
+				"Casting the spell &6costs Source&r from a nearby Source Jar."
+			]
+			id: "40FFFC3BEFB7C442"
+			rewards: [
+				{
+					id: "5982F5D4B5E8DCEA"
+					item: "ars_nouveau:thread_spellpower"
+					type: "item"
+				}
+				{
+					id: "095D6545DC009A96"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make a Basic Spell Turret"
+			tasks: [{
+				id: "5C35B2DED3938EB3"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4F93CB2B27A6B18A"
+				"15382B624A9A64F8"
+			]
+			description: [
+				"If you make a &6Nether Portal shape&r made of Sourcestone, supply Source, and throw a bound &bWarp Scroll through&r, and it will become a &6Warp Portal&r! "
+				""
+				"This will cause a &6permanent portal&r to the location bound by the Scroll."
+				""
+				"The &bStabilized Warp Scroll&r is required to teleport across dimensions."
+			]
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:warp_scroll"
+				tag: { }
+			}
+			id: "6A70EC3F2551324A"
+			min_width: 250
+			rewards: [
+				{
+					id: "4501CE62A343673B"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3517B939E928A774"
+					item: "ars_nouveau:bucket_of_source"
+					type: "item"
+				}
+				{
+					id: "2A0455E6894BB469"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2DFBB74EE42866A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Make a Warp Scroll"
+			tasks: [{
+				id: "06E9142ED9B41152"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:warp_scroll"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:stable_warp_scroll"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Warp Scroll"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3B988B8D06F51C84"]
+			description: [
+				"&bMagical Armor&r &6increases the wearer's Mana and Mana Regen&r, and can &6be upgraded&r."
+				""
+				"There are three tiers. The Sorcerer's set can be upgraded more, while the other two protect more."
+				""
+				"They can be &6upgraded in the Enchanting Apparatus&r to increase their tier."
+			]
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:apprentice_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "401DAE33CD802FC1"
+			subtitle: "Make a set of magical armor"
+			tasks: [
+				{
+					id: "55EA0FD91866BE3D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magic Boots"
+					type: "item"
+				}
+				{
+					id: "3B3955813E28CA50"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magic Leggings"
+					type: "item"
+				}
+				{
+					id: "23541FABF3C90F60"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magic Robes"
+					type: "item"
+				}
+				{
+					id: "70DDBEBBD259BAF5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magic Hats"
+					type: "item"
+				}
+			]
+			title: "Magic Armor"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["401DAE33CD802FC1"]
+			description: [
+				"&bArmor Threads&r are basically &6upgrades&r to your magical armor. They are applied on the &bAlteration Table&r."
+				""
+				"First, place the armor, then the Threads, then remove the armor."
+			]
+			icon: "ars_nouveau:thread_undying"
+			id: "5DD629B0834D432F"
+			rewards: [{
+				id: "59F32CA75F560CAB"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Make an Armor Thread"
+			tasks: [
+				{
+					id: "110D30422396593D"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: ":thread"
+						}
+					}
+					title: "Armor Threads"
+					type: "item"
+				}
+				{
+					id: "2E7AF170658A6F02"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			id: "1F88BD35E7AF9EEE"
+			tasks: [{
+				id: "5D778C5B3CD07E2B"
+				item: "ars_nouveau:source_berry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49B023DFB3D79DA7"]
+			id: "6EBD8CACC25E650E"
+			tasks: [{
+				id: "7FA0D3341E9BEF07"
+				item: "kubejs:magebloom_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F88BD35E7AF9EEE"]
+			id: "363AA7605B4F3BD7"
+			tasks: [{
+				id: "2E8CD3AF843EB976"
+				item: "kubejs:sourceberry_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+	]
+	title: "Ars Nouveau"
+}

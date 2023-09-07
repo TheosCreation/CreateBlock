@@ -1,0 +1,15 @@
+{
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [
+    {
+      "item": "minecraft:sculk_catalyst"
+    },
+    {
+      "fluid": "kubejs:magic",
+      "amount": 1000
+    }
+  ],
+  "result": {
+    "item": "minecraft:sculk"
+  }
+}
