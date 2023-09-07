@@ -74,15 +74,16 @@
 			y: 2.0d
 		}
 		{
-			id: "5F37048C2D0A49FF"
-			subtitle: "Teseract can transport fluids, energy and items at a fast rate"
+			dependencies: ["09447DA319D56D63"]
+			id: "76AF51665FD12875"
+			subtitle: "Large Connectors have more capacity than regular connectors"
 			tasks: [{
-				id: "2F91E2F0A89C9C88"
-				item: "tesseract:tesseract"
+				id: "40072034C4D350EB"
+				item: "createaddition:large_connector"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.5d
+			x: -8.5d
+			y: 1.5d
 		}
 	]
 	title: "Energy and Wireless"

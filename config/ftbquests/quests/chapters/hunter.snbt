@@ -11,7 +11,7 @@
 		}
 	}
 	id: "000000000000003C"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -37,18 +37,45 @@
 			dependencies: ["000000000000003D"]
 			icon: "minecraft:skeleton_skull"
 			id: "000000000000003F"
-			rewards: [{
-				count: 18
-				id: "0000000000000567"
-				item: {
-					Count: 1b
-					id: "minecraft:tipped_arrow"
-					tag: {
-						Potion: "minecraft:strong_poison"
+			rewards: [
+				{
+					count: 18
+					id: "0000000000000567"
+					item: {
+						Count: 1b
+						id: "minecraft:tipped_arrow"
+						tag: {
+							Potion: "minecraft:strong_poison"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "07CC971B065A37E5"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:skeleton_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16CAFE99D0C0ED56"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:skeleton"
 				icon: "minecraft:skeleton_skull"
@@ -63,21 +90,33 @@
 		{
 			dependencies: ["000000000000003F"]
 			id: "0000000000000041"
-			rewards: [{
-				id: "151F7C27B0041520"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							"forbidden_arcanus:tick_counter": {
-								value: 0
+			rewards: [
+				{
+					id: "151F7C27B0041520"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								"forbidden_arcanus:tick_counter": {
+									value: 0
+								}
 							}
 						}
+						id: "forbidden_arcanus:obsidian_skull"
 					}
-					id: "forbidden_arcanus:obsidian_skull"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0051635146BDFE6B"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "227136345393A758"
+					item: "minecraft:skeleton_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:skeleton"
 				icon: "minecraft:skeleton_skull"
@@ -91,12 +130,19 @@
 		}
 		{
 			id: "000000000000004B"
-			rewards: [{
-				count: 8
-				id: "30F42AD9C5854879"
-				item: "forbidden_arcanus:rotten_leather"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "30F42AD9C5854879"
+					item: "forbidden_arcanus:rotten_leather"
+					type: "item"
+				}
+				{
+					id: "47365F8D2A637336"
+					item: "forbidden_arcanus:zombie_arm"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:zombie"
 				icon: "minecraft:zombie_head"
@@ -111,20 +157,33 @@
 		{
 			dependencies: ["000000000000004B"]
 			id: "000000000000004D"
-			rewards: [{
-				id: "0000000000000054"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:thorns"
-							lvl: 3s
-						}]
+			rewards: [
+				{
+					id: "0000000000000054"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:thorns"
+								lvl: 3s
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6A767DEB2462AC4A"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:zombie_gate"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:zombie"
 				icon: "minecraft:zombie_head"
@@ -139,20 +198,18 @@
 		{
 			dependencies: ["000000000000004D"]
 			id: "000000000000004F"
-			rewards: [{
-				id: "4F8C41C932AB006A"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:smite"
-							lvl: 5s
-						}]
-					}
+			rewards: [
+				{
+					id: "35D21E9CF59E7019"
+					item: "minecraft:spawner"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "31C7B1CD3146A80A"
+					item: "minecraft:zombie_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:zombie"
 				icon: "minecraft:zombie_head"
@@ -186,20 +243,33 @@
 		{
 			dependencies: ["0000000000000057"]
 			id: "0000000000000059"
-			rewards: [{
-				id: "000000000000064F"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:silk_touch"
-							lvl: 1s
-						}]
+			rewards: [
+				{
+					id: "000000000000064F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7272D6EE327EF538"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:spider_gate"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:spider"
 				icon: "minecraft:spider_eye"
@@ -214,20 +284,32 @@
 		{
 			dependencies: ["0000000000000059"]
 			id: "000000000000005B"
-			rewards: [{
-				id: "0A45C7DA46FD69FA"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:bane_of_arthropods"
-							lvl: 5s
-						}]
+			rewards: [
+				{
+					id: "0A45C7DA46FD69FA"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 5s
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "19DD2F4B91FCBF3E"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "69025BA01E3D4013"
+					item: "minecraft:spider_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:spider"
 				icon: "minecraft:spider_eye"
@@ -261,20 +343,33 @@
 		{
 			dependencies: ["0000000000000061"]
 			id: "0000000000000063"
-			rewards: [{
-				id: "000000000000023C"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:blast_protection"
-							lvl: 4s
-						}]
+			rewards: [
+				{
+					id: "000000000000023C"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 4s
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "54FCCB3977440120"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:creeper_gate"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:creeper"
 				icon: "minecraft:creeper_head"
@@ -289,11 +384,18 @@
 		{
 			dependencies: ["0000000000000063"]
 			id: "0000000000000065"
-			rewards: [{
-				id: "09BF6F2B570140A1"
-				item: "minecraft:spawner"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "09BF6F2B570140A1"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "2414C2B1C1BC35A1"
+					item: "minecraft:creeper_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:creeper"
 				icon: "minecraft:creeper_head"
@@ -327,6 +429,20 @@
 		{
 			dependencies: ["000000000000006B"]
 			id: "000000000000006D"
+			rewards: [{
+				id: "4306817EC039F911"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:smite"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:wither_skeleton"
 				icon: "minecraft:wither_skeleton_skull"
@@ -341,6 +457,18 @@
 		{
 			dependencies: ["000000000000006D"]
 			id: "000000000000006F"
+			rewards: [
+				{
+					id: "70D59354649AB06B"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "21F8F95C567E1348"
+					item: "minecraft:wither_skeleton_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:wither_skeleton"
 				icon: "minecraft:wither_skeleton_skull"
@@ -404,26 +532,40 @@
 				type: "kill"
 				value: 10L
 			}]
+			title: "Novice Blaze Hunter"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["0000000000000098"]
 			id: "000000000000009A"
-			rewards: [{
-				id: "0000000000000221"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:fortune"
-							lvl: 3s
-						}]
+			rewards: [
+				{
+					id: "0000000000000221"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "18579048FAE24389"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:blaze_gate"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:blaze"
 				icon: "minecraft:blaze_rod"
@@ -431,12 +573,25 @@
 				type: "kill"
 				value: 100L
 			}]
+			title: "Apprentice Blaze Hunter"
 			x: -3.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["000000000000009A"]
 			id: "000000000000009C"
+			rewards: [
+				{
+					id: "363C6D203C6CA2FC"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "78322F8FC657E5F6"
+					item: "minecraft:blaze_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:blaze"
 				icon: "minecraft:blaze_rod"
@@ -444,6 +599,7 @@
 				type: "kill"
 				value: 1000L
 			}]
+			title: "Journeyman Blaze Hunter"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -469,6 +625,17 @@
 		{
 			dependencies: ["0000000000000075"]
 			id: "00000000000003E0"
+			rewards: [{
+				id: "7120E907A7431946"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:ghast_gate"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:ghast"
 				icon: "minecraft:ghast_tear"
@@ -483,6 +650,18 @@
 		{
 			dependencies: ["00000000000003E0"]
 			id: "00000000000003E2"
+			rewards: [
+				{
+					id: "033236CA2B59FB13"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "3D1CC0BCA83484A5"
+					item: "minecraft:ghast_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:ghast"
 				icon: "minecraft:ghast_tear"
@@ -497,6 +676,17 @@
 		{
 			dependencies: ["00000000000003DE"]
 			id: "00000000000003E6"
+			rewards: [{
+				id: "2583F2F86A328923"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:enderman_gate"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:enderman"
 				icon: "minecraft:ender_pearl"
@@ -514,6 +704,18 @@
 				"00000000000003E6"
 			]
 			id: "00000000000003E8"
+			rewards: [
+				{
+					id: "68312D9A96317C28"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "4398D890BEF2DF36"
+					item: "minecraft:enderman_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:enderman"
 				icon: "minecraft:ender_pearl"
@@ -529,24 +731,42 @@
 			id: "000000000000045E"
 			rewards: [
 				{
-					count: 64
-					id: "0E97BC791F10418F"
-					item: "witherproofed:withered_powder"
-					type: "item"
-				}
-				{
 					id: "5B35B143EAC5D4C0"
 					item: "mythicbotany:wither_aconite"
 					type: "item"
 				}
+				{
+					count: 54
+					id: "6AC55C66C38AA913"
+					item: "witherproofed:heavy_reinforced_obsidian"
+					type: "item"
+				}
+				{
+					id: "17BC794D5444CB4A"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "26CC2E24ABBC5139"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_sword"
+						tag: {
+							Damage: 0
+							Modifier: "forbidden_arcanus:eternal"
+						}
+					}
+					type: "item"
+				}
 			]
+			subtitle: "You can automate killing the wither too"
 			tasks: [{
 				entity: "minecraft:wither"
 				icon: "minecraft:nether_star"
 				id: "000000000000045F"
 				title: "Wither Slayer"
 				type: "kill"
-				value: 10L
+				value: 5L
 			}]
 			x: 1.5d
 			y: -4.5d
@@ -588,7 +808,7 @@
 				id: "0000000000000461"
 				title: "Dragon Slayer"
 				type: "kill"
-				value: 10L
+				value: 5L
 			}]
 			x: -1.5d
 			y: -4.5d
@@ -596,12 +816,26 @@
 		{
 			icon: "minecraft:witch_spawn_egg"
 			id: "507E6FC07C05B784"
-			rewards: [{
-				count: 4
-				id: "187420DAE8130097"
-				item: "minecraft:frog_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "187420DAE8130097"
+					item: "minecraft:frog_spawn_egg"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "34478592BC615AAA"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "539DDAE3E7EDECDD"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:witch"
 				id: "6ADF9B2AB8C46735"
@@ -615,6 +849,17 @@
 		{
 			dependencies: ["507E6FC07C05B784"]
 			id: "0F212D61E278C98E"
+			rewards: [{
+				id: "76BB7D72C3A6A3E2"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:witch_gate"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:witch"
 				id: "3392639C8D9811A8"
@@ -628,6 +873,18 @@
 		{
 			dependencies: ["0F212D61E278C98E"]
 			id: "540E05434C2B259C"
+			rewards: [
+				{
+					id: "7E972D352CD3C913"
+					item: "minecraft:spawner"
+					type: "item"
+				}
+				{
+					id: "38CB5FF514CCE66C"
+					item: "minecraft:witch_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:witch"
 				id: "7AD431D635AEAD80"
@@ -661,6 +918,17 @@
 						id: "create_sa:slime_boots"
 						tag: {
 							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "710D7FFB75B7B824"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:slime_gate"
 						}
 					}
 					type: "item"
@@ -736,7 +1004,7 @@
 					entity: "minecraft:guardian"
 					id: "6AE5563CD79CEC70"
 					type: "kill"
-					value: 100L
+					value: 10L
 				}
 			]
 			title: "Guardians of the Sea"
@@ -753,7 +1021,7 @@
 				value: 3L
 			}]
 			title: "Novice Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
 			y: -7.0d
 		}
 		{
@@ -767,7 +1035,7 @@
 				value: 10L
 			}]
 			title: "Apprentice Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
 			y: -8.5d
 		}
 		{
@@ -781,7 +1049,56 @@
 				value: 20L
 			}]
 			title: "Journeyman Guardian of Gaia Hunter"
-			x: 0.0d
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "790A8F863CDAB18C"
+			rewards: [{
+				id: "0C2A83AE457724DA"
+				item: "minecraft:music_disc_5"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "7901F46E35C08B4C"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Novice Warden Hunter"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["790A8F863CDAB18C"]
+			id: "533991437F18802C"
+			rewards: [{
+				count: 4
+				id: "00F1870D3B5D39A7"
+				item: "witherproofed:sculk_metal"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "75B7BAE5FA138EB4"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Apprentice Warden Hunter"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["533991437F18802C"]
+			id: "4B06C1EC6D5AE383"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "4593B716DCA4A3A6"
+				type: "kill"
+				value: 20L
+			}]
+			title: "Journeyman Warden Hunter"
+			x: 1.0d
 			y: -10.0d
 		}
 	]
