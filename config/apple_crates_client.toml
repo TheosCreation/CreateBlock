@@ -1,3 +1,0 @@
-#Allowed Values: THREE, MANY
-crate_item_rendering = "THREE"
-
