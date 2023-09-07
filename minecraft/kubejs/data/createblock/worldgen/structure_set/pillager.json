@@ -3,6 +3,10 @@
     {
       "structure": "createblock:pillager",
       "weight": 1
+    },
+    {
+      "structure": "createblock:goal",
+      "weight": 1
     }
   ],
   "placement": {
