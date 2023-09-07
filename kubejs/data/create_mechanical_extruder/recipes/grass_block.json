@@ -1,9 +1,0 @@
-{
-    "type": "create_mechanical_extruder:extruding",
-    "catalyst": {
-        "item": "minecraft:moss_block"
-    },
-    "result": {
-        "item": "minecraft:grass_block"
-    }
-}
