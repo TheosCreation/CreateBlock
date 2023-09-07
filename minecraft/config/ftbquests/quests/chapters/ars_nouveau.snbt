@@ -1187,6 +1187,7 @@
 			y: 8.5d
 		}
 		{
+			description: ["Find a &estarbuncle floating island&r and you will find many sourceberrys on this island"]
 			id: "1F88BD35E7AF9EEE"
 			tasks: [{
 				id: "5D778C5B3CD07E2B"
