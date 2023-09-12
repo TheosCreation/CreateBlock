@@ -14,7 +14,13 @@
 	}]
 	quests: [
 		{
+			description: ["BTW this chance cube makes alot of noice"]
 			id: "7C91E2F2D5E43A1C"
+			rewards: [{
+				id: "1C4D244D593721E6"
+				item: "chancecubes:compact_giant_chance_cube"
+				type: "item"
+			}]
 			tasks: [{
 				id: "58D6291A0A2D7688"
 				item: "summoningrituals:altar"
@@ -24,8 +30,15 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["7C91E2F2D5E43A1C"]
 			id: "46D03311C48AACFC"
+			rewards: [{
+				count: 4
+				id: "7A44F323F0C5DB75"
+				item: "minecraft:reinforced_deepslate"
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:warden"
 				id: "4FDB219CC15FE3D9"
@@ -37,8 +50,14 @@
 			y: 1.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["7C91E2F2D5E43A1C"]
 			id: "61B611F6982549C5"
+			rewards: [{
+				id: "67B80E02A8CC55DC"
+				item: "chancecubes:chance_cube"
+				type: "item"
+			}]
 			tasks: [{
 				id: "72D0B759B5A50C92"
 				item: "quark:soul_bead"
@@ -51,6 +70,11 @@
 		{
 			dependencies: ["4D86F0F513E5EEB8"]
 			id: "1B2EDE5D4C07B4DD"
+			rewards: [{
+				id: "01F1E682EE0D3C68"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
 			tasks: [{
 				entity: "minecraft:blaze"
 				id: "63238D0E2B8C3FD4"
