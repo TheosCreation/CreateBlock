@@ -41,12 +41,19 @@
 		{
 			description: ["You only need 10 obsidian blocks to make a portal."]
 			id: "7A5F94720CCC4836"
-			rewards: [{
-				count: 4
-				id: "26606352B5F6774A"
-				item: "minecraft:obsidian"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "26606352B5F6774A"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "57A6221E30719CAC"
+					item: "chancecubes:chance_cube"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Hint: Use lava to make obsidian or make fel pumpkins to get blazes"

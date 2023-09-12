@@ -820,11 +820,6 @@
 			dependencies: ["0027048889049815"]
 			description: ["Rune of Pride is one of the Seven Deadly Sins Runes which is the third tier of Botania Runes. This is an important component in creating complex magical devices."]
 			id: "477EDACF18125B64"
-			rewards: [{
-				id: "711356EA4892BD42"
-				item: "sophisticatedbackpacks:stack_upgrade_tier_2"
-				type: "item"
-			}]
 			tasks: [{
 				id: "412D0A5AAD4E418D"
 				item: "botania:rune_pride"

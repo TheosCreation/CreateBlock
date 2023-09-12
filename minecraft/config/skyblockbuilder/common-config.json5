@@ -13,7 +13,7 @@
     "Nether": {
     
       // Should nether generate as in default world type? [default: false]
-      "Default": false
+      "Default": true
     },
     
     "Overworld": {
@@ -194,9 +194,7 @@
     "biomes": {
       "minecraft:overworld": {
         "allow_list": false,
-        "elements": [
-          "minecraft:*ocean*"
-        ]
+        "elements": []
       },
       "minecraft:the_nether": {
         "allow_list": false,

@@ -1,6 +1,4 @@
 minecraft:canyon
-mythicbotany:canyon
 minecraft:cave
-mythicbotany:cave
 minecraft:cave_extra_underground
 minecraft:nether_cave

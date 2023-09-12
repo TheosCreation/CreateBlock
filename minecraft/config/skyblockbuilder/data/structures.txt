@@ -1,13 +1,9 @@
 minecraft:ancient_city
-mythicbotany:andwari_cave
 minecraft:bastion_remnant
 minecraft:buried_treasure
 minecraft:desert_pyramid
 minecraft:end_city
 minecraft:fortress
-createblock:goal
-ars_nouveau:guardian_wilden_den
-ars_nouveau:hunter_wilden_den
 minecraft:igloo
 minecraft:jungle_pyramid
 minecraft:mansion
@@ -20,7 +16,6 @@ forbidden_arcanus:nipa
 forbidden_arcanus:nipa_floating
 minecraft:ocean_ruin_cold
 minecraft:ocean_ruin_warm
-createblock:pillager
 minecraft:pillager_outpost
 minecraft:ruined_portal
 minecraft:ruined_portal_desert
@@ -31,9 +26,6 @@ minecraft:ruined_portal_ocean
 minecraft:ruined_portal_swamp
 minecraft:shipwreck
 minecraft:shipwreck_beached
-skyvillages:skyvillage
-ars_nouveau:stalker_wilden_den
-ars_elemental:starbuncle_shrine
 minecraft:stronghold
 minecraft:swamp_hut
 minecraft:village_desert

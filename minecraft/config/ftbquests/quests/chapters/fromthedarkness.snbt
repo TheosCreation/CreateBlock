@@ -98,8 +98,8 @@
 			]
 			id: "0000000000000014"
 			rewards: [{
-				id: "000000000000001A"
-				item: "comforts:sleeping_bag_white"
+				id: "2AD7EB74DEEB3CD9"
+				item: "travelersbackpack:red_sleeping_bag"
 				type: "item"
 			}]
 			tasks: [{
@@ -247,8 +247,6 @@
 				"Cobblestone can be much more useful than dirt."
 				""
 				"Gather 64 Cobblestone and we'll give ya your first bridge made from... well, cobblestone!"
-				""
-				"Suggestion: Hold the magnet in your off hand"
 			]
 			id: "00000000000000C7"
 			rewards: [
@@ -339,8 +337,8 @@
 			id: "00000000000000B8"
 			rewards: [{
 				count: 2
-				id: "0000000000000519"
-				item: "minecraft:villager_spawn_egg"
+				id: "1AE254EB43488369"
+				item: "chancecubes:chance_cube"
 				type: "item"
 			}]
 			tasks: [{
