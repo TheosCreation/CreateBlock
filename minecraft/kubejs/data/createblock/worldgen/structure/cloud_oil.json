@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#createblock:has_structure/cloudoil",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "createblock:cloud_oil",
+  "size": 1,
+  "start_height": {
+    "absolute": 290
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}
