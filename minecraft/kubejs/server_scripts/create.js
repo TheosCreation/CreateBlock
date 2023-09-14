@@ -582,4 +582,11 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(IN, [IN, 'minecraft:redstone']),
 		event.recipes.createPressing(IN, IN)
 	]).transitionalItem(IN).loops(1)
+	let IT = 'minecraft:barrel'
+	event.recipes.createSequencedAssembly([
+		Item.of('createindustry:steel_fluid_tank'),
+	], 'minecraft:barrel', [
+		event.recipes.createDeploying(IN, [IN, 'createindustry:heavy_plate']),
+		event.recipes.createDeploying(IN, [IN, 'createindustry:heavy_plate'])
+	]).transitionalItem(IN).loops(1)
 	})

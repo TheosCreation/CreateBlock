@@ -134,7 +134,9 @@
         "minecraft:pillager_outpost",
         "minecraft:monument",
         "skyvillages:skyvillage",
-        "createblock:pillager"
+        "createblock:pillager",
+        "createblock:cloud_oil",
+        "createblock:jungle"
       ]
     }
   },

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "createblock:cloud_oil",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 70,
+    "separation": 50,
+    "salt": 220923621
+  }
+}
