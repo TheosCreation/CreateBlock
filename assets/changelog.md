@@ -1,5 +1,17 @@
 # Create Block Change Log
 
+## Create Block-3.9.0
+Sep. 18, 2023
+
+- Mods Added:
+  - 
+- Mods Updated:
+  - create_mechanical_extruder-1.19.2-1.5.6.c-36.jar
+- Mods Removed:
+  - 
+- Other Changes:
+  - fix to mechanical extruder
+
 ## Create Block-3.8.0
 Sep. 14, 2023
 
