@@ -1,9 +1,10 @@
 // priority: 0
 
 ServerEvents.recipes(event => {
-	const REMOVED_BY_OUTPUT = ['createindustry:steel_fluid_tank', 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', 'fluxnetworks:basic_flux_storage', 'fluxnetworks:herculean_flux_storage', 'fluxnetworks:gargantuan_flux_storage', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'mekanism:industrial_alarm', 'mekanism:fluidic_plenisher', 'mekanism:resistive_heater', 'quark:charcoal_block', 'mekanism:rotary_condensentrator', 'mekanism:chemical_washer', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.paint_kit', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
+	const REMOVED_BY_OUTPUT = ['createsifter:advanced_brass_mesh', /*'createindustry:steel_fluid_tank', */ 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', 'fluxnetworks:basic_flux_storage', 'fluxnetworks:herculean_flux_storage', 'fluxnetworks:gargantuan_flux_storage', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'mekanism:industrial_alarm', 'mekanism:fluidic_plenisher', 'mekanism:resistive_heater', 'quark:charcoal_block', 'mekanism:rotary_condensentrator', 'mekanism:chemical_washer', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.paint_kit', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
 	// remove items in array
 	REMOVED_BY_OUTPUT.forEach(id => event.remove({ output: id }));
+	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
 	event.remove({ output: 'minecraft:flint', type: 'create:milling' })
 	event.remove({ output: 'minecraft:cobblestone', type: 'create_mechanical_extruder:extruding' })
@@ -129,6 +130,7 @@ ServerEvents.recipes(event => {
 		}
 
 	})
+	/*
 	event.shaped('createindustry:steel_fluid_tank', [
 		' S ',
 		' B ',
@@ -137,6 +139,7 @@ ServerEvents.recipes(event => {
 		B: 'minecraft:barrel',
 		S: 'createindustry:heavy_plate'
 	})
+	*/
 	event.shaped('forbidden_arcanus:obsidian_with_iron', [
 		' I ',
 		'IOI',
