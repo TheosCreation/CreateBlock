@@ -1,12 +1,41 @@
 # Create Block Change Log
 
+## Create Block-4.0.0
+Sep. 27, 2023
+
+- Mods Added:
+  - loadmyresources_forge_1.0.4_MC_1.19-1.19.2.jar
+  - simplemagnets-1.1.9-forge-mc1.19.jar
+- Mods Updated:
+  - clickadv-1.19.2-3.5.jar
+  - craftingstation-1.19.2-6.0.3.jar
+  - create-1.19.2-0.5.1.e.jar
+  - create_enchantment_industry-1.19.2-for-create-0.5.1.e-1.2.6.c.jar
+  - create_mechanical_extruder-1.19.2-1.5.7.e-44.jar
+  - createaddition-1.19.2-1.1.1.jar
+  - createsifter-1.19.2-1.8.1.e-44.jar
+  - cupboard-1.19.2-2.0.jar
+  - defaultoptions-forge-1.19-15.0.2.jar
+  - fancymenu_forge_2.14.9_MC_1.19-1.19.2.jar
+  - functionalstorage-1.19.2-1.1.7.jar
+  - oculus-mc1.19.2-1.6.9.jar
+  - rubidium-mc1.19.2-0.6.2c.jar
+  - trashslot-forge-1.19.2-12.1.0.jar
+- Mods Removed:
+  - 
+- Other Changes:
+  - updated Fancy Menu
+  - createindustry-0.5.4b-1.19.2-yeehaw.jar.disabled
+  - Added resourcepacks
+
 ## Create Block-3.9.0
 Sep. 18, 2023
 
 - Mods Added:
-  - 
+
 - Mods Updated:
   - create_mechanical_extruder-1.19.2-1.5.6.c-36.jar
+
 - Mods Removed:
   - 
 - Other Changes:
