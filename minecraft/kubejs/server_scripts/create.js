@@ -31,7 +31,11 @@ ServerEvents.recipes(event => {
 	event.recipes.create.deploying('forbidden_arcanus:pixie', ['forbidden_arcanus:soul', 'forbidden_arcanus:arcane_crystal_dust'])
 
 	event.recipes.create.milling('4x minecraft:snowball', 'minecraft:snow_block')
+	event.recipes.create.milling('createsifter:crushed_end_stone', 'minecraft:end_stone')
+	event.recipes.create.milling('createsifter:dust', 'minecraft:sand')
 	event.recipes.create.crushing('4x minecraft:snowball', 'minecraft:snow_block')
+	event.recipes.create.crushing('createsifter:crushed_end_stone', 'minecraft:end_stone')
+	event.recipes.create.crushing('createsifter:dust', 'minecraft:sand')
 
 	event.recipes.create.compacting(Fluid.of('kubejs:sourceberry', 100), 'ars_nouveau:source_berry')
 	event.recipes.create.compacting(Fluid.of('kubejs:magebloom', 100), 'ars_nouveau:magebloom')

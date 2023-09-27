@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
                 ['create:experience_nugget', 0.3]
             ]
         },
-        'kubejs:crushed_end_stone': {
+        'createsifter:crushed_end_stone': {
             'createsifter:brass_mesh': [
                 ['minecraft:ender_pearl', 0.1]
             ],
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
                 ['ars_nouveau:red_archwood_sapling', 0.1]
             ]
         },
-        'kubejs:dust': {
+        'createsifter:dust': {
             'createsifter:string_mesh': [
                 ['minecraft:gunpowder', 0.09],
                 ['minecraft:bone_meal', 0.2]

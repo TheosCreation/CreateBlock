@@ -13,8 +13,6 @@ Platform.mods.kubejs.name = 'Create Block'
 // Temp fix 
 StartupEvents.registry('block', event => {
     event.create('crushed_netherrack').material('clay').hardness(0.5).displayName('Crushed Netherrack');
-    event.create('crushed_end_stone').material('clay').hardness(0.5).displayName('Crushed End Stone');
-    event.create('dust').material('sand').hardness(0.5).displayName('Dust');
     event.create('cracked_stone').material('stone').displayName('Cracked Stone');
     event.create('reactive_bricks').material('stone').displayName('Reactive Bricks');
     event.create('soulless_soil').material('dirt').displayName('Soulless Soil');
