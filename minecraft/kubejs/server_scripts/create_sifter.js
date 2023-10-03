@@ -2,28 +2,28 @@ ServerEvents.recipes(event => {
     const recipes = {
         'minecraft:mycelium': {
             'createsifter:string_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['minecraft:red_mushroom', 0.3],
+                ['minecraft:brown_mushroom', 0.3]
             ],
             'createsifter:andesite_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['minecraft:red_mushroom', 0.6],
+                ['minecraft:brown_mushroom', 0.6]
             ],
             'createsifter:zinc_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['minecraft:red_mushroom', 0.9],
+                ['minecraft:brown_mushroom', 0.9]
             ],
             'createsifter:brass_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['farmersdelight:brown_mushroom_colony', 0.2],
+                ['farmersdelight:red_mushroom_colony', 0.2]
             ],
             'kubejs:diamond_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['farmersdelight:brown_mushroom_colony', 0.4],
+                ['farmersdelight:red_mushroom_colony', 0.4]
             ],
             'kubejs:netherite_mesh': [
-                ['minecraft:red_mushroom', 0.1],
-                ['minecraft:brown_mushroom', 0.1]
+                ['farmersdelight:brown_mushroom_colony', 0.6],
+                ['farmersdelight:red_mushroom_colony', 0.6]
             ]
         },
         'minecraft:soul_sand': {

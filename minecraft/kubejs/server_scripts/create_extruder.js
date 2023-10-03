@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
         event.recipes.createMechanicalExtruderExtruding(Item.of('create:asurine').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:zinc' + `_${i}x`)
         event.recipes.createMechanicalExtruderExtruding(Item.of('create:ochrum').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:gold' + `_${i}x`)
         event.recipes.createMechanicalExtruderExtruding(Item.of('create:veridium').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:copper' + `_${i}x`)
+        event.recipes.createMechanicalExtruderExtruding(Item.of('create:crimsite').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:iron' + `_${i}x`)
         event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:blackstone').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:coal' + `_${i}x`)
         event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:netherrack').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:nether_bricks' + `_${i}x`)
         event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dripstone_block').withChance(0.2 * i + 0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('kubejs:dripstone' + `_${i}x`)

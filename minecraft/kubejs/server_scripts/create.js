@@ -9,6 +9,9 @@ ServerEvents.recipes(event => {
 	event.recipes.create.item_application(['forbidden_arcanus:soulless_sand', 'forbidden_arcanus:soul'], ['minecraft:soul_sand', 'forbidden_arcanus:soul_extractor']).keepHeldItem()
 	event.recipes.create.item_application(['forbidden_arcanus:soulless_sand'], ['#minecraft:sand', 'quark:soul_bead'])
 	event.recipes.create.item_application(['kubejs:warping_block'], ['minecraft:diamond_block', 'forbidden_arcanus:dark_matter'])
+	event.recipes.create.item_application(['minecraft:warped_nylium'], ['minecraft:netherrack', 'kubejs:warped_nylium_spores'])
+	event.recipes.create.item_application(['minecraft:crimson_nylium'], ['minecraft:netherrack', 'kubejs:crimson_nylium_spores'])
+	event.recipes.create.item_application(['minecraft:mycelium'], ['minecraft:grass_block', 'kubejs:mycelium_spores'])
 	//event.recipes.create.item_application(['minecraft:netherrack'], ['kubejs:cracked_stone', 'minecraft:redstone'])
 	//emptying refined radiance into refined fluid
 	event.recipes.create.emptying([Fluid.of('kubejs:refined_fluid', 1000)], 'create:refined_radiance')
@@ -33,6 +36,8 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling('4x minecraft:snowball', 'minecraft:snow_block')
 	event.recipes.create.milling('createsifter:crushed_end_stone', 'minecraft:end_stone')
 	event.recipes.create.milling('createsifter:dust', 'minecraft:sand')
+	event.recipes.create.milling(Item.of('minecraft:warped_fungus').withChance(0.5), 'minecraft:warped_nylium')
+	event.recipes.create.milling(Item.of('minecraft:crimson_fungus').withChance(0.5), 'minecraft:crimson_nylium')
 	event.recipes.create.crushing('4x minecraft:snowball', 'minecraft:snow_block')
 	event.recipes.create.crushing('createsifter:crushed_end_stone', 'minecraft:end_stone')
 	event.recipes.create.crushing('createsifter:dust', 'minecraft:sand')
