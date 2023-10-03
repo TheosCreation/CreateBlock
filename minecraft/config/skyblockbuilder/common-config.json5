@@ -134,8 +134,10 @@
         "minecraft:pillager_outpost",
         "minecraft:monument",
         "skyvillages:skyvillage",
-        "createblock:pillager",
+        "createblock:cherry",
         "createblock:cloud_oil",
+	"createblock:forest",
+	"createblock:dark_forest",
         "createblock:jungle"
       ]
     }

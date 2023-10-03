@@ -1,0 +1,15 @@
+{
+  "name": "createblock:forest",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "createblock:forest",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

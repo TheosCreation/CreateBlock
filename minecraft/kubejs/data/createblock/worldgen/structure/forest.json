@@ -1,10 +1,10 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#createblock:has_structure/pillager",
+  "biomes": "#createblock:has_structure/tree_islands",
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
-  "start_pool": "createblock:pillager",
+  "start_pool": "createblock:forest",
   "size": 1,
   "start_height": {
     "absolute": 60

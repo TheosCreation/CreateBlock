@@ -4,7 +4,7 @@
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
-  "start_pool": "createblock:jungle",
+  "start_pool": "createblock:cherry",
   "size": 1,
   "start_height": {
     "absolute": 60

@@ -1,11 +1,19 @@
 {
   "structures": [
     {
-      "structure": "createblock:pillager",
+      "structure": "createblock:cherry",
       "weight": 1
     },
     {
       "structure": "createblock:jungle",
+      "weight": 1
+    },
+    {
+      "structure": "createblock:forest",
+      "weight": 1
+    },
+    {
+      "structure": "createblock:dark_forest",
       "weight": 1
     }
   ],
