@@ -20,25 +20,25 @@ toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
-mouseSensitivity:0.37793427230046944
+mouseSensitivity:0.5019091109154928
 fov:0.5
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
 gamma:0.5
-renderDistance:32
+renderDistance:12
 simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
 particles:0
-maxFps:160
+maxFps:260
 graphicsMode:1
 ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","quark:emote_resources","file/Better-Leaves-7.1-1.19+.zip","cullleaves:smartleaves"]
-incompatibleResourcePacks:["quark:emote_resources"]
+resourcePacks:["vanilla","mod_resources","quark:emote_resources","cullleaves:smartleaves","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/Tom\u0027s Better Create Storage 1.1.zip","file/Create Simple Storage 2.1.zip","file/Created Applied Energistics.zip","file/Create Computers 1.2.zip"]
+incompatibleResourcePacks:["quark:emote_resources","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/Tom\u0027s Better Create Storage 1.1.zip"]
 lastServer:
 lang:en_us
 soundDevice:"OpenAL Soft on Speakers (HyperX Cloud Revolver S)"
@@ -48,7 +48,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
