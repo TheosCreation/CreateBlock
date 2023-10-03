@@ -46,7 +46,6 @@ StartupEvents.registry('item', event => {
     item("Incomplete Raw Improved Processor");
     item("Incomplete Raw Basic Processor");
     item("Corruption Bottle");
-    item("Empty Vial");
 })
 StartupEvents.registry('fluid', event => {
     event.create('refined_fluid').displayName('Refined Essence')
