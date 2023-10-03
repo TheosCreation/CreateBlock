@@ -2,7 +2,7 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     " PBP ",
-    "PYEYP",
+    "PYGYP",
     "PCPCP",
     " C C "
   ],
@@ -10,8 +10,8 @@
     "B": {
       "item": "create:copper_backtank"
     },
-    "E": {
-      "item": "minecraft:elytra"
+    "G": {
+      "item": "create:gearbox"
     },
     "C": {
       "item": "create:chute"
