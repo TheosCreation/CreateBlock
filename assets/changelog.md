@@ -1,7 +1,20 @@
 # Create Block Change Log
 
+## Create Block-4.2.0
+Oct. 5, 2023
+
+- Mods Added:
+  - cabletiers-1.19.2-0.5471.jar
+- Mods Updated:
+  -
+- Mods Removed:
+  -
+- Other Changes:
+  - Added Recipe for Edelwood
+  - Removed Recipe for electrum nuggets
+
 ## Create Block-4.1.0
-Sep. 27, 2023
+Oct. 4, 2023
 
 - Mods Added:
   - 
