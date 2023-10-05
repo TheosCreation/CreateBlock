@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.item_application(['minecraft:warped_nylium'], ['minecraft:netherrack', 'kubejs:warped_nylium_spores'])
 	event.recipes.create.item_application(['minecraft:crimson_nylium'], ['minecraft:netherrack', 'kubejs:crimson_nylium_spores'])
 	event.recipes.create.item_application(['minecraft:mycelium'], ['minecraft:grass_block', 'kubejs:mycelium_spores'])
+	event.recipes.create.item_application(['forbidden_arcanus:growing_edelwood'], ['architects_palette:twisted_sapling', 'forbidden_arcanus:dark_matter'])
 	//event.recipes.create.item_application(['minecraft:netherrack'], ['kubejs:cracked_stone', 'minecraft:redstone'])
 	//emptying refined radiance into refined fluid
 	event.recipes.create.emptying([Fluid.of('kubejs:refined_fluid', 1000)], 'create:refined_radiance')
