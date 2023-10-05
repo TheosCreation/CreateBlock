@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'create:haunting/soul_sand' })
 	event.remove({ id: 'create:haunting/soul_soil' })
 	event.remove({ id: 'ars_nouveau:conjuration_essence_to_soul_sand' })
+	event.remove({ id: 'forbidden_arcanus:polished_darkstone' })
 	event.smithing(
 		'kubejs:netherite_mesh',  // arg 1: output
 		'kubejs:diamond_mesh', // arg 2: the item to be upgraded

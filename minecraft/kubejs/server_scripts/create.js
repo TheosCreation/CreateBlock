@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 	//filling electron tube with rainbow essence into chomatic tube
 	event.recipes.create.filling('kubejs:chromatic_tube', [Fluid.of('kubejs:rainbow', 1000), 'create:electron_tube'])
 	//press darkstone to have a chance of getting dark rune
-	event.recipes.create.pressing(Item.of('forbidden_arcanus:dark_rune').withChance(0.5), 'forbidden_arcanus:darkstone')
+	event.recipes.create.compacting(Item.of('forbidden_arcanus:dark_rune').withChance(0.5), 'forbidden_arcanus:darkstone')
 	//washing dark rune to get normal rune
 	event.recipes.create.splashing('forbidden_arcanus:rune', 'forbidden_arcanus:dark_rune')
 
