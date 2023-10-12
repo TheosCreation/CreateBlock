@@ -17,6 +17,7 @@ StartupEvents.registry('block', event => {
     event.create('reactive_bricks').material('stone').displayName('Reactive Bricks');
     event.create('soulless_soil').material('dirt').displayName('Soulless Soil');
     event.create('warping_block').material('metal').displayName('Warping Block');
+    event.create('nether_star_block').material('metal').displayName('Nether Star Block').hardness(1.5).lightLevel(1);;
     //event.create('crushed_end_stone').texture('createsifter:block/crushed_end_stone').displayName('Crushed End Stone');
 })
 StartupEvents.registry('item', event => {
@@ -38,6 +39,7 @@ StartupEvents.registry('item', event => {
     event.create('rad_star').displayName('Radiating Star').texture('kubejs:item/rad_star').rarity('RARE').glow(true)
     event.create('chromatic_dust').displayName('Chromatic Dust').texture('kubejs:item/chromatic_dust').rarity('UNCOMMON').glow(true)
     event.create('chromatic_shard').displayName('Chromatic Shard').texture('kubejs:item/chromatic_shard').rarity('UNCOMMON').glow(true)
+    event.create('create_ingot').displayName('Create Ingot').rarity('UNCOMMON').rarity('RARE').glow(true)
     item("Incomplete Machine Casing");
     item("Warped Nylium Spores");
     item("Crimson Nylium Spores");

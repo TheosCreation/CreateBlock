@@ -2,6 +2,20 @@
 
 ServerEvents.recipes(event => {
 	/*
+	event.recipes.create.mechanical_crafting('create:creative_motor', [
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB',
+		'BBBBBBBBB'
+	], {
+		B: 'kubejs:create_ingot'
+	})
+	
 	event.shaped('botania:corporea_spark_creative', [
 		'ABA',
 		'CDE',
@@ -60,32 +74,7 @@ ServerEvents.recipes(event => {
 		A: "minecraft:netherite_ingot"
 	})
 	
-	event.recipes.create.mechanical_crafting('create:creative_motor', [
-		'ABCCCCCBA',
-		'DDDDDDDDD',
-		'EBFGGGFBH',
-		'EBIKKKLBI',
-		'EBIKMNJJJ',
-		'EBIKKKLBI',
-		'EBFGGGFBH',
-		'DDDDDDDDD',
-		'ABCCCCCBA'
-	], {
-		A:"minecraft:netherite_ingot",
-		B:"create:sturdy_sheet",
-		C:"minecraft:purpur_block",
-		D:"create:zinc_block",
-		E:"minecraft:amethyst_cluster",
-		F:"minecraft:crying_obsidian",
-		G:"minecraft:shulker_shell",
-		H:"minecraft:amethyst_block",
-		I:"minecraft:obsidian",
-		J:"create:shaft",
-		K:"minecraft:end_crystal",
-		L:"minecraft:dragon_breath",
-		M:"minecraft:nether_star",
-		N:"minecraft:end_rod"
-	})
+	
 	event.recipes.create.mechanical_crafting('createaddition:creative_energy', [
 		' AAAAA ',
 		'AAAAAAA',

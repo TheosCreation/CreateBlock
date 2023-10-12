@@ -502,6 +502,86 @@ ServerEvents.recipes(event => {
 		'minecraft:candle'
 	]
 	)
+	event.shapeless('kubejs:cow_bait', [
+		'2x minecraft:wheat'
+	]
+	)
+	event.shapeless('kubejs:sheep_bait', [
+		'minecraft:wheat',
+		'minecraft:wheat_seeds'
+	]
+	)
+	event.shapeless('kubejs:chicken_bait', [
+		'2x minecraft:wheat_seeds'
+	]
+	)
+	event.shapeless('kubejs:pig_bait', [
+		'2x minecraft:carrot'
+	]
+	)
+	event.shapeless('kubejs:wolf_bait', [
+		'minecraft:bone',
+		'minecraft:beef'
+	]
+	)
+	event.shapeless('kubejs:ocelot_bait', [
+		'minecraft:gunpowder',
+		'#forge:raw_fishes'
+	]
+	)
+	event.shapeless('kubejs:squid_bait', [
+		'2x #forge:raw_fishes'
+	]
+	)
+	event.shapeless('kubejs:glow_squid_bait', [
+		'2x #forge:raw_fishes',
+		'minecraft:glow_berries'
+	]
+	)
+	event.shapeless('kubejs:rabbit_bait', [
+		'minecraft:carrot',
+		'minecraft:melon_seeds'
+	]
+	)
+	event.shapeless('kubejs:polar_beer_bait', [
+		'#forge:raw_fishes',
+		'minecraft:snowball'
+	]
+	)
+	event.shapeless('kubejs:llama_bait', [
+		'minecraft:wheat',
+		'minecraft:sugar'
+	]
+	)
+	event.shapeless('kubejs:parrot_bait', [
+		'#forge:dyes/green',
+		'#forge:dyes/red'
+	]
+	)
+	event.shapeless('kubejs:nether_star_block', [
+		'9x minecraft:nether_star'
+	]
+	)
+	event.shapeless('kubejs:cat_bait', [
+		'2x minecraft:carrot',
+		'minecraft:lead'
+	]
+	)
+	event.shapeless('kubejs:fox_bait', [
+		'minecraft:sweet_berries',
+		'minecraft:rabbit'
+	]
+	)
+	event.shapeless('kubejs:turtle_bait', [
+		'minecraft:seagrass',
+		'minecraft:sea_pickle'
+	]
+	)
+	event.shapeless('kubejs:mooshroom_bait', [
+		'minecraft:red_mushroom',
+		'minecraft:wheat'
+	]
+	)
 	event.smelting('minecraft:bread', 'create:dough')
 	event.smoking('minecraft:bread', 'create:dough')
 
@@ -510,15 +590,6 @@ ServerEvents.recipes(event => {
 BlockEvents.rightClicked("block.right_click", (event) => {
 	const { block, hand, world, item, player } = event;
 	if (hand.name() != "MAIN_HAND") return;
-
-	if (item == "minecraft:prismarine_shard") {
-		if (block.equals('botania:cocoon')) {
-			if (block.properties.waterlogged == 'true') {
-				//Remove one prismarine shard from hand
-				//increase chance to spawn elder guardian or guardian by percentage
-			}
-		}
-	}
 
 	if (item == "create:wrench" && player.isCrouching()) {
 		if (block.equals("minecraft:spawner")) {
