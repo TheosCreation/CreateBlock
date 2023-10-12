@@ -1,5 +1,34 @@
 # Create Block Change Log
 
+## Create Block-4.3.0
+Oct. 12, 2023
+
+- Mods Added:
+  - BeeFix-1.19-1.0.7.jar
+- Mods Updated:
+  - create_enchantment_industry-1.19.2-for-create-0.5.1.e-1.2.7.b.jar
+- Mods Removed:
+  -
+- Other Changes:
+  - Added Baits
+  - Fixed World gen rates
+  - Changed default island
+
+## Create Block-4.1.0
+Oct. 4, 2023
+
+- Mods Added:
+  - 
+- Mods Updated:
+  -
+- Mods Removed:
+  - ftb-essentials-forge-1902.3.3-build.100.jar
+- Other Changes:
+  - Added resourcepacks
+  - Adjusted Shrine spawn
+  - Changed Jetpack Recipe
+  - Added New islands
+
 ## Create Block-4.2.0
 Oct. 5, 2023
 
