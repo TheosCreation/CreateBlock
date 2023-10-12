@@ -5,6 +5,8 @@ ServerEvents.recipes(event => {
 	// remove items in array
 	REMOVED_BY_OUTPUT.forEach(id => event.remove({ output: id }));
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
+	event.remove({ input: 'minecraft:end_stone', type: 'create:crushing' })
+	event.remove({ input: 'minecraft:end_stone', type: 'create:milling' })
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
 	event.remove({ output: 'minecraft:flint', type: 'create:milling' })
 	event.remove({ output: 'minecraft:cobblestone', type: 'create_mechanical_extruder:extruding' })
