@@ -36,6 +36,7 @@ minecraft:shipwreck_beached
 skyvillages:skyvillage
 ars_nouveau:stalker_wilden_den
 ars_elemental:starbuncle_shrine
+betterstrongholds:stronghold
 minecraft:stronghold
 minecraft:swamp_hut
 minecraft:village_desert

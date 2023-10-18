@@ -125,6 +125,7 @@
       "allow_list": true,
       "elements": [
         "minecraft:fortress",
+	"minecraft:stronghold",
         "ae2:meteorite",
         "forbidden_arcanus:nipa_floating",
         "ars_nouveau:stalker_wilden_den",
@@ -138,7 +139,8 @@
         "createblock:cloud_oil",
 	"createblock:forest",
 	"createblock:dark_forest",
-        "createblock:jungle"
+        "createblock:jungle",
+	"betterstrongholds:stronghold"
       ]
     }
   },
