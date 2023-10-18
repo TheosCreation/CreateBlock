@@ -48,6 +48,14 @@ StartupEvents.registry('item', event => {
     item("Incomplete Raw Improved Processor");
     item("Incomplete Raw Basic Processor");
     item("Corruption Bottle");
+    item("Raw Silver");
+    item("Silver Ingot");
+    item("Silver Nugget");
+    item("Crushed Raw Silver");
+    item("Common Lootbox");
+    item("Rare Lootbox");
+    item("Epic Lootbox");
+    item("Legendary Lootbox");
 })
 StartupEvents.registry('fluid', event => {
     event.create('refined_fluid').displayName('Refined Essence')
