@@ -1,0 +1,29 @@
+type = menu
+
+customization-meta {
+  identifier = %fancymenu:universal_layout%
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  loop = true
+  channel = master
+  x = 307
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = 60a54c44-1183-4940-b492-ee2e1b6863a11697515861459
+  y = 174
+  once_per_session = false
+  audio_source:e6b9fbc7-a925-4864-a0cb-e4ebf117b3201697515865263 = config/fancymenu/assets/menu_music1.ogg;EXTERNAL_LOCAL;100;0
+  height = 50
+}
+

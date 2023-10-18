@@ -6,3 +6,6 @@ net.minecraft.client.gui.screens.AccessibilityOnboardingScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+

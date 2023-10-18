@@ -26,9 +26,9 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   orientation = mid-centered
-  x = -68
+  x = -69
   action = movebutton
-  y = 33
+  y = 32
 }
 
 customization {
@@ -159,7 +159,7 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   width = 150
   action = resizebutton
-  height = 20
+  height = 18
 }
 
 customization {
@@ -293,5 +293,19 @@ customization {
   label = 
   backgroundnormal = config/fancymenu/assets/btn_rentaserver.png
   height = 20
+}
+
+customization {
+  audio_source:bd72a6db-d37d-43d9-9ea5-224cae4f0b301697514443961 = config/fancymenu/assets/meun_music3.ogg;EXTERNAL_LOCAL;60;0
+  orientation = mid-centered
+  loop = true
+  channel = music
+  x = -207
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = 46a3a17f-b1c0-4450-bdf4-a488794462131697506902204
+  y = -60
+  once_per_session = false
+  height = 50
 }
 
