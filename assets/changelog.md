@@ -1,5 +1,26 @@
 # Create Block Change Log
 
+## Create Block-4.4.0
+Oct. 25, 2023
+
+- Mods Added:
+  - FramedBlocks-6.8.6.jar
+  - YungsApi-1.19.2-Forge-3.8.9.jar
+  - YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar
+  - auudio_forge_1.0.3_MC_1.19.jar
+  - drippyloadingscreen_forge_2.2.2_MC_1.19.1-1.19.2.jar
+  - fm_audio_extension_forge_1.1.1-1_MC_1.19.jar
+- Mods Updated:
+  - TravelersBackpack-1.19.2-8.2.35.jar
+  - create_jetpack-forge-3.2.2.jar
+  - simplemagnets-1.1.10-forge-mc1.19.jar
+- Mods Removed:
+  - createindustry-0.5.4b-1.19.2-yeehaw.jar
+- Other Changes:
+  - Fixed many bugs
+  - Added menu music
+  - changed textures for questbook
+
 ## Create Block-4.3.0
 Oct. 12, 2023
 
