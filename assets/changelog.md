@@ -20,6 +20,7 @@ Oct. 25, 2023
   - Fixed many bugs
   - Added menu music
   - changed textures for questbook
+  - added stronghold to worldgen
 
 ## Create Block-4.3.0
 Oct. 12, 2023
