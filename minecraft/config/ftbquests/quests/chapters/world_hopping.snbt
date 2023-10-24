@@ -81,11 +81,11 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 12L
-				id: "72048D96EF736319"
-				item: "minecraft:end_portal_frame"
-				type: "item"
+				id: "5F68F72C01B1610C"
+				structure: "betterstrongholds:stronghold"
+				type: "structure"
 			}]
+			title: "Find a Stronghold"
 			x: 0.0d
 			y: 1.0d
 		}

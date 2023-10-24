@@ -71,6 +71,16 @@ ServerEvents.recipes(event => {
 		M: 'create:precision_mechanism',
 		T: 'toms_storage:ts.storage_terminal'
 	})
+	event.recipes.create.mechanical_crafting('computercraft:computer_advanced', [
+		'BBB',
+		'TDT',
+		'BMB'
+	], {
+		T: 'create:nixie_tube',
+		B: 'create:brass_sheet',
+		D: 'create:display_board',
+		M: 'create:precision_mechanism'
+	})
 
 	event.custom({
 		type: "create:sequenced_assembly",

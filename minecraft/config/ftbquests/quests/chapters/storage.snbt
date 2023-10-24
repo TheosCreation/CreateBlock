@@ -126,8 +126,8 @@
 			dependencies: ["7740C0ED2155F768"]
 			id: "2AD835D0EA570CFF"
 			rewards: [{
-				id: "390217D64E54BDA9"
-				item: "minecraft:spawner"
+				id: "0A3F6214F45E99B3"
+				item: "toms_storage:ts.inventory_hopper_basic"
 				type: "item"
 			}]
 			tasks: [{
@@ -141,9 +141,8 @@
 		{
 			id: "4240DD5A5E1AB2A4"
 			rewards: [{
-				count: 4
-				id: "73CB4734EB4623E7"
-				item: "minecraft:redstone"
+				id: "323CB92F55866703"
+				item: "applecrates:oak_crate"
 				type: "item"
 			}]
 			shape: "diamond"
@@ -236,6 +235,12 @@
 			dependencies: ["4240DD5A5E1AB2A4"]
 			icon: "functionalstorage:oak_1"
 			id: "3D4D59A523276C3E"
+			rewards: [{
+				count: 4
+				id: "0AF91FFF858EC1F9"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1FA86A846BBE45C7"
 				item: {
@@ -255,6 +260,11 @@
 		{
 			dependencies: ["3D4D59A523276C3E"]
 			id: "5672989937EA349E"
+			rewards: [{
+				id: "50C5E09EBD928F74"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C0299545972558F"
 				item: "functionalstorage:copper_upgrade"
@@ -266,6 +276,11 @@
 		{
 			dependencies: ["5672989937EA349E"]
 			id: "48CB31799F416F30"
+			rewards: [{
+				id: "10FA713E57F3EFD8"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5B94491DC544B651"
 				item: "functionalstorage:gold_upgrade"
@@ -277,6 +292,11 @@
 		{
 			dependencies: ["48CB31799F416F30"]
 			id: "687512250040FEA0"
+			rewards: [{
+				id: "56C8FBB0E3E4C2A4"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "17932FCCCEA98782"
 				item: "functionalstorage:diamond_upgrade"
@@ -288,6 +308,11 @@
 		{
 			dependencies: ["687512250040FEA0"]
 			id: "200FFA57AF97D8DB"
+			rewards: [{
+				id: "76D0640F6CDAB617"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "61D0344AEFA3BC10"
 				item: "functionalstorage:netherite_upgrade"
@@ -405,6 +430,11 @@
 		{
 			dependencies: ["4240DD5A5E1AB2A4"]
 			id: "50C69AA034DCCCAC"
+			rewards: [{
+				id: "3155BF3AE91677E0"
+				item: "travelersbackpack:hose"
+				type: "item"
+			}]
 			tasks: [{
 				id: "20EC958DCB1F6FD4"
 				item: {

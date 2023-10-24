@@ -262,8 +262,12 @@
 					type: "item"
 				}
 				{
-					id: "37E46CB10026613E"
-					item: "create_sa:copper_magnet"
+					id: "1DF08690FD091055"
+					item: {
+						Count: 1b
+						id: "simplemagnets:basicmagnet"
+						tag: { }
+					}
 					type: "item"
 				}
 			]

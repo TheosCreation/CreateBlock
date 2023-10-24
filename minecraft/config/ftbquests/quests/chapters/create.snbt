@@ -172,7 +172,7 @@
 			]
 			description: ["&bMechanical Arms&r can move items with much more precision than Mechanical Belts."]
 			id: "2A8562EC7696B873"
-			subtitle: "Make a Mechanical Arm"
+			subtitle: "Craft a Mechanical Arm"
 			tasks: [{
 				id: "4CFD8A36E7BBE49E"
 				item: "create:mechanical_arm"
@@ -259,7 +259,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Make a Mechanical Saw"
+			subtitle: "Craft a Mechanical Saw"
 			tasks: [{
 				id: "5C1C71997C208ED5"
 				item: "create:mechanical_saw"
@@ -272,7 +272,7 @@
 			dependencies: ["55704A5966DC72CC"]
 			description: ["When used as part of a contraption, the &bMechanical Harvester&r will harvest and replant crops it passes through."]
 			id: "4A605373EF916B19"
-			subtitle: "Make a Mechanical Harvester"
+			subtitle: "Craft a Mechanical Harvester"
 			tasks: [{
 				id: "124D74D6A9AF18A7"
 				item: "create:mechanical_harvester"
@@ -368,7 +368,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Make a Smart Chute"
+			subtitle: "Craft a Smart Chute"
 			tasks: [{
 				id: "561778F62900BA6E"
 				item: "create:smart_chute"
@@ -457,7 +457,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Make a Brass Funnel"
+			subtitle: "Craft a Brass Funnel"
 			tasks: [{
 				id: "66D0AED95576C63A"
 				item: "create:brass_funnel"
@@ -507,8 +507,8 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3A2DC2BD7C0487D5"]
@@ -521,6 +521,7 @@
 				type: "item"
 			}]
 			shape: "square"
+			subtitle: "Craft the Sifter"
 			tasks: [{
 				id: "138C81CDC7D2D512"
 				item: "createsifter:sifter"
@@ -716,6 +717,7 @@
 				item: "create:shaft"
 				type: "item"
 			}]
+			subtitle: "Craft Shafts"
 			tasks: [{
 				id: "1A88B0DE4B824D13"
 				item: "create:shaft"
@@ -773,6 +775,7 @@
 		{
 			dependencies: ["3A2DC2BD7C0487D5"]
 			id: "3B92E29596B40569"
+			subtitle: "Supply the Oxygen"
 			tasks: [{
 				id: "48889F50EF1F80BD"
 				item: {
@@ -791,6 +794,7 @@
 			dependencies: ["3B92E29596B40569"]
 			description: ["Walk on belts and the ocean flour."]
 			id: "78F656DFFE233ACB"
+			subtitle: "Take me to the Bottom of the Ocean?"
 			tasks: [{
 				id: "6BE211578A922381"
 				item: {
@@ -823,6 +827,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Take me to the Bottom of the Nether?"
 			tasks: [{
 				id: "082B67D874DF5A42"
 				item: {
@@ -841,6 +846,7 @@
 			dependencies: ["3B92E29596B40569"]
 			description: ["Does it get any better? Breath and work in lava without being made crispy! Need full netherite set."]
 			id: "4A168E908986C7D2"
+			subtitle: "Tough Tank"
 			tasks: [{
 				id: "6D6AB6C9E70CB1B6"
 				item: {
@@ -859,6 +865,7 @@
 			dependencies: ["3B92E29596B40569"]
 			description: ["Lets you breath underwater when you are also wearing a backtank"]
 			id: "5285176B7732ABCA"
+			subtitle: "Bubbles"
 			tasks: [{
 				id: "079F067BC104BBD1"
 				item: {
@@ -940,6 +947,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Bubbles in Lava"
 			tasks: [{
 				id: "228B92CB0730B182"
 				item: {
@@ -995,7 +1003,14 @@
 			dependencies: ["3A2DC2BD7C0487D5"]
 			description: ["Instead of a cobble generator, try the Mechanical Extruder, which extrudes various stone blocks. Check JEI for all of the recipes."]
 			id: "4A8320F850B32E7A"
+			rewards: [{
+				count: 8
+				id: "4CC5B39C3FF2ACFB"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			shape: "square"
+			subtitle: "Craft the Mechanical Extruder"
 			tasks: [{
 				id: "111C251583217902"
 				item: "create_mechanical_extruder:mechanical_extruder"
@@ -1118,6 +1133,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
+			subtitle: "Key to Precision"
 			tasks: [{
 				id: "73C3E39535B100A5"
 				item: "create:precision_mechanism"
@@ -1205,7 +1221,7 @@
 				"The &bEncased Fan&r can also move items and entitys which can be very useful"
 			]
 			id: "039676F2B8E9A910"
-			subtitle: "Make a Encased Fan"
+			subtitle: "Craft a Encased Fan"
 			tasks: [{
 				id: "10A110E18BD8297B"
 				item: "create:encased_fan"
@@ -1244,6 +1260,7 @@
 			dependencies: ["55704A5966DC72CC"]
 			description: ["When used as part of a contraption, the &bMechanical Plough&r will create farmland or break blocks without hitboxes such as torches, levers, snow and redstone. Check out ponder for more information"]
 			id: "408C425651F8CB08"
+			subtitle: "Craft a Mechanical Plough"
 			tasks: [{
 				id: "05196836344C2DE1"
 				item: "create:mechanical_plough"
@@ -1256,7 +1273,7 @@
 			dependencies: ["55704A5966DC72CC"]
 			description: ["Either when used alone, or when part of a contraption, the &bMechanical Drill&r will &6Break Blocks in front of it&r."]
 			id: "4D9533C5D2F1C815"
-			subtitle: "Make a Mechanical Drill"
+			subtitle: "Craft a Mechanical Drill"
 			tasks: [{
 				id: "29DF22CF897949E1"
 				item: "create:mechanical_drill"
@@ -1268,6 +1285,7 @@
 		{
 			dependencies: ["55704A5966DC72CC"]
 			id: "689F73F796D27CA8"
+			subtitle: "Makeshift Elevator"
 			tasks: [{
 				id: "54A2555C7A8FDBF0"
 				item: "create:rope_pulley"
@@ -1279,6 +1297,7 @@
 		{
 			dependencies: ["420FD74BAAD72FEC"]
 			id: "0AE09AFFDF59E340"
+			subtitle: "Go drain some lakes"
 			tasks: [{
 				id: "74ACC67D4B5A0D20"
 				item: "create:hose_pulley"
@@ -1290,6 +1309,7 @@
 		{
 			dependencies: ["46B27890B3EF957C"]
 			id: "5FC37044373ABBAD"
+			subtitle: "Oh Fancy!"
 			tasks: [{
 				id: "105C3748B1946867"
 				item: "create:elevator_pulley"
@@ -1301,6 +1321,7 @@
 		{
 			dependencies: ["2B73493B6034A185"]
 			id: "5C4D284AEFDC5821"
+			subtitle: "Control Speed"
 			tasks: [{
 				id: "306F87849812155A"
 				item: "create:rotation_speed_controller"
@@ -1313,6 +1334,7 @@
 			dependencies: ["2B73493B6034A185"]
 			description: ["This can help with your OCD wanting blocks to be symmetrical."]
 			id: "652CC703384C4DA6"
+			subtitle: "Helps your adhd"
 			tasks: [{
 				id: "3E48054C41BB4C08"
 				item: "create:wand_of_symmetry"
@@ -1345,6 +1367,7 @@
 				item: "create:schematic_table"
 				type: "item"
 			}]
+			subtitle: "Building Cannon"
 			tasks: [
 				{
 					id: "6BE5C3C2D26F437D"
@@ -1364,6 +1387,7 @@
 			dependencies: ["7FAAD541EF8779AC"]
 			description: ["The &bToolbox&r holds large amounts of 8 different items types"]
 			id: "32EC8FBA8082C80C"
+			subtitle: "Hold my Tools"
 			tasks: [{
 				id: "0C5CA8FF26D5DC9C"
 				item: "create:brown_toolbox"
@@ -1377,7 +1401,7 @@
 			description: ["Want something more beefy here is the &bSteam Engine&r the most powerful &eRotational Force Source&r"]
 			id: "5C7F009998E6CCE6"
 			shape: "square"
-			subtitle: "The Almighty"
+			subtitle: "Not so Mighty but an engine aleast?"
 			tasks: [{
 				id: "706A80FACFA45144"
 				item: "create:steam_engine"
@@ -1421,8 +1445,8 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.0d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2698A862F801E567"]
@@ -1456,6 +1480,7 @@
 		{
 			dependencies: ["0753F0286951113B"]
 			id: "4F1F69ECD66E2080"
+			subtitle: "Do the Splits"
 			tasks: [{
 				id: "09632B8F2BEA4E08"
 				item: "create:andesite_tunnel"
@@ -1467,6 +1492,7 @@
 		{
 			dependencies: ["46B27890B3EF957C"]
 			id: "324C68F49C7714A2"
+			subtitle: "Do the Splits with a filter"
 			tasks: [{
 				id: "545B6F21B86E44FB"
 				item: "create:brass_tunnel"
@@ -1478,6 +1504,7 @@
 		{
 			dependencies: ["46B27890B3EF957C"]
 			id: "55B0A02BE11A16F9"
+			subtitle: "Am i actually smart"
 			tasks: [{
 				id: "66B58D201B5746E8"
 				item: "create:content_observer"
@@ -1489,6 +1516,7 @@
 		{
 			dependencies: ["46B27890B3EF957C"]
 			id: "2A4BB45010ED957A"
+			subtitle: "Craft a Threshold Switch"
 			tasks: [{
 				id: "64EC44648C3CFBDD"
 				item: "create:stockpile_switch"
@@ -1500,6 +1528,7 @@
 		{
 			dependencies: ["3699B58F553565E6"]
 			id: "5A1A1549CBDED2AD"
+			subtitle: "Move those Fluids"
 			tasks: [{
 				id: "5AF2A34F864C18EB"
 				item: "create:fluid_pipe"
@@ -1511,6 +1540,7 @@
 		{
 			dependencies: ["5A1A1549CBDED2AD"]
 			id: "090B509777E2F6CB"
+			subtitle: "Push/Pull those Fluids"
 			tasks: [{
 				id: "706D59650F93EF3B"
 				item: "create:mechanical_pump"
@@ -1522,6 +1552,7 @@
 		{
 			dependencies: ["5A1A1549CBDED2AD"]
 			id: "533F7E9C6CF79036"
+			subtitle: "Smarter Pipe"
 			tasks: [{
 				id: "3162825591D2C018"
 				item: "create:smart_fluid_pipe"
@@ -1533,6 +1564,7 @@
 		{
 			dependencies: ["420FD74BAAD72FEC"]
 			id: "3E4F4AA1D8CFE713"
+			subtitle: "Drain those Fluids"
 			tasks: [{
 				id: "7DAF03992F57933F"
 				item: "create:item_drain"
@@ -1544,6 +1576,7 @@
 		{
 			dependencies: ["3699B58F553565E6"]
 			id: "420FD74BAAD72FEC"
+			subtitle: "Copper Age!"
 			tasks: [{
 				id: "50AE3D043EAB489A"
 				item: "create:copper_casing"
@@ -1555,6 +1588,7 @@
 		{
 			dependencies: ["420FD74BAAD72FEC"]
 			id: "60B037B020CBC0F0"
+			subtitle: "Remove those pesky enchants"
 			tasks: [{
 				id: "53728D22F4FE98A3"
 				item: "create_enchantment_industry:disenchanter"
@@ -1566,6 +1600,7 @@
 		{
 			dependencies: ["5A1A1549CBDED2AD"]
 			id: "3CC7F429FDC0D377"
+			subtitle: "Control the flow"
 			tasks: [{
 				id: "10203E60D33E91E9"
 				item: "create:fluid_valve"
@@ -1577,6 +1612,7 @@
 		{
 			dependencies: ["55704A5966DC72CC"]
 			id: "3699B58F553565E6"
+			subtitle: "Make a Copper Sheet"
 			tasks: [{
 				id: "3D08F5FAB8093BD0"
 				item: "create:copper_sheet"

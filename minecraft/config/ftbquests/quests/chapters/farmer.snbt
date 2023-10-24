@@ -281,6 +281,22 @@
 				"323EB0C6DA70DE9C"
 				"655CF89B7D59F2B9"
 				"75F5A704EA52B26E"
+				"52305EDAC562953D"
+				"13BC22049C4C0AC8"
+				"58C25E66C75EF277"
+				"51FACC38EEE8CB63"
+				"3C469D9BDE8A6230"
+				"67FF29DF7698DF5F"
+				"37BCC674A38F78B4"
+				"4555957D57802180"
+				"15545503BD906505"
+				"1BADB79B95DA94F1"
+				"4BC81370894AF9F8"
+				"380E73000992FC40"
+				"3BE427BB49599656"
+				"68968B6BCD429EE7"
+				"427871F5C7A7FC62"
+				"770249B9387D57A4"
 			]
 			id: "000000000000069A"
 			rewards: [{
@@ -296,6 +312,7 @@
 				title: "All Your Veggies"
 				type: "checkmark"
 			}]
+			title: "Ultimate Farmer"
 			x: 10.0d
 			y: 3.5d
 		}
@@ -547,7 +564,7 @@
 				item: "sliceanddice:slicer"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 5.5d
 		}
 		{
@@ -564,6 +581,252 @@
 			}]
 			x: 9.0d
 			y: 5.5d
+		}
+		{
+			id: "58C25E66C75EF277"
+			rewards: [{
+				count: 2
+				id: "6BD277D46DFFE244"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5579CF4F242E6CD3"
+				item: "kubejs:cow_bait"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			id: "3BE427BB49599656"
+			rewards: [{
+				id: "39EA254F2591EC01"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A4780A5294A1812"
+				item: "kubejs:sheep_bait"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			id: "1BADB79B95DA94F1"
+			rewards: [{
+				id: "237852182B7819CE"
+				item: {
+					Count: 1b
+					id: "minecraft:carrot_on_a_stick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B84B6CD7E175491"
+				item: "kubejs:pig_bait"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			id: "13BC22049C4C0AC8"
+			rewards: [{
+				id: "238587DB22FA0108"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A6581047741021E"
+				item: "kubejs:chicken_bait"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			id: "770249B9387D57A4"
+			rewards: [{
+				count: 4
+				id: "6DD416F1EF659871"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63FB67EEF55C2B03"
+				item: "kubejs:wolf_bait"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			id: "4555957D57802180"
+			rewards: [{
+				count: 2
+				id: "33112C19D39EF8BB"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48D64712A6FC3429"
+				item: "kubejs:ocelot_bait"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			id: "3C469D9BDE8A6230"
+			rewards: [{
+				id: "30830AFEE6D58354"
+				item: "minecraft:glow_ink_sac"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C6AA2BBB01890BF"
+				item: "kubejs:glow_squid_bait"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			id: "68968B6BCD429EE7"
+			rewards: [{
+				id: "4082AF024DBD86BA"
+				item: "minecraft:ink_sac"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7119F0EAC885AA68"
+				item: "kubejs:squid_bait"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			id: "4BC81370894AF9F8"
+			rewards: [{
+				id: "3344703B06129879"
+				item: "minecraft:rabbit_foot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12776DFBC6538940"
+				item: "kubejs:rabbit_bait"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			id: "380E73000992FC40"
+			rewards: [{
+				id: "63676E081CA002E5"
+				item: "minecraft:lead"
+				type: "item"
+			}]
+			tasks: [{
+				id: "415D2B8AA3878689"
+				item: "kubejs:polar_beer_bait"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			id: "67FF29DF7698DF5F"
+			rewards: [{
+				id: "6DA5FE638B0F6FCD"
+				item: "minecraft:red_carpet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "672606418738E038"
+				item: "kubejs:llama_bait"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			id: "15545503BD906505"
+			rewards: [{
+				count: 4
+				id: "067EB2E0FFF9D4DA"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6000E36C5D748EA7"
+				item: "kubejs:parrot_bait"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			id: "52305EDAC562953D"
+			rewards: [{
+				count: 4
+				id: "27FCDEAD929031A8"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6644FF2000C16E1A"
+				item: "kubejs:cat_bait"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			id: "51FACC38EEE8CB63"
+			tasks: [{
+				id: "23191B0DD25C256D"
+				item: "kubejs:fox_bait"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			id: "427871F5C7A7FC62"
+			rewards: [{
+				id: "462C6A6F23F4755E"
+				item: "minecraft:scute"
+				type: "item"
+			}]
+			tasks: [{
+				id: "311DDDB590D8371C"
+				item: "kubejs:turtle_bait"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			id: "37BCC674A38F78B4"
+			rewards: [{
+				id: "075899B5B17CC27B"
+				item: "minecraft:mushroom_stew"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58D872387F33648A"
+				item: "kubejs:mooshroom_bait"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
 		}
 	]
 	title: "Farming and Cooking"

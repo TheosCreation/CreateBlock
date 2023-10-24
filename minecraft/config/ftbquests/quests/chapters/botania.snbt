@@ -763,9 +763,14 @@
 			description: ["Rune of Sloth is one of the Seven Deadly Sins Runes which is the third tier of Botania Runes. This is an important component in creating complex magical devices."]
 			id: "2CB6399BF755E30C"
 			rewards: [{
-				count: 16
-				id: "7891EF6AFD5413AF"
-				item: "minecraft:soul_sand"
+				id: "1FC819DCE8A9F50F"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strong_slowness"
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -820,6 +825,17 @@
 			dependencies: ["0027048889049815"]
 			description: ["Rune of Pride is one of the Seven Deadly Sins Runes which is the third tier of Botania Runes. This is an important component in creating complex magical devices."]
 			id: "477EDACF18125B64"
+			rewards: [{
+				id: "3F5158AB455EFB53"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strong_strength"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "412D0A5AAD4E418D"
 				item: "botania:rune_pride"
@@ -889,6 +905,12 @@
 			dependencies: ["79D64612AE5E8351"]
 			description: ["Armor, tools, and weapons made out of Terrasteel, much like its Manasteel-based counterpart, can use Mana from the inventory to heal damage.However, its durabilities are comparable more to Diamond armor than to Iron."]
 			id: "68F57454D085D85A"
+			rewards: [{
+				count: 4
+				id: "59AB2AC33D45AD96"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "1B966640B6A601FD"

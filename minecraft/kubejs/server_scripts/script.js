@@ -1,7 +1,7 @@
 // priority: 0
 
 ServerEvents.recipes(event => {
-	const REMOVED_BY_OUTPUT = ['forbidden_arcanus:dark_matter', 'createsifter:advanced_brass_mesh', /*'createindustry:steel_fluid_tank', */ 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'quark:charcoal_block', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
+	const REMOVED_BY_OUTPUT = ['computercraft:monitor_advanced', 'forbidden_arcanus:dark_matter', 'createsifter:advanced_brass_mesh', /*'createindustry:steel_fluid_tank', */ 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'quark:charcoal_block', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
 	// remove items in array
 	REMOVED_BY_OUTPUT.forEach(id => event.remove({ output: id }));
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
@@ -135,6 +135,23 @@ ServerEvents.recipes(event => {
 		S: 'createindustry:heavy_plate'
 	})
 	*/
+	event.shaped('computercraft:computer_normal', [
+		'AAA',
+		'ADA',
+		'ARA'
+	], {
+		G: '#forge:glass_panes',
+		A: 'create:andesite_alloy',
+		R: 'create:polished_rose_quartz'
+	})
+	event.shaped('computercraft:monitor_advanced', [
+		'BBB',
+		'BGB',
+		'BBB'
+	], {
+		B: 'create:brass_sheet',
+		G: '#forge:glass_panes'
+	})
 	event.shaped('forbidden_arcanus:obsidian_with_iron', [
 		' I ',
 		'IOI',
@@ -413,32 +430,6 @@ ServerEvents.recipes(event => {
 	], {
 		W: 'minecraft:pillager_spawn_egg',
 		A: 'minecraft:iron_axe'
-	})
-	event.shaped('computercraft:computer_normal', [
-		'SSS',
-		'SNS',
-		'SDS'
-	], {
-		S: '#forge:stone',
-		N: 'create:nixie_tube',
-		D: 'create:display_board'
-	})
-	event.shaped('computercraft:computer_advanced', [
-		'GGG',
-		'GNG',
-		'GDG'
-	], {
-		G: 'minecraft:gold_ingot',
-		N: 'create:nixie_tube',
-		D: 'create:display_board'
-	})
-	event.shaped('computercraft:computer_advanced', [
-		'GGG',
-		'GCG',
-		'G G'
-	], {
-		G: 'minecraft:gold_ingot',
-		C: 'computercraft:computer_normal'
 	})
 
 	event.shapeless('toms_storage:ts.inventory_cable_connector', [

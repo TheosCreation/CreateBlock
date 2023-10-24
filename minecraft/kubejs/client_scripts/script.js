@@ -5,6 +5,7 @@ JEIEvents.addItems(event => {
     event.add('kubejs:pig_bait')
     event.add('kubejs:wolf_bait') 
     event.add('kubejs:ocelot_bait')
+    event.add('kubejs:glow_squid_bait')
     event.add('kubejs:squid_bait')
     event.add('kubejs:rabbit_bait')
     event.add('kubejs:polar_beer_bait')

@@ -1,0 +1,5 @@
+{
+  "name": "Support",
+  "description": "Please use the links provided to recieve support or want more information:$(li)$(l:https://discord.gg/GkXArmJUFD)CM's World discord$(/l)$(li)$(l:https://legacy.curseforge.com/minecraft/modpacks/create-block)Curseforge$(/l)$(li)$(l:https://github.com/TheosCreation/CreateBlock/issues)Issue Tracker$(/l)",
+  "icon": "createblock:images/icons/support.png"
+}
