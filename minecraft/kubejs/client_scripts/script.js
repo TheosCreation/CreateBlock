@@ -15,4 +15,6 @@ JEIEvents.addItems(event => {
     event.add('kubejs:fox_bait')
     event.add('kubejs:turtle_bait')
     event.add('kubejs:mooshroom_bait')
+    event.add('kubejs:bee_bait')
+    event.add('create:crushed_raw_silver')
 }); 

@@ -16,11 +16,21 @@ ServerEvents.recipes(event => {
     event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:netherrack').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:nether_bricks')
     event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dripstone_block').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:dripstone_block')
     event.recipes.createMechanicalExtruderExtruding(Item.of('create:ochrum').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:gold_block')
-    event.recipes.createMechanicalExtruderExtruding(Item.of('create:veridium').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:copper_block')
+    
     event.recipes.createMechanicalExtruderExtruding(Item.of('create:crimsite').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:iron_block')
     event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dripstone_block').withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst('minecraft:dripstone_block')
 
-    event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dirt').withChance(0.5), ['forge:dirtable', 'forge:dirtable']).requiredBonks(5)
-
+    event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dirt').withChance(0.5), ['#forge:dirtable', '#forge:dirtable']).requiredBonks(5)
+    let ExtruderWithCatalyst = (output, Input) => {
+        event.recipes.createMechanicalExtruderExtruding(Item.of(output).withChance(0.4), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).withCatalyst(Input)
+    }
+    ExtruderWithCatalyst('create:veridium', 'minecraft:copper_block')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:weathered_copper')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:exposed_copper')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:oxidized_copper')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:waxed_copper_block')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:waxed_exposed_copper')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:waxed_weathered_copper')
+    ExtruderWithCatalyst('create:veridium', 'minecraft:waxed_oxidized_copper')
 })
     //event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:dirt'),[Fluid.of('minecraft:lava'),Item.of('minecraft:stone')]).withCatalyst('minecraft:clay').requiredBonks(10)

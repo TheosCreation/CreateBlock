@@ -202,6 +202,7 @@ ServerEvents.recipes(event => {
             'createsifter:andesite_mesh': [
                 ['create:copper_nugget', 0.15],
                 ['create:zinc_nugget', 0.2],
+                ['kubejs:silver_nugget', 0.2],
                 ['minecraft:iron_nugget', 0.6],
                 ['minecraft:coal', 0.10],
                 ['minecraft:lapis_lazuli', 0.05],
@@ -211,6 +212,7 @@ ServerEvents.recipes(event => {
             'createsifter:zinc_mesh': [
                 ['create:copper_nugget', 0.5],
                 ['create:zinc_nugget', 0.4],
+                ['kubejs:silver_nugget', 0.4],
                 ['minecraft:iron_nugget', 0.8],
                 ['minecraft:iron_nugget', 0.2],
                 ['minecraft:gold_nugget', 0.4],
@@ -222,6 +224,7 @@ ServerEvents.recipes(event => {
             'createsifter:brass_mesh': [
                 ['create:crushed_raw_copper', 0.15],
                 ['create:crushed_raw_zinc', 0.1],
+                ['create:crushed_raw_silver', 0.1],
                 ['create:crushed_raw_iron', 0.3],
                 ['create:crushed_raw_gold', 0.1],
                 ['minecraft:diamond', 0.03],
@@ -234,9 +237,9 @@ ServerEvents.recipes(event => {
             'kubejs:diamond_mesh': [
                 ['minecraft:raw_copper', 0.25],
                 ['create:raw_zinc', 0.2],
+                ['kubejs:raw_silver', 0.2],
                 ['minecraft:raw_iron', 0.4],
                 ['minecraft:raw_gold', 0.2],
-                ['create:crushed_raw_aluminum', 0.2],
                 ['minecraft:diamond', 0.06],
                 ['minecraft:diamond', 0.03],
                 ['minecraft:emerald', 0.04],
@@ -249,9 +252,9 @@ ServerEvents.recipes(event => {
             'kubejs:netherite_mesh': [
                 ['minecraft:raw_copper', 0.5],
                 ['create:raw_zinc', 0.4],
+                ['kubejs:raw_silver', 0.4],
                 ['minecraft:raw_iron', 0.8],
                 ['minecraft:raw_gold', 0.4],
-                ['create:crushed_raw_aluminum', 0.4],
                 ['minecraft:diamond', 0.12],
                 ['minecraft:diamond', 0.06],
                 ['minecraft:emerald', 0.08],

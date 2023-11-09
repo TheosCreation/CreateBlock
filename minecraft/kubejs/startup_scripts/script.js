@@ -25,6 +25,10 @@ StartupEvents.registry('item', event => {
         let id = name.toLowerCase().replace(/ /g, "_");
         event.create(id).texture(`kubejs:item/${id}`).displayName(name);
     };
+    let itemTrasitional = (name) => {
+        let id = name.toLowerCase().replace(/ /g, "_");
+        event.create(id, 'create:sequenced_assembly').texture(`kubejs:item/${id}`).displayName(name);
+    };
     
     event.create("diamond_mesh", "createsifter:mesh").displayName(`Diamond Mesh`).parentModel("kubejs:block/meshes/diamond_mesh").texture('kubejs:item/diamond_mesh')
     event.create("netherite_mesh", "createsifter:mesh").displayName(`Netherite Mesh`).parentModel("kubejs:block/meshes/netherite_mesh").texture('kubejs:item/netherite_mesh')
@@ -32,30 +36,29 @@ StartupEvents.registry('item', event => {
     event.create("worldshaper_cogwheel").displayName(`Worldshaper Cogwheel`).parentModel("kubejs:item/worldshaper_cogwheel")
     event.create("worldshaper_barrel").displayName(`Worldshaper Barrel`).parentModel("kubejs:item/worldshaper_barrel")
     event.create("worldshaper_handle").displayName(`Worldshaper Handle`).parentModel("kubejs:item/worldshaper_handle")
-    event.create('incomplete_cracked_stone').parentModel("minecraft:block/cube_all").displayName('Incomplete Cracked Stone').texture('all', 'kubejs:item/incomplete_cracked_stone');
-    event.create('incomplete_netherrack').parentModel("minecraft:block/cube_all").displayName('Incomplete Netherrack').texture('all', 'kubejs:item/incomplete_netherrack');
+    event.create('incomplete_cracked_stone', 'create:sequenced_assembly').parentModel("minecraft:block/cube_all").displayName('Incomplete Cracked Stone').texture('all', 'kubejs:item/incomplete_cracked_stone');
+    event.create('incomplete_netherrack', 'create:sequenced_assembly').parentModel("minecraft:block/cube_all").displayName('Incomplete Netherrack').texture('all', 'kubejs:item/incomplete_netherrack');
 
     event.create('chromatic_tube').displayName('Chromatic Tube').texture('kubejs:item/chromatic_tube').rarity('RARE')
     event.create('rad_star').displayName('Radiating Star').texture('kubejs:item/rad_star').rarity('RARE').glow(true)
     event.create('chromatic_dust').displayName('Chromatic Dust').texture('kubejs:item/chromatic_dust').rarity('UNCOMMON').glow(true)
     event.create('chromatic_shard').displayName('Chromatic Shard').texture('kubejs:item/chromatic_shard').rarity('UNCOMMON').glow(true)
     event.create('create_ingot').displayName('Create Ingot').rarity('UNCOMMON').rarity('RARE').glow(true)
-    item("Incomplete Machine Casing");
-    item("Warped Nylium Spores");
-    item("Crimson Nylium Spores");
-    item("Mycelium Spores");
-    item("Incomplete Raw Advanced Processor");
-    item("Incomplete Raw Improved Processor");
-    item("Incomplete Raw Basic Processor");
+    itemTrasitional("Incomplete Machine Casing");
+    itemTrasitional("Incomplete Raw Advanced Processor");
+    itemTrasitional("Incomplete Raw Improved Processor");
+    itemTrasitional("Incomplete Raw Basic Processor");
+    itemTrasitional("Incomplete Raw Super Advanced Processor");
+    itemTrasitional("Incomplete");
+    itemTrasitional("Incomplete Processor");
     item("Corruption Bottle");
     item("Raw Silver");
     item("Silver Ingot");
     item("Silver Nugget");
-    item("Crushed Raw Silver");
-    item("Common Lootbox");
-    item("Rare Lootbox");
-    item("Epic Lootbox");
-    item("Legendary Lootbox");
+    item("Silver Sheet");
+    item("Warped Nylium Spores");
+    item("Crimson Nylium Spores");
+    item("Mycelium Spores");
 })
 StartupEvents.registry('fluid', event => {
     event.create('refined_fluid').displayName('Refined Essence')

@@ -1,7 +1,10 @@
 ServerEvents.tags('item', event => {
     event.remove('forge:fillet_knife', 'farmersdelight:flint_knife')
     event.add('forge:dirtable', 'farmersdelight:rich_soil')
+    //event.add('createblock:copper', ['minecraft:copper_block', 'minecraft:weathered_copper', 'minecraft:exposed_copper', 'minecraft:oxidized_copper', 'minecraft:waxed_copper_block', 'minecraft:waxed_exposed_copper', 'minecraft:waxed_weathered_copper', 'minecraft:waxed_oxidized_copper'])
     event.add('curios:back', ['create:copper_backtank', 'create:netherite_backtank', 'create_jetpack:jetpack'])
     event.add('forge:relocation_not_supported', 'create_mechanical_extruder:mechanical_extruder')
     event.add('forge:raw_materials/silver', 'kubejs:raw_silver')
+    event.add('forge:ingots/silver', 'kubejs:silver_ingot')
+    event.add('forge:nuggets/silver', 'kubejs:silver_nugget')
 })

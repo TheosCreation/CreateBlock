@@ -18,4 +18,5 @@ StartupEvents.registry('item', e => {
     e.createCustom('fox_bait', () => new $ForgeSpawnEggItem(() => $EntityType.FOX, 16777215, 16777215, new $ItemProperties()));
     e.createCustom('turtle_bait', () => new $ForgeSpawnEggItem(() => $EntityType.TURTLE, 16777215, 16777215, new $ItemProperties()));
     e.createCustom('mooshroom_bait', () => new $ForgeSpawnEggItem(() => $EntityType.MOOSHROOM, 16777215, 16777215, new $ItemProperties()));
+    e.createCustom('bee_bait', () => new $ForgeSpawnEggItem(() => $EntityType.BEE, 16777215, 16777215, new $ItemProperties()));
 })

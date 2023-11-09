@@ -20,10 +20,14 @@ ServerEvents.recipes(event => {
 	event.recipes.create.filling('kubejs:rad_star', [Fluid.of('kubejs:refined_fluid', 1000), 'minecraft:nether_star'])
 	//filling electron tube with rainbow essence into chomatic tube
 	event.recipes.create.filling('kubejs:chromatic_tube', [Fluid.of('kubejs:rainbow', 1000), 'create:electron_tube'])
+	event.recipes.create.pressing('kubejs:silver_sheet', 'kubejs:silver_ingot')
 	//press darkstone to have a chance of getting dark rune
 	event.recipes.create.compacting(Item.of('forbidden_arcanus:dark_rune').withChance(0.5), 'forbidden_arcanus:darkstone')
 	//washing dark rune to get normal rune
 	event.recipes.create.splashing('forbidden_arcanus:rune', 'forbidden_arcanus:dark_rune')
+	event.recipes.create.splashing(['9x kubejs:silver_nugget', Item.of('minecraft:gold_nugget').withChance(0.5)], 'create:crushed_raw_silver')
+	//mixing
+	//event.recipes.create.mixing('createaddition:electrum_ingot', ['minecraft:gold_ingot', 'kubejs:silver_ingot']).heated()
 
 	event.recipes.create.haunting('minecraft:charcoal', 'minecraft:coal')
 	event.recipes.create.haunting('minecraft:echo_shard', 'minecraft:amethyst_shard')
@@ -33,6 +37,10 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.deploying('forbidden_arcanus:corrupted_pixie', ['forbidden_arcanus:corrupt_soul', 'forbidden_arcanus:arcane_crystal_dust'])
 	event.recipes.create.deploying('forbidden_arcanus:pixie', ['forbidden_arcanus:soul', 'forbidden_arcanus:arcane_crystal_dust'])
+	event.recipes.create.deploying('ae2:silicon_press', ['minecraft:iron_block', 'ae2:silicon_press']).keepHeldItem()
+	event.recipes.create.deploying('ae2:logic_processor_press', ['minecraft:iron_block', 'ae2:logic_processor_press']).keepHeldItem()
+	event.recipes.create.deploying('ae2:calculation_processor_press', ['minecraft:iron_block', 'ae2:calculation_processor_press']).keepHeldItem()
+	event.recipes.create.deploying('ae2:engineering_processor_press', ['minecraft:iron_block', 'ae2:engineering_processor_press']).keepHeldItem()
 
 	event.recipes.create.milling('4x minecraft:snowball', 'minecraft:snow_block')
 	event.recipes.create.milling('createsifter:crushed_end_stone', 'minecraft:end_stone')
@@ -490,6 +498,82 @@ ServerEvents.recipes(event => {
 		},
 	});
 
+	// Raw raw super advanced processor
+	event.custom({
+		type: "create:sequenced_assembly",
+		ingredient: {
+			item: "minecraft:netherite_ingot",
+		},
+		loops: 1,
+		results: [
+			{
+				chance: 90.0,
+				item: 'rebornstorage:raw_super_advanced_processor',
+			},
+			{
+				chance: 5.0,
+				item: "minecraft:netherite_ingot",
+			},
+			{
+				chance: 5.0,
+				item: "create:cogwheel",
+			},
+		],
+		sequence: [
+			{
+				type: "create:deploying",
+				ingredients: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+					{
+						item: "refinedstorage:processor_binding",
+					},
+				],
+				results: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+				],
+			},
+			{
+				type: "create:deploying",
+				ingredients: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+					{
+						item: 'ae2:printed_silicon',
+					},
+				],
+				results: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+				],
+			},
+			{
+				type: "create:deploying",
+				ingredients: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+					{
+						item: "minecraft:redstone",
+					},
+				],
+				results: [
+					{
+						item: "kubejs:incomplete_raw_super_advanced_processor",
+					},
+				],
+			},
+		],
+		transitionalItem: {
+			item: "kubejs:incomplete_raw_super_advanced_processor",
+		},
+	});
+
 	event.custom({
 		type: "create:sequenced_assembly",
 		ingredient: {
@@ -586,6 +670,69 @@ ServerEvents.recipes(event => {
 			item: 'create:experience_nugget',
 		},
 	});
+	//event.recipes.create.deploying(Item.of('ae2:printed_engineering_processor').withChance(0.5), ['minecraft:diamond', 'ae2:engineering_processor_press']).keepHeldItem()
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:printed_engineering_processor').withChance(0.5),
+		Item.of('minecraft:diamond').withChance(0.5)
+	], 'minecraft:diamond', [
+		event.recipes.createDeploying('kubejs:incomplete', ['minecraft:diamond', 'ae2:engineering_processor_press']).keepHeldItem()
+	]).transitionalItem('kubejs:incomplete').loops(1)
+
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:printed_logic_processor').withChance(0.5),
+		Item.of('minecraft:gold_ingot').withChance(0.5)
+	], 'minecraft:gold_ingot', [
+		event.recipes.createDeploying('kubejs:incomplete', ['minecraft:gold_ingot', 'ae2:logic_processor_press']).keepHeldItem()
+	]).transitionalItem('kubejs:incomplete').loops(1)
+
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:printed_calculation_processor').withChance(0.5),
+		Item.of('ae2:certus_quartz_crystal').withChance(0.5)
+	], 'ae2:certus_quartz_crystal', [
+		event.recipes.createDeploying('kubejs:incomplete', ['ae2:certus_quartz_crystal', 'ae2:calculation_processor_press']).keepHeldItem()
+	]).transitionalItem('kubejs:incomplete').loops(1)
+
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:printed_silicon').withChance(0.5),
+		Item.of('ae2:silicon').withChance(0.5)
+	], 'ae2:silicon', [
+		event.recipes.createDeploying('kubejs:incomplete', ['ae2:silicon', 'ae2:silicon_press']).keepHeldItem()
+	]).transitionalItem('kubejs:incomplete').loops(1)
+
+	let I = 'kubejs:incomplete_processor'
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:engineering_processor').withChance(0.9),
+		Item.of('minecraft:redstone').withChance(0.05),
+		Item.of('ae2:printed_engineering_processor').withChance(0.025),
+		Item.of('ae2:printed_silicon').withChance(0.025)
+	], 'minecraft:redstone', [
+		event.recipes.createDeploying(I, [I, 'ae2:printed_engineering_processor']),
+		event.recipes.createDeploying(I, [I, 'ae2:printed_silicon'])
+	]).transitionalItem(I).loops(1)
+
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:calculation_processor').withChance(0.9),
+		Item.of('minecraft:redstone').withChance(0.05),
+		Item.of('ae2:printed_calculation_processor').withChance(0.025),
+		Item.of('ae2:printed_silicon').withChance(0.025)
+	], 'minecraft:redstone', [
+		event.recipes.createDeploying(I, [I, 'ae2:printed_calculation_processor']),
+		event.recipes.createDeploying(I, [I, 'ae2:printed_silicon'])
+	]).transitionalItem(I).loops(1)
+
+	event.recipes.createSequencedAssembly([
+		Item.of('ae2:logic_processor').withChance(0.9),
+		Item.of('minecraft:redstone').withChance(0.05),
+		Item.of('ae2:printed_logic_processor').withChance(0.025),
+		Item.of('ae2:printed_silicon').withChance(0.025)
+	], 'minecraft:redstone', [
+		event.recipes.createDeploying(I, [I, 'ae2:printed_logic_processor']),
+		event.recipes.createDeploying(I, [I, 'ae2:printed_silicon'])
+	]).transitionalItem(I).loops(1)
+
+
+
+
 	let IS = 'kubejs:incomplete_cracked_stone'
 	event.recipes.createSequencedAssembly([
 		Item.of('kubejs:cracked_stone'),
@@ -601,12 +748,5 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(IN, [IN, 'minecraft:glowstone_dust']),
 		event.recipes.createDeploying(IN, [IN, 'minecraft:redstone']),
 		event.recipes.createPressing(IN, IN)
-	]).transitionalItem(IN).loops(1)
-	let IT = 'minecraft:barrel'
-	event.recipes.createSequencedAssembly([
-		Item.of('createindustry:steel_fluid_tank'),
-	], 'minecraft:barrel', [
-		event.recipes.createDeploying(IN, [IN, 'createindustry:heavy_plate']),
-		event.recipes.createDeploying(IN, [IN, 'createindustry:heavy_plate'])
 	]).transitionalItem(IN).loops(1)
 	})
