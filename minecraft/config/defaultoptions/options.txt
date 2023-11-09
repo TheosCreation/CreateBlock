@@ -37,8 +37,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","quark:emote_resources","cullleaves:smartleaves","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/Tom\u0027s Better Create Storage 1.1.zip","file/Create Simple Storage 2.1.zip","file/Created Applied Energistics.zip","file/Create Computers 1.2.zip","file/Refined Storage - ReCreated v0.1.zip"]
-incompatibleResourcePacks:["quark:emote_resources","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/Tom\u0027s Better Create Storage 1.1.zip"]
+resourcePacks:["vanilla","mod_resources","quark:emote_resources","cullleaves:smartleaves","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/Tom\u0027s Better Create Storage 1.1.zip","file/Create Simple Storage 2.1.zip","file/Created Applied Energistics.zip","file/Create Computers 1.2.zip","file/Refined Storage - ReCreated v0.2.zip", "file/Traveller's Backpack - ReCreated v0.1.zip"]
+incompatibleResourcePacks:["quark:emote_resources","loadmyresources.hiddenpack","file/xali\u0027s Bushy Leaves v3.5.0.zip", "file/Tom\u0027s Better Create Storage 1.1.zip"]
 lastServer:
 lang:en_us
 soundDevice:"OpenAL Soft on Speakers (HyperX Cloud Revolver S)"
@@ -78,7 +78,7 @@ allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
 soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:0.15962441
 soundCategory_block:1.0
