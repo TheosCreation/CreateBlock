@@ -59,7 +59,7 @@
 				title: "Any minecraft:logs"
 				type: "item"
 			}]
-			title: "Don't Punch Trees..."
+			title: "Time For Wood"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -402,7 +402,7 @@
 			dependencies: ["5687DBC582721D74"]
 			description: [
 				"For more information regarding obtaining more Lava"
-				"1. Open your Potato guidebook. "
+				"1. Open your Create Block guidebook. "
 				"2. Go to either \"Getting Started\" > \"Early Game\" or \"Videos\" > \"Useful Farms\" "
 				"3. Open the page \"Dripstone, Lava and More...\""
 			]

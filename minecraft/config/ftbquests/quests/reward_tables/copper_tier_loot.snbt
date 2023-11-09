@@ -1,0 +1,11 @@
+{
+	id: "7E26692875FF65E0"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "minecraft:copper_ingot" }
+		{ item: "create:zinc_ingot" }
+		{ item: "create:copper_casing" }
+	]
+	title: "Copper Tier Loot"
+}

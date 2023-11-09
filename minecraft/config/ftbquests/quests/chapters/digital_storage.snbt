@@ -38,7 +38,7 @@
 				type: "item"
 			}]
 			title: "Applied Energistics 2"
-			x: -9.5d
+			x: -10.5d
 			y: 1.0d
 		}
 		{
@@ -100,7 +100,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
+			title: "Going Wireless"
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -116,8 +117,8 @@
 				item: "refinedstorage:network_transmitter"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["00000000000004D6"]
@@ -133,8 +134,8 @@
 				item: "refinedstorage:network_receiver"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["16575C381D3F4967"]
@@ -149,8 +150,8 @@
 				item: "refinedstorage:exporter"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["16575C381D3F4967"]
@@ -168,7 +169,7 @@
 				}
 			]
 			x: -0.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["16575C381D3F4967"]
@@ -178,8 +179,8 @@
 				item: "refinedstorage:relay"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["00000000000004BB"]
@@ -189,8 +190,8 @@
 				item: "refinedstorage:detector"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["00000000000004AE"]
@@ -201,7 +202,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3B16231EAE660EB6"]
@@ -211,8 +212,8 @@
 				item: "refinedstorage:crafting_grid"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["00000000000004AE"]
@@ -222,8 +223,8 @@
 				item: "refinedstorage:fluid_interface"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["16575C381D3F4967"]
@@ -238,7 +239,7 @@
 				item: "refinedstorage:importer"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -249,8 +250,8 @@
 				item: "refinedstorage:grid"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			description: ["Meteorites spawn in the sky, use a meteorite compass to help you find the closest one. I suggest getting an elytra first"]
@@ -277,6 +278,776 @@
 			}]
 			x: -8.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000004A8"]
+			id: "5F3A52345A4E2B31"
+			tasks: [{
+				id: "4B6A28B2B1F9CBF5"
+				item: "cabletiers:elite_exporter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F3A52345A4E2B31"]
+			id: "322468F64D62A2C8"
+			tasks: [{
+				id: "4C1BE85C07A92179"
+				item: "cabletiers:ultra_exporter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["322468F64D62A2C8"]
+			id: "47AE68F68947AB00"
+			tasks: [{
+				id: "20F4E0E128FA07BB"
+				item: "cabletiers:creative_exporter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["01ECA2931CA2BBF9"]
+			id: "1D8DCDFBE4DD6CCA"
+			tasks: [{
+				id: "5272294F391517C1"
+				item: "cabletiers:elite_importer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D8DCDFBE4DD6CCA"]
+			id: "748DBCCABC340B60"
+			tasks: [{
+				id: "6E794DB987A3CDB3"
+				item: "cabletiers:ultra_importer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["748DBCCABC340B60"]
+			id: "78F6D78DA3AE1ACE"
+			tasks: [{
+				id: "2D9B03A74C634C3F"
+				item: "cabletiers:creative_importer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3145A8AF78624FAA"]
+			id: "33EB8D142AB1B83F"
+			tasks: [{
+				id: "064A1042E9A6FA59"
+				item: "ae2:spatial_pylon"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7796014539C63002"]
+			id: "16D770B8AAEDA9AC"
+			tasks: [{
+				id: "7AF13F30E83A7EFE"
+				item: "ae2:spatial_io_port"
+				type: "item"
+			}]
+			x: -17.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6CBE5FE769F734EA"]
+			id: "1A608AFC32C8BC6B"
+			tasks: [{
+				id: "44D77E19CD4E788C"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16575C381D3F4967"]
+			id: "4682D280F97DD66D"
+			tasks: [{
+				id: "302C0A08B1B25CDC"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4682D280F97DD66D"]
+			id: "58CDFA5AF6EBCC4C"
+			tasks: [{
+				id: "1CAE11332428FB0E"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A608AFC32C8BC6B"]
+			id: "402C70B7CCB66125"
+			tasks: [{
+				id: "64A6BB6D445815D2"
+				item: "ae2:cell_component_4k"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["402C70B7CCB66125"]
+			id: "7EB306795CCBEF6A"
+			tasks: [{
+				id: "277B3CED2B022BC1"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7EB306795CCBEF6A"]
+			id: "23C94F91EB080259"
+			tasks: [{
+				id: "2A459553A57C26D7"
+				item: "ae2:cell_component_64k"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["23C94F91EB080259"]
+			id: "0E0ABEB54F7E4036"
+			tasks: [{
+				id: "689CBD537D720643"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0E0ABEB54F7E4036"]
+			id: "1B5FDB90F8DEF423"
+			tasks: [{
+				id: "5923D9C05127C20A"
+				item: "megacells:cell_component_1m"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B5FDB90F8DEF423"]
+			id: "2A403020FF76B095"
+			tasks: [{
+				id: "09C9488A02A52297"
+				item: "megacells:cell_component_4m"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["58CDFA5AF6EBCC4C"]
+			id: "5C8CDC5B8C49EB62"
+			tasks: [{
+				id: "7D38F51140E60971"
+				item: "refinedstorage:16k_storage_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5C8CDC5B8C49EB62"]
+			id: "6D9E3BE60D555DCB"
+			tasks: [{
+				id: "32C9A547CB52743B"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D9E3BE60D555DCB"]
+			id: "55E65E86C3D0BEC7"
+			tasks: [{
+				id: "4DE916D39C7591F6"
+				item: "rebornstorage:small_item_disk_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["55E65E86C3D0BEC7"]
+			id: "02FD561FA51D3EEF"
+			tasks: [{
+				id: "282D6DBDBC3F7FAA"
+				item: "rebornstorage:medium_item_disk_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["02FD561FA51D3EEF"]
+			id: "3AE45E36F470FBBF"
+			tasks: [{
+				id: "7FBE0D3CDBA587B4"
+				item: "rebornstorage:large_item_disk_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3AE45E36F470FBBF"]
+			id: "4A6431A9469EBD5B"
+			tasks: [{
+				id: "2EC34FF4A0A054EA"
+				item: "rebornstorage:larger_item_disk_part"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7258BA8B9F0C2D6B"]
+			id: "0F55F7E3A0607631"
+			tasks: [{
+				id: "5070B722BC976C59"
+				item: "rebornstorage:small_fluid_disk_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A403020FF76B095"]
+			id: "29AFF41F26C71266"
+			tasks: [{
+				id: "3BEE919A71E3534A"
+				item: "megacells:cell_component_16m"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["29AFF41F26C71266"]
+			id: "444A7F8F2941223C"
+			tasks: [{
+				id: "53C5DBDFD75D75E9"
+				item: "megacells:cell_component_64m"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["444A7F8F2941223C"]
+			id: "3CB6D5C462211DEE"
+			tasks: [{
+				id: "265C30437897BAE4"
+				item: "megacells:cell_component_256m"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["16575C381D3F4967"]
+			id: "5FCDAECD06540561"
+			tasks: [{
+				id: "165717B531210415"
+				item: "refinedstorage:64k_fluid_storage_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5FCDAECD06540561"]
+			id: "66D831DFA37134B1"
+			tasks: [{
+				id: "706EA6B3690CC5BB"
+				item: "refinedstorage:256k_fluid_storage_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["66D831DFA37134B1"]
+			id: "34BB408AD315B6D6"
+			tasks: [{
+				id: "5B86AFB67F6A7B1F"
+				item: "refinedstorage:1024k_fluid_storage_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["34BB408AD315B6D6"]
+			id: "7258BA8B9F0C2D6B"
+			tasks: [{
+				id: "27F01E55DEFDC8EC"
+				item: "refinedstorage:4096k_fluid_storage_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F55F7E3A0607631"]
+			id: "7B132A1B1D0DEF45"
+			tasks: [{
+				id: "0A11C63EC091AE30"
+				item: "rebornstorage:medium_fluid_disk_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B132A1B1D0DEF45"]
+			id: "6A8C2B7962137D45"
+			tasks: [{
+				id: "2D2A8A76C7E640B7"
+				item: "rebornstorage:large_fluid_disk_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6A8C2B7962137D45"]
+			id: "05D19836E0749AF2"
+			tasks: [{
+				id: "6EAFE334FE822DD7"
+				item: "rebornstorage:larger_fluid_disk_part"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["00000000000004DB"]
+			id: "4CCD3388B774E7D6"
+			tasks: [{
+				id: "64B89380D40EE7CC"
+				item: "rsinfinitybooster:infinity_card"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["124732C6C4CA0B72"]
+			id: "2C1748EEA2F4A6B3"
+			tasks: [{
+				id: "0278B41D99596E60"
+				item: "aeinfinitybooster:infinity_card"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["00000000000004DB"]
+			id: "1A00DCDFFC3FDC8B"
+			tasks: [{
+				id: "245B63D4DA5E0846"
+				item: "rebornstorage:advanced_wireless_transmitter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1976AFB615C8B163"]
+			id: "57D842CA6BA4114C"
+			tasks: [{
+				id: "3627541CE2ABE291"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3145A8AF78624FAA"
+				"7878DC09546B78B3"
+			]
+			id: "3920A5FF56485C05"
+			tasks: [{
+				id: "0CE51A327D649456"
+				item: "ae2:spatial_cell_component_2"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3920A5FF56485C05"]
+			id: "19F16D5F11825E37"
+			tasks: [{
+				id: "7DF99B45BF9B1558"
+				item: "ae2:spatial_cell_component_16"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19F16D5F11825E37"]
+			id: "09478A98FE9572FF"
+			tasks: [{
+				id: "496D4ABF7DBDE3E9"
+				item: "ae2:spatial_cell_component_128"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B16231EAE660EB6"]
+			id: "163D35AA683B34A3"
+			tasks: [{
+				id: "081518798E8D7CA4"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B16231EAE660EB6"]
+			id: "1FC5C25D789F4D38"
+			tasks: [{
+				id: "783FF81845E93D6B"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1FC5C25D789F4D38"]
+			id: "093C8C9279AEC51E"
+			tasks: [{
+				id: "757F9B440B9B5105"
+				item: "refinedstorage:pattern"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16575C381D3F4967"]
+			id: "13A6A8DE7ECF26FB"
+			tasks: [{
+				id: "51589A263A270277"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6CBE5FE769F734EA"]
+			description: ["Can be found in meteorites."]
+			id: "306E4EC9B26603FB"
+			tasks: [
+				{
+					id: "0AAA47134AA2D0F1"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "41E4242AEFAB025A"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "450E9BD5B42E9B3E"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "5A1E077BC389EC0D"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			title: "The Press"
+			x: -12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["306E4EC9B26603FB"]
+			id: "7878DC09546B78B3"
+			tasks: [
+				{
+					id: "390F091D3B222D18"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+				{
+					id: "451AE4A6FE7039B9"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "2828125D351B3335"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+			]
+			title: "Pressed Circuits"
+			x: -13.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CBE5FE769F734EA"]
+			id: "121233EF234A23B0"
+			tasks: [{
+				id: "23E1A88248F01CE7"
+				item: "ae2:quartz_growth_accelerator"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6CBE5FE769F734EA"]
+			id: "3145A8AF78624FAA"
+			tasks: [{
+				id: "416BAAA5BA42CB8A"
+				item: "ae2:fluix_pearl"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7878DC09546B78B3"]
+			id: "7E2C6B61945F798A"
+			tasks: [{
+				id: "39CDC6B1C50A50EC"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7E2C6B61945F798A"]
+			id: "7796014539C63002"
+			tasks: [{
+				id: "465DC2BEA297BE89"
+				item: "ae2:io_port"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09478A98FE9572FF"]
+			id: "7B183558A01DFB53"
+			tasks: [{
+				id: "56978988CD9F0649"
+				item: "ae2:spatial_anchor"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7878DC09546B78B3"]
+			id: "7A768F43D557D3F6"
+			tasks: [
+				{
+					id: "15C37E2C5FC52696"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "01E3E1CC300B3569"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+			]
+			title: "Dual Core"
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A768F43D557D3F6"]
+			id: "6DC183B4DC5555B5"
+			tasks: [
+				{
+					id: "178CC5119E8E11B9"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					id: "1DBB46F3BB551F7C"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+			]
+			title: "Export/Import Buses"
+			x: -17.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57D842CA6BA4114C"]
+			id: "5D75F88DBAFCF1D4"
+			tasks: [{
+				id: "7548E0A9357FA07E"
+				item: "ae2:wireless_terminal"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57D842CA6BA4114C"]
+			id: "2D129731FB2EB174"
+			tasks: [{
+				id: "11F7FF9B9E52ED12"
+				item: "ae2:wireless_crafting_terminal"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7878DC09546B78B3"]
+			id: "1976AFB615C8B163"
+			tasks: [{
+				id: "30C0836A06B09C7B"
+				item: "ae2:security_station"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4CCD3388B774E7D6"]
+			id: "20BB87669AC5FCB9"
+			tasks: [{
+				id: "4A5453B3C9D181CB"
+				item: "rsinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C1748EEA2F4A6B3"]
+			id: "474030438A8ADA24"
+			tasks: [{
+				id: "2857C0FD1FA5E6D1"
+				item: "aeinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57D842CA6BA4114C"]
+			id: "124732C6C4CA0B72"
+			tasks: [{
+				id: "6B4C82F66932044C"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.5d
+		}
+		{
+			id: "03E270C58CADFEB6"
+			tasks: [
+				{
+					id: "0153B3E5833BC38C"
+					item: "refinedstorage:advanced_processor"
+					type: "item"
+				}
+				{
+					id: "3872DE995B2F3903"
+					item: "refinedstorage:improved_processor"
+					type: "item"
+				}
+				{
+					id: "669E9FEB685FCBD7"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+				{
+					id: "355DB897F87F5836"
+					item: "rebornstorage:super_advanced_processor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Processors"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			id: "77E72E2889061A02"
+			tasks: [{
+				id: "141530319775C564"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 2.5d
+		}
+		{
+			id: "24EAE6ACFC4A4F5D"
+			tasks: [{
+				id: "5E5A1977ECC9A862"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 3.5d
+		}
+		{
+			id: "1BFBB51B9786FEE4"
+			tasks: [{
+				id: "7138108030E42B0A"
+				item: "refinedstorage:crafting_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.0d
 		}
 	]
 	title: "Digital Storage"

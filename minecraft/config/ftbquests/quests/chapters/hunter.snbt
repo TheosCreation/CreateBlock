@@ -731,17 +731,6 @@
 			id: "000000000000045E"
 			rewards: [
 				{
-					id: "5B35B143EAC5D4C0"
-					item: "mythicbotany:wither_aconite"
-					type: "item"
-				}
-				{
-					count: 54
-					id: "6AC55C66C38AA913"
-					item: "witherproofed:heavy_reinforced_obsidian"
-					type: "item"
-				}
-				{
 					id: "17BC794D5444CB4A"
 					item: "create:deployer"
 					type: "item"

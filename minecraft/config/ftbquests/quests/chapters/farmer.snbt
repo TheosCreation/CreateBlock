@@ -28,8 +28,9 @@
 		{
 			id: "000000000000031B"
 			rewards: [{
-				id: "73CD633610987E51"
-				item: "minecraft:red_mushroom"
+				count: 4
+				id: "350B22A6E1AC5844"
+				item: "minecraft:brown_mushroom_block"
 				type: "item"
 			}]
 			tasks: [{
@@ -57,19 +58,11 @@
 		}
 		{
 			id: "000000000000031F"
-			rewards: [
-				{
-					count: 2
-					id: "37F238BDBE85A2D5"
-					item: "minecraft:rabbit_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "1904824B2B9CE856"
-					item: "solcarrot:food_book"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2817933C7AE72BC9"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0000000000000320"
 				item: "minecraft:carrot"
@@ -80,12 +73,19 @@
 		}
 		{
 			id: "0000000000000323"
-			rewards: [{
-				count: 4
-				id: "749D2308BC7402C9"
-				item: "minecraft:baked_potato"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "749D2308BC7402C9"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "0160C5A46DBF2C89"
+					item: "solapplepie:food_book"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0000000000000324"
 				item: "minecraft:potato"
@@ -127,9 +127,8 @@
 		{
 			id: "0000000000000341"
 			rewards: [{
-				count: 4
-				id: "39E8CF4B945B0E18"
-				item: "minecraft:pumpkin_seeds"
+				id: "0DB7E2E34AFF7306"
+				item: "farmersdelight:melon_popsicle"
 				type: "item"
 			}]
 			tasks: [{
@@ -143,9 +142,8 @@
 		{
 			id: "000000000000034D"
 			rewards: [{
-				count: 2
-				id: "18377F99891870BA"
-				item: "minecraft:glow_squid_spawn_egg"
+				id: "1DCF92C96FF48E9F"
+				item: "farmersdelight:glow_berry_custard"
 				type: "item"
 			}]
 			tasks: [{
@@ -237,8 +235,9 @@
 		{
 			id: "000000000000036B"
 			rewards: [{
-				id: "7674B07B26D4347C"
-				item: "minecraft:brown_mushroom"
+				count: 4
+				id: "189F31A4A9C02D74"
+				item: "minecraft:red_mushroom_block"
 				type: "item"
 			}]
 			tasks: [{
@@ -297,6 +296,7 @@
 				"68968B6BCD429EE7"
 				"427871F5C7A7FC62"
 				"770249B9387D57A4"
+				"1276AFD09BDE6BA8"
 			]
 			id: "000000000000069A"
 			rewards: [{
@@ -504,6 +504,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Serious Business"
 			tasks: [{
 				id: "23B12E1EDD7624DB"
 				item: {
@@ -554,9 +555,8 @@
 		{
 			id: "75F5A704EA52B26E"
 			rewards: [{
-				count: 3
-				id: "382E7F331B821492"
-				item: "minecraft:bookshelf"
+				id: "3ED879A49A585914"
+				item: "minecraft:cake"
 				type: "item"
 			}]
 			tasks: [{
@@ -596,7 +596,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "3BE427BB49599656"
@@ -611,7 +611,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "1BADB79B95DA94F1"
@@ -632,7 +632,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "13BC22049C4C0AC8"
@@ -647,7 +647,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "770249B9387D57A4"
@@ -663,7 +663,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "4555957D57802180"
@@ -679,7 +679,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "3C469D9BDE8A6230"
@@ -694,7 +694,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "68968B6BCD429EE7"
@@ -709,7 +709,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "4BC81370894AF9F8"
@@ -724,7 +724,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "380E73000992FC40"
@@ -739,7 +739,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "67FF29DF7698DF5F"
@@ -754,7 +754,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "15545503BD906505"
@@ -770,7 +770,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "52305EDAC562953D"
@@ -786,7 +786,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "51FACC38EEE8CB63"
@@ -796,7 +796,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			id: "427871F5C7A7FC62"
@@ -810,8 +810,8 @@
 				item: "kubejs:turtle_bait"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.5d
+			x: 11.0d
+			y: 1.0d
 		}
 		{
 			id: "37BCC674A38F78B4"
@@ -825,8 +825,24 @@
 				item: "kubejs:mooshroom_bait"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			id: "1276AFD09BDE6BA8"
+			rewards: [{
+				count: 2
+				id: "52DA08816EF9E938"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1685ED2C17C4F590"
+				item: "kubejs:bee_bait"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
 		}
 	]
 	title: "Farming and Cooking"

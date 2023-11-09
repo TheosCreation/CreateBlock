@@ -1,0 +1,11 @@
+{
+	id: "710B078DB67DC392"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "createaddition:connector" }
+		{ item: "createaddition:copper_wire" }
+		{ item: "createaddition:gold_wire" }
+	]
+	title: "Power Tier"
+}

@@ -1,0 +1,12 @@
+{
+	id: "3E582511448EA008"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "refinedstorage:basic_processor" }
+		{ item: "refinedstorage:improved_processor" }
+		{ item: "refinedstorage:advanced_processor" }
+		{ item: "rebornstorage:super_advanced_processor" }
+	]
+	title: "Refined Storage Loot"
+}

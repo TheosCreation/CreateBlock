@@ -96,24 +96,11 @@
 			dependencies: ["757DC52392EB674B"]
 			description: ["The &bAlternator&r converts rotational energy into FE!"]
 			id: "6DD54ABB7D00AB13"
-			rewards: [
-				{
-					id: "59B75C1A5E2B7636"
-					item: "createaddition:modular_accumulator"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "36766C25850FD1A1"
-					item: "createaddition:connector"
-					type: "item"
-				}
-				{
-					id: "28F790CA47ABE79D"
-					item: "createaddition:copper_spool"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "747D0CB18102BB21"
+				table_id: 8145612656263152530L
+				type: "random"
+			}]
 			subtitle: "Make an Alternator"
 			tasks: [{
 				id: "2B0A556EDC61B3F1"
@@ -137,6 +124,12 @@
 					id: "32B9C95B98237425"
 					item: "create:clutch"
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E6EA8F96F6B42E7"
+					table_id: 8145612656263152530L
+					type: "random"
 				}
 			]
 			subtitle: "Make an Electric Motor"
@@ -186,10 +179,10 @@
 			description: ["The &bWrench&r is used to &6configure Create's machines&r."]
 			id: "73C75E570155C0DC"
 			rewards: [{
-				count: 8
-				id: "31E8AC03EEE59EFA"
-				item: "create:andesite_alloy"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "1A84767D5F796785"
+				table_id: 2968319311514780042L
+				type: "random"
 			}]
 			subtitle: "Twisted and Torqued"
 			tasks: [{
@@ -204,20 +197,12 @@
 			dependencies: ["7FAAD541EF8779AC"]
 			description: ["While wearing &bEngineer's Goggles&r, you can &6see a machine's kinetic information&r, like how many Stress Units it's using."]
 			id: "17DA73DF6AEE23ED"
-			rewards: [
-				{
-					count: 2
-					id: "2643C9F9283F6F4C"
-					item: "create:shaft"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "57272FDC047D6F29"
-					item: "create:belt_connector"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4ADAA3A0FCF5A95B"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Nerd Vision"
 			tasks: [{
 				id: "5BF4527184CB2C3A"
@@ -651,11 +636,19 @@
 			dependencies: ["757DC52392EB674B"]
 			description: ["The &bTesla Coil&r is used to shock enemies that damages and slows them, the &bTesla Coil&r is also used to charge items and devices"]
 			id: "6E1D7E1B95765613"
-			rewards: [{
-				id: "37B3E3B22BADCBFF"
-				item: "create:depot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "37B3E3B22BADCBFF"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06063822158DFC4A"
+					table_id: 8145612656263152530L
+					type: "random"
+				}
+			]
 			subtitle: "Make a Tesla Coil"
 			tasks: [{
 				id: "71F37111BA6F8C37"
@@ -712,10 +705,10 @@
 			dependencies: ["0753F0286951113B"]
 			id: "3A2DC2BD7C0487D5"
 			rewards: [{
-				count: 8
-				id: "0CA2021D51410938"
-				item: "create:shaft"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "02797B6FD3291BC4"
+				table_id: 2968319311514780042L
+				type: "random"
 			}]
 			subtitle: "Craft Shafts"
 			tasks: [{
@@ -730,10 +723,10 @@
 			dependencies: ["3A2DC2BD7C0487D5"]
 			id: "2698A862F801E567"
 			rewards: [{
-				count: 4
-				id: "5807833E7D7E8DFA"
-				item: "create:cogwheel"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "4FF3AF746D374963"
+				table_id: 2968319311514780042L
+				type: "random"
 			}]
 			tasks: [{
 				id: "678162706270D775"
@@ -747,10 +740,10 @@
 			dependencies: ["3A2DC2BD7C0487D5"]
 			id: "7F9194CB14D5711F"
 			rewards: [{
-				count: 2
-				id: "369832A08CE8BB2C"
-				item: "create:large_cogwheel"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "7B67A98372079553"
+				table_id: 2968319311514780042L
+				type: "random"
 			}]
 			tasks: [{
 				id: "11CAD7F3C37C926E"
@@ -763,6 +756,12 @@
 		{
 			dependencies: ["7FAAD541EF8779AC"]
 			id: "0753F0286951113B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "503CA3F9AD8C548B"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Dont waste it all in one place"
 			tasks: [{
 				id: "1157B7A37A88E989"
@@ -775,6 +774,12 @@
 		{
 			dependencies: ["3A2DC2BD7C0487D5"]
 			id: "3B92E29596B40569"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14E76C7B8C6154B2"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Supply the Oxygen"
 			tasks: [{
 				id: "48889F50EF1F80BD"
@@ -794,6 +799,12 @@
 			dependencies: ["3B92E29596B40569"]
 			description: ["Walk on belts and the ocean flour."]
 			id: "78F656DFFE233ACB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DE06D2B2D314943"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Take me to the Bottom of the Ocean?"
 			tasks: [{
 				id: "6BE211578A922381"
@@ -865,6 +876,12 @@
 			dependencies: ["3B92E29596B40569"]
 			description: ["Lets you breath underwater when you are also wearing a backtank"]
 			id: "5285176B7732ABCA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5720C94DFBF6F058"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Bubbles"
 			tasks: [{
 				id: "079F067BC104BBD1"
@@ -890,11 +907,19 @@
 				"&oSoulsand no longer provides a boost in stress units (SU)&r"
 			]
 			id: "00000000000007AB"
-			rewards: [{
-				id: "00000000000007AD"
-				item: "create:stressometer"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "00000000000007AD"
+					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40B2E5F7BA575EBB"
+					table_id: 2968319311514780042L
+					type: "random"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "00000000000007AC"
@@ -908,18 +933,12 @@
 			dependencies: ["00000000000007AB"]
 			description: ["you probably want to step down this water wheel to get a faster rotation check out some youtube video tutorials on how to increase rotational speed"]
 			id: "113A3EBEF62CB4E9"
-			rewards: [
-				{
-					id: "05146293089DC5E5"
-					item: "create:large_cogwheel"
-					type: "item"
-				}
-				{
-					id: "53BE7AFE6E02C6AF"
-					item: "create:cogwheel"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7743CEAA95378BE3"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "60F107B03A24455B"
@@ -1086,8 +1105,8 @@
 			id: "2DBCE52C78BB66F9"
 			rewards: [{
 				count: 8
-				id: "684D35498CD0AE8D"
-				item: "kubejs:dust"
+				id: "62F2CAB32C84FF81"
+				item: "createsifter:dust"
 				type: "item"
 			}]
 			tasks: [{
@@ -1202,6 +1221,12 @@
 		{
 			dependencies: ["0753F0286951113B"]
 			id: "3CC38577DFA43381"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C185D7D5D7FFE4E"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "To get those machines working aleast"
 			tasks: [{
@@ -1387,6 +1412,12 @@
 			dependencies: ["7FAAD541EF8779AC"]
 			description: ["The &bToolbox&r holds large amounts of 8 different items types"]
 			id: "32EC8FBA8082C80C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1964022C7ED26756"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Hold my Tools"
 			tasks: [{
 				id: "0C5CA8FF26D5DC9C"
@@ -1439,6 +1470,12 @@
 			dependencies: ["3A2DC2BD7C0487D5"]
 			description: ["You probably have a need for these, check out the ponder."]
 			id: "2E7B9BA1775DFE09"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E2DDE7D9A47D6D7"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Get those items moving"
 			tasks: [{
 				id: "5A2ECBBFDC96EDBE"
@@ -1451,6 +1488,12 @@
 		{
 			dependencies: ["2698A862F801E567"]
 			id: "21C3BF6CAC7290C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FCCFD345D750D42"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "722FABBFE537F361"
@@ -1469,6 +1512,12 @@
 		{
 			dependencies: ["0753F0286951113B"]
 			id: "70927549090FA82B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01B7F0DAFED497E5"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			tasks: [{
 				id: "27A35DEAB0686DE1"
 				item: "create:andesite_funnel"
@@ -1480,6 +1529,12 @@
 		{
 			dependencies: ["0753F0286951113B"]
 			id: "4F1F69ECD66E2080"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "118FD009C4EA48C8"
+				table_id: 2968319311514780042L
+				type: "random"
+			}]
 			subtitle: "Do the Splits"
 			tasks: [{
 				id: "09632B8F2BEA4E08"

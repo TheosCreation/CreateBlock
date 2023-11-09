@@ -6,12 +6,32 @@
 	icon: "createaddition:copper_wire"
 	id: "33BFF837A4141FAC"
 	order_index: 1
-	quest_links: [{
-		id: "09B94232AEC3A9D8"
-		linked_quest: "09447DA319D56D63"
-		x: -6.0d
-		y: 2.0d
-	}]
+	quest_links: [
+		{
+			id: "09B94232AEC3A9D8"
+			linked_quest: "09447DA319D56D63"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "678EC637E4A5BE4A"
+			linked_quest: "6DD54ABB7D00AB13"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			id: "216CB46DF1B9E036"
+			linked_quest: "3F6111879910D997"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			id: "60FD761FBFAE1236"
+			linked_quest: "6E1D7E1B95765613"
+			x: -4.0d
+			y: 4.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["09447DA319D56D63"]
@@ -86,5 +106,5 @@
 			y: 1.5d
 		}
 	]
-	title: "Energy and Wireless"
+	title: "Power!"
 }

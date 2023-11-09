@@ -1,0 +1,11 @@
+{
+	id: "40F8FD0980AF988A"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "create:brass_ingot" }
+		{ item: "create:brass_casing" }
+		{ item: "create:rose_quartz" }
+	]
+	title: "Brass Tier Loot"
+}

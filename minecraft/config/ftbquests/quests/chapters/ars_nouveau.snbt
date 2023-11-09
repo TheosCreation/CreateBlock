@@ -19,13 +19,14 @@
 					type: "item"
 				}
 				{
-					id: "18E8638612281FAA"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "5F82212124407B66"
 					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3E533F01EAA42C39"
+					item: "create:experience_nugget"
 					type: "item"
 				}
 			]
@@ -118,9 +119,10 @@
 					type: "item"
 				}
 				{
-					id: "232AB6A2EF9225BC"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "5A4E597653E13244"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "How to make custom spells"
@@ -292,9 +294,10 @@
 					type: "item"
 				}
 				{
-					id: "735C9727D9393AB3"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "07DA745BD4C18626"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make a Source Jar"
@@ -376,9 +379,10 @@
 					type: "item"
 				}
 				{
-					id: "649AA924DFE7808A"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "4588515C4AC07715"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make Sourcestone"
@@ -455,9 +459,10 @@
 					type: "item"
 				}
 				{
-					id: "3AD7E6DD8D173790"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "25E048047D9CF403"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			shape: "hexagon"
@@ -512,13 +517,14 @@
 			id: "2ADA7D6FDBBCC8E0"
 			rewards: [
 				{
-					id: "70333A228694AE7B"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "4477AD5B4C0EE1C4"
 					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "36D2E7EF574A51B2"
+					item: "create:experience_nugget"
 					type: "item"
 				}
 			]
@@ -548,9 +554,10 @@
 					type: "item"
 				}
 				{
-					id: "461CC81424CE7F36"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "3D8AB1A3958A10EB"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make an Enchanting Apparatus"
@@ -603,9 +610,10 @@
 					type: "item"
 				}
 				{
-					id: "252CFE09D589EB56"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "4A6188EDBB28C3B0"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make Magebloom Seeds"
@@ -629,9 +637,10 @@
 					type: "item"
 				}
 				{
-					id: "10A7CB9696BA12F3"
-					type: "xp_levels"
-					xp_levels: 1
+					count: 5
+					id: "21327B67F21A7CC7"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make Magebloom Fiber"
@@ -663,9 +672,10 @@
 					type: "item"
 				}
 				{
-					id: "29A26C5FA184682F"
-					type: "xp"
-					xp: 20
+					count: 10
+					id: "427BBD2CD66C028C"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make a Scribe's Table"
@@ -782,13 +792,14 @@
 			id: "20E94F203F824018"
 			rewards: [
 				{
-					id: "695A3EBBF7225491"
-					type: "xp"
-					xp: 20
-				}
-				{
 					id: "2B1A2C4AC18E37B0"
 					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7923894FC1C64748"
+					item: "create:experience_nugget"
 					type: "item"
 				}
 			]
@@ -859,9 +870,10 @@
 					type: "item"
 				}
 				{
-					id: "0EE76A433F7CB569"
-					type: "xp"
-					xp: 30
+					count: 50
+					id: "4A157E4CBD64A989"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Magic Landmines!"
@@ -899,9 +911,10 @@
 					type: "item"
 				}
 				{
-					id: "095D6545DC009A96"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "7F8CBDFD83741C5C"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make a Basic Spell Turret"
@@ -957,9 +970,10 @@
 					type: "item"
 				}
 				{
-					id: "2DFBB74EE42866A6"
-					type: "xp"
-					xp: 10
+					count: 5
+					id: "234BAC6416248E81"
+					item: "create:experience_nugget"
+					type: "item"
 				}
 			]
 			subtitle: "Make a Warp Scroll"
@@ -1159,9 +1173,10 @@
 			icon: "ars_nouveau:thread_undying"
 			id: "5DD629B0834D432F"
 			rewards: [{
-				id: "59F32CA75F560CAB"
-				type: "xp_levels"
-				xp_levels: 10
+				count: 5
+				id: "33EAE163C5E935EF"
+				item: "create:experience_nugget"
+				type: "item"
 			}]
 			subtitle: "Make an Armor Thread"
 			tasks: [
@@ -1189,6 +1204,12 @@
 		{
 			description: ["Find a &estarbuncle floating island&r and you will find many sourceberrys on this island"]
 			id: "1F88BD35E7AF9EEE"
+			rewards: [{
+				count: 5
+				id: "6DE1A8BF2F41F361"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D778C5B3CD07E2B"
 				item: "ars_nouveau:source_berry"
@@ -1211,6 +1232,12 @@
 		{
 			dependencies: ["1F88BD35E7AF9EEE"]
 			id: "363AA7605B4F3BD7"
+			rewards: [{
+				count: 10
+				id: "747BC1726D668211"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2E8CD3AF843EB976"
 				item: "kubejs:sourceberry_bucket"

@@ -447,6 +447,46 @@
 			x: -6.5d
 			y: -1.5d
 		}
+		{
+			id: "3E064F5009C076C9"
+			tasks: [{
+				id: "53B8E41A5BE06BA9"
+				item: "travelersbackpack:iron_tier_upgrade"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			id: "778B75BCAF37E212"
+			tasks: [{
+				id: "2A573E90BBD51209"
+				item: "travelersbackpack:gold_tier_upgrade"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			id: "1C8B507F5D43F7D1"
+			tasks: [{
+				id: "560E23CA584886D4"
+				item: "travelersbackpack:diamond_tier_upgrade"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			id: "013D949FC7EA1C42"
+			tasks: [{
+				id: "48EFBEF4D07B01AA"
+				item: "travelersbackpack:netherite_tier_upgrade"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.5d
+		}
 	]
 	title: "Storage"
 }

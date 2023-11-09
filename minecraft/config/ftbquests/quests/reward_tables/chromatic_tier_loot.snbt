@@ -1,0 +1,13 @@
+{
+	id: "60BF2E71DF7ACFD7"
+	loot_size: 1
+	order_index: 3
+	rewards: [{
+		item: {
+			Count: 1b
+			id: "create:chromatic_compound"
+			tag: { }
+		}
+	}]
+	title: "Chromatic Tier Loot"
+}

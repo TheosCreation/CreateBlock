@@ -1,0 +1,15 @@
+{
+	id: "293196AFDEC5418A"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 4, item: "create:cogwheel" }
+		{ count: 2, item: "create:large_cogwheel" }
+		{ item: "create:gearbox" }
+		{ count: 2, item: "create:andesite_casing" }
+		{ count: 2, item: "create:belt_connector" }
+		{ count: 8, item: "create:andesite_alloy" }
+		{ count: 16, item: "create:shaft" }
+	]
+	title: "Andesite Tier Loot"
+}
