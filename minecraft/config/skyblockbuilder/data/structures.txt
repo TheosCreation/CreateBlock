@@ -1,9 +1,11 @@
 minecraft:ancient_city
+createblock:badlands
 minecraft:bastion_remnant
 minecraft:buried_treasure
 createblock:cherry
 createblock:cloud_oil
 createblock:dark_forest
+createblock:desert
 minecraft:desert_pyramid
 minecraft:end_city
 createblock:forest
@@ -31,6 +33,7 @@ minecraft:ruined_portal_mountain
 minecraft:ruined_portal_nether
 minecraft:ruined_portal_ocean
 minecraft:ruined_portal_swamp
+createblock:savanna
 minecraft:shipwreck
 minecraft:shipwreck_beached
 skyvillages:skyvillage

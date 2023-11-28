@@ -5,7 +5,7 @@
 	group: "4AA931E23612708F"
 	icon: "createaddition:copper_wire"
 	id: "33BFF837A4141FAC"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "09B94232AEC3A9D8"

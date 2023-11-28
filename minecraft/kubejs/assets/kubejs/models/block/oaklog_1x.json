@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:block/block",
+	"loader": "forge:composite",
+	"textures": {
+		"particle": "minecraft:block/oak_log"
+	},
+	"parts": {
+		"solid": {
+			"render_type": "solid",
+			"parent": "minecraft:block/oak_log"
+		},
+		"translucent": {
+			"render_type": "translucent",
+			"parent": "minecraft:block/cube_column",
+			"textures": {
+				"end": "kubejs:block/overlays/layer_1",
+				"side": "kubejs:block/overlays/layer_1"
+			}
+		}
+	}
+}

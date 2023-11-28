@@ -1,5 +1,23 @@
 # Create Block Change Log
 
+## Create Block-4.5.0
+Nov. 28, 2023
+
+- Mods Added:
+  - 
+  - 
+- Mods Updated:
+  - 
+  - 
+  - 
+- Mods Removed:
+  - 
+- Other Changes:
+  - 
+  - 
+  - 
+  - 
+
 ## Create Block-4.4.0
 Oct. 25, 2023
 

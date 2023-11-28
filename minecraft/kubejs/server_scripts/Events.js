@@ -23,6 +23,7 @@ EntityEvents.death(event => {
 LevelEvents.tick(event => {
     if (event.level.time % 100 != 0)
         return;
+        
     wraiths.forEach(wraith => {
         if (wraith.block.id != 'forbidden_arcanus:soulless_sand')
             return;

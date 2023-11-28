@@ -14,16 +14,16 @@ ServerEvents.recipes(event => {
 	event.recipes.create.item_application(['minecraft:mycelium'], ['minecraft:grass_block', 'kubejs:mycelium_spores'])
 	event.recipes.create.item_application(['forbidden_arcanus:growing_edelwood'], ['architects_palette:twisted_sapling', 'forbidden_arcanus:dark_matter'])
 	//event.recipes.create.item_application(['minecraft:netherrack'], ['kubejs:cracked_stone', 'minecraft:redstone'])
-	//emptying refined radiance into refined fluid
-	event.recipes.create.emptying([Fluid.of('kubejs:refined_fluid', 1000)], 'create:refined_radiance')
 	//filling nether star with refined essence into Radiating Star
-	event.recipes.create.filling('kubejs:rad_star', [Fluid.of('kubejs:refined_fluid', 1000), 'minecraft:nether_star'])
+	event.recipes.create.filling('kubejs:rad_star', [Fluid.of('kubejs:liquid_light', 1000), 'minecraft:nether_star'])
 	//filling electron tube with rainbow essence into chomatic tube
 	event.recipes.create.filling('kubejs:chromatic_tube', [Fluid.of('kubejs:rainbow', 1000), 'create:electron_tube'])
 	event.recipes.create.pressing('kubejs:silver_sheet', 'kubejs:silver_ingot')
 	//press darkstone to have a chance of getting dark rune
 	event.recipes.create.compacting(Item.of('forbidden_arcanus:dark_rune').withChance(0.5), 'forbidden_arcanus:darkstone')
-	//washing dark rune to get normal rune
+	event.recipes.create.compacting('create:experience_block', ['minecraft:honeycomb', Fluid.of('create_enchantment_industry:experience', 108)])
+	event.recipes.create.compacting('create:experience_block', ['minecraft:slime_ball', Fluid.of('create_enchantment_industry:experience', 108)])
+	//washing dark rune to get normal run
 	event.recipes.create.splashing('forbidden_arcanus:rune', 'forbidden_arcanus:dark_rune')
 	event.recipes.create.splashing(['9x kubejs:silver_nugget', Item.of('minecraft:gold_nugget').withChance(0.5)], 'create:crushed_raw_silver')
 	//mixing
@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing('create:chromatic_compound', ['3x minecraft:glowstone_dust', '3x create:powdered_obsidian', 'create:polished_rose_quartz']).superheated()
 	event.recipes.create.mixing(Fluid.of('kubejs:magic', 1000), [Fluid.of('kubejs:source', 1000), 'create:polished_rose_quartz', 'botania:mana_diamond']).heated()
 	event.recipes.create.mixing(Fluid.of('kubejs:source', 1000), [Fluid.of('kubejs:sourceberry', 500), Fluid.of('kubejs:magebloom', 500)])
+	event.recipes.create.mixing(Fluid.of('kubejs:liquid_light', 1000), [Fluid.of('minecraft:water', 1000), 'create:refined_radiance']).superheated()
 
 	event.recipes.create.mechanical_crafting('toms_storage:ts.crafting_terminal', [
 		' T ',
@@ -78,6 +79,26 @@ ServerEvents.recipes(event => {
 		L: 'create:linked_controller',
 		M: 'create:precision_mechanism',
 		T: 'toms_storage:ts.storage_terminal'
+	})
+	event.recipes.create.mechanical_crafting('createindustry:pumpjack_base', [
+		'PSP',
+		'CAC',
+		'PIP'
+	], {
+		A: 'createindustry:steel_mechanical_pump',
+		P: 'createindustry:heavy_plate',
+		C: 'createindustry:heavy_machinery_casing',
+		I: 'createindustry:industrial_pipe',
+		S: 'minecraft:string'
+	})
+	event.recipes.create.mechanical_crafting('createindustry:pumpjack_hammer_holder', [
+		'SSSSB',
+		' GT B'
+	], {
+		B: 'createindustry:steel_block',
+		S: 'createindustry:steel_ingot',
+		T: 'createindustry:steel_truss',
+		G: 'create:shaft'
 	})
 	event.recipes.create.mechanical_crafting('computercraft:computer_advanced', [
 		'BBB',
@@ -640,43 +661,17 @@ ServerEvents.recipes(event => {
 			item: "kubejs:incomplete_machine_casing",
 		},
 	});
-	event.custom({
-		type: "create:sequenced_assembly",
-		ingredient: {
-			item: 'create:experience_nugget',
-		},
-		loops: 10,
-		results: [
-			{
-				item: 'forbidden_arcanus:xpetrified_orb',
-			}
-		],
-		sequence: [
-			{
-				type: "create:pressing",
-				ingredients: [
-					{
-						item: 'create:experience_nugget',
-					},
-				],
-				results: [
-					{
-						item: 'create:experience_nugget',
-					},
-				],
-			}
-		],
-		transitionalItem: {
-			item: 'create:experience_nugget',
-		},
-	});
+
 	//event.recipes.create.deploying(Item.of('ae2:printed_engineering_processor').withChance(0.5), ['minecraft:diamond', 'ae2:engineering_processor_press']).keepHeldItem()
 	event.recipes.createSequencedAssembly([
 		Item.of('ae2:printed_engineering_processor').withChance(0.5),
 		Item.of('minecraft:diamond').withChance(0.5)
+
 	], 'minecraft:diamond', [
 		event.recipes.createDeploying('kubejs:incomplete', ['minecraft:diamond', 'ae2:engineering_processor_press']).keepHeldItem()
 	]).transitionalItem('kubejs:incomplete').loops(1)
+
+	
 
 	event.recipes.createSequencedAssembly([
 		Item.of('ae2:printed_logic_processor').withChance(0.5),
@@ -730,9 +725,6 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(I, [I, 'ae2:printed_silicon'])
 	]).transitionalItem(I).loops(1)
 
-
-
-
 	let IS = 'kubejs:incomplete_cracked_stone'
 	event.recipes.createSequencedAssembly([
 		Item.of('kubejs:cracked_stone'),
@@ -749,4 +741,21 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(IN, [IN, 'minecraft:redstone']),
 		event.recipes.createPressing(IN, IN)
 	]).transitionalItem(IN).loops(1)
+
+	let IXO = 'kubejs:incomplete_xpetrified_orb'
+	event.recipes.createSequencedAssembly(
+		'forbidden_arcanus:xpetrified_orb'
+		, 'create:experience_block', [
+			event.recipes.createPressing(IXO, IXO)
+	]).transitionalItem(IXO).loops(10)
+
+	let ISSM = 'kubejs:incomplete_incomplete_soul_scorched_metal'
+	event.recipes.createSequencedAssembly(
+		'kubejs:incomplete_soul_scorched_metal'
+		, 'witherproofed:reinforced_alloy', [
+			event.recipes.createDeploying(ISSM, [ISSM, 'forbidden_arcanus:corrupt_soul']),
+			event.recipes.createFilling(ISSM, [ISSM, Fluid.of('create_enchantment_industry:experience', 972)])
+	]).transitionalItem(ISSM).loops(1)
+	
+
 	})

@@ -1,0 +1,29 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "fluid": "createindustry:crude_oil_fluid",
+      "amount": 100
+    }
+  ],
+  "heatRequirement": "heated",
+  "processingTime": 100,
+  "results": [
+    {
+      "fluid": "createindustry:heavy_oil",
+      "amount": 50
+    },
+    {
+      "fluid": "createdieselgenerators:diesel",
+      "amount": 50
+    },
+    {
+      "fluid": "createdieselgenerators:gasoline",
+      "amount": 50
+    },
+    {
+      "fluid": "createindustry:naphtha",
+      "amount": 50
+    }
+  ]
+}

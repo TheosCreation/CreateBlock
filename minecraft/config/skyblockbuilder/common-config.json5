@@ -140,6 +140,9 @@
 	"createblock:forest",
 	"createblock:dark_forest",
         "createblock:jungle",
+	"createblock:badlands",
+	"createblock:savanna",
+	"createblock:desert",
 	"betterstrongholds:stronghold"
       ]
     }

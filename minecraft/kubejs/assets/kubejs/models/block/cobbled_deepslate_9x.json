@@ -1,0 +1,20 @@
+{
+	"parent": "minecraft:block/block",
+	"loader": "forge:composite",
+	"textures": {
+		"particle": "minecraft:block/cobbled_deepslate"
+	},
+	"parts": {
+		"solid": {
+			"render_type": "solid",
+			"parent": "minecraft:block/cobbled_deepslate"
+		},
+		"translucent": {
+			"render_type": "translucent",
+			"parent": "minecraft:block/cube_all",
+			"textures": {
+				"all": "kubejs:block/overlays/layer_9"
+			}
+		}
+	}
+}

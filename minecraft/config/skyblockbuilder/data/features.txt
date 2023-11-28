@@ -137,6 +137,7 @@ minecraft:oak
 minecraft:oak_bees_0002
 minecraft:oak_bees_002
 minecraft:oak_bees_005
+createindustry:oil
 botania:orange_mystical_flower_patch
 minecraft:ore_ancient_debris_large
 minecraft:ore_ancient_debris_small
@@ -229,6 +230,7 @@ minecraft:seagrass_short
 minecraft:seagrass_simple
 minecraft:seagrass_slightly_less_short
 minecraft:seagrass_tall
+createindustry:simulated_oil
 minecraft:single_piece_of_grass
 minecraft:small_basalt_columns
 forbidden_arcanus:small_cherry

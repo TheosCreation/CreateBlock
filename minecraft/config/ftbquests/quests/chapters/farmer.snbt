@@ -9,12 +9,17 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Breaking grass is always fun. Now get to it! Break some grass. Get some seeds. Grow some wheat!"]
+			description: [""]
 			id: "00000000000000B0"
 			rewards: [{
-				count: 32
-				id: "00000000000005E8"
-				item: "minecraft:bone_meal"
+				id: "5855EED896906DA6"
+				item: {
+					Count: 1b
+					id: "farmersdelight:golden_knife"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -59,8 +64,14 @@
 		{
 			id: "000000000000031F"
 			rewards: [{
-				id: "2817933C7AE72BC9"
-				item: "minecraft:golden_carrot"
+				id: "315D4D74045D3BF0"
+				item: {
+					Count: 1b
+					id: "minecraft:carrot_on_a_stick"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -97,8 +108,8 @@
 		{
 			id: "000000000000032D"
 			rewards: [{
-				id: "35EF612361C52236"
-				item: "minecraft:tadpole_bucket"
+				id: "53423DF6D5EFEC47"
+				item: "farmersdelight:hot_cocoa"
 				type: "item"
 			}]
 			tasks: [{
@@ -112,8 +123,8 @@
 		{
 			id: "000000000000033F"
 			rewards: [{
-				id: "5C35101DF8B8054D"
-				item: "createaddition:seed_oil_bucket"
+				id: "54EEBCF7543D0739"
+				item: "minecraft:beetroot_soup"
 				type: "item"
 			}]
 			tasks: [{
@@ -217,6 +228,7 @@
 			y: 5.5d
 		}
 		{
+			description: ["Breaking grass is always fun. Now get to it! Break some grass. Get some seeds. Grow some wheat!"]
 			id: "0000000000000367"
 			rewards: [{
 				count: 4
@@ -843,6 +855,108 @@
 			}]
 			x: 10.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"05E4ADEDE13C7683"
+				"302B3E12CADAD1CA"
+				"361E88BA15A5616B"
+				"66DC1157251FA895"
+				"721452CACC8B2C8B"
+				"75E8C132E59449DC"
+				"53EA6E149322F96D"
+				"1611E6A9E0D26BA5"
+			]
+			id: "406AD3A361DE4042"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4B161F8EAB59908F"
+				title: "Master Chef"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			id: "05E4ADEDE13C7683"
+			tasks: [{
+				id: "56B29547F619F396"
+				item: "brewinandchewin:pizza"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			id: "302B3E12CADAD1CA"
+			tasks: [{
+				id: "2152C197CB9FC1BB"
+				item: "brewinandchewin:fiery_fondue_pot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 13.0d
+		}
+		{
+			id: "66DC1157251FA895"
+			tasks: [{
+				id: "3A16CCB02586C037"
+				item: "farmersdelight:shepherds_pie_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 13.0d
+		}
+		{
+			id: "721452CACC8B2C8B"
+			tasks: [{
+				id: "7526CF35CD2E3B72"
+				item: "farmersdelight:honey_glazed_ham_block"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			id: "75E8C132E59449DC"
+			tasks: [{
+				id: "7CFBF4A1155398F9"
+				item: "farmersdelight:stuffed_pumpkin_block"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			id: "53EA6E149322F96D"
+			tasks: [{
+				id: "3FA23A822192B447"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			id: "1611E6A9E0D26BA5"
+			tasks: [{
+				id: "68689A52763CE990"
+				item: "farmersdelight:squid_ink_pasta"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			id: "361E88BA15A5616B"
+			tasks: [{
+				id: "190905F864E8F498"
+				item: "farmersdelight:bacon_and_eggs"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
 		}
 	]
 	title: "Farming and Cooking"

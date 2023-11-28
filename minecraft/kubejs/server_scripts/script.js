@@ -1,10 +1,14 @@
 // priority: 0
 
 ServerEvents.recipes(event => {
-	const REMOVED_BY_OUTPUT = ['ae2:inscriber', 'rebornstorage:raw_super_advanced_processor', 'computercraft:monitor_advanced', 'forbidden_arcanus:dark_matter', 'createsifter:advanced_brass_mesh', /*'createindustry:steel_fluid_tank', */ 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'quark:charcoal_block', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
+	const REMOVED_BY_OUTPUT = ['createindustry:pumpjack_base', 'createindustry:pumpjack_hammer_holder', 'createindustry:machine_input', 'createindustry:liquid_asphalt', 'createindustry:surface_scanner', 'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:pumpjack_head', 'createdieselgenerators:pumpjack_bearing', 'createindustry:engine_base', 'createindustry:light_blue_concrete', 'createindustry:lime_concrete', 'createindustry:green_concrete', 'createindustry:gray_concrete', 'createindustry:purple_concrete', 'createindustry:brown_concrete', 'createindustry:orange_concrete', 'createindustry:cast_iron_block', 'createindustry:spark_plug', 'createindustry:engine_chamber', 'createindustry:screw', 'createindustry:screwdriver', 'createindustry:turbine_blade', 'createindustry:cast_iron_ingot', 'createindustry:cement', 'createdieselgenerators:gasoline_bucket', 'createdieselgenerators:diesel_bucket', 'createdieselgenerators:plant_oil_bucket', 'createdieselgenerators:gasoline', 'createdieselgenerators:diesel', 'createdieselgenerators:plant_oil', 'createindustry:flarestack', 'createindustry:steel_mechanism', 'createindustry:diesel_engine_expansion', 'createindustry:diesel_engine', 'createindustry:turbine_engine_back', 'createindustry:turbine_engine', 'createindustry:lpg_engine_back', 'createindustry:lpg_engine', 'createindustry:gasoline_engine', 'createindustry:air_intake', 'createindustry:gasoline_engine_back', 'create:experience_block', 'brewinandchewin:keg', 'ae2:inscriber', 'rebornstorage:raw_super_advanced_processor', 'computercraft:monitor_advanced', 'forbidden_arcanus:dark_matter', 'createsifter:advanced_brass_mesh', /*'createindustry:steel_fluid_tank', */ 'chancecubes:chance_cube', 'quark:sturdy_stone', 'forbidden_arcanus:corrupted_pixie', 'createsifter:brass_mesh', 'createsifter:zinc_mesh', 'createsifter:andesite_mesh', 'forbidden_arcanus:rune', 'forbidden_arcanus:obsidian_with_iron', 'computercraft:computer_advanced', 'computercraft:computer_normal', '#create_sa:jetpack', 'craftingcraft:portable_crafting', 'craftingcraft:inventory_crafting', 'ae2:charger', 'create:crushed_raw_lead', 'create:crushed_raw_tin', 'create:crushed_raw_uranium', 'quark:charcoal_block', 'refinedstorage:controller', 'refinedstorage:silicon', 'refinedstorage:machine_casing', 'refinedstorage:raw_advanced_processor', 'refinedstorage:raw_basic_processor', 'refinedstorage:raw_improved_processor', 'toms_storage:ts.crafting_terminal', 'minecraft:packed_mud', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:blue_ice', 'createdeco:zinc_sheet', 'wstweaks:lava_blade', 'wstweaks:blaze_blade', 'create:smart_fluid_pipe', 'create:steam_engine', 'toms_storage:ts.inventory_cable_connector_filtered', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.open_crate', 'toms_storage:ts.storage_terminal', 'toms_storage:ts.trim', 'toms_storage:ts.inventory_cable_connector', 'toms_storage:ts.inventory_connector', 'toms_storage:ts.inventory_proxy', 'toms_storage:ts.level_emitter', 'toms_storage:ts.trim', 'toms_storage:ts.wireless_terminal', 'farmersdelight:wheat_dough', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring', 'angelring:energetic_angel_ring'];
 	// remove items in array
 	REMOVED_BY_OUTPUT.forEach(id => event.remove({ output: id }));
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
+	event.remove({ input: 'create:experience_block'})
+	event.remove({ input: 'createindustry:fossilstone' })
+	event.remove({ input: 'createindustry:cement' })
+	event.remove({ input: 'createindustry:lignite' })
 	event.remove({ input: 'minecraft:end_stone', type: 'create:crushing' })
 	event.remove({ input: 'minecraft:end_stone', type: 'create:milling' })
 	event.remove({ output: 'create:cinder_flour', type: 'create:crushing' })
@@ -18,6 +22,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'create:haunting/soul_soil' })
 	event.remove({ id: 'ars_nouveau:conjuration_essence_to_soul_sand' })
 	event.remove({ id: 'forbidden_arcanus:polished_darkstone' })
+	event.remove({ type: 'brewinandchewin:fermenting' })
 	event.smithing(
 		'kubejs:netherite_mesh',  // arg 1: output
 		'kubejs:diamond_mesh', // arg 2: the item to be upgraded
@@ -28,6 +33,7 @@ ServerEvents.recipes(event => {
 	event.smelting('kubejs:silver_ingot', 'create:crushed_raw_silver')
 	event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver')
 	event.blasting('kubejs:silver_ingot', 'create:crushed_raw_silver')
+	event.blasting('witherproofed:soul_scorched_metal', 'kubejs:incomplete_soul_scorched_metal')
 
 	let Blocks = ['Coal', 'Quartz', 'Lapis', 'Snow', 'Iron', 'Diamond', 'Gold', 'Emerald', 'Netherite', 'Copper', 'Honey', 'Dripstone']
 	Blocks.forEach(item => {
@@ -142,6 +148,14 @@ ServerEvents.recipes(event => {
 		S: 'createindustry:heavy_plate'
 	})
 	*/
+	event.shaped('createindustry:machine_input', [
+		'SC',
+		'G '
+	], {
+		S: 'createindustry:heavy_machinery_casing',
+		C: 'create:cogwheel',
+		G: 'create:shaft'
+	})
 	event.shaped('computercraft:computer_normal', [
 		'AAA',
 		'ADA',
@@ -578,8 +592,67 @@ ServerEvents.recipes(event => {
 		'2x #minecraft:small_flowers'
 	]
 	)
+
+	event.shapeless('kubejs:silver_block', [
+		'9x kubejs:silver_ingot'
+	]
+	)
+	event.shapeless('9x kubejs:silver_ingot', [
+		'kubejs:silver_block'
+	]
+	)
+
+	event.shapeless('kubejs:raw_silver_block', [
+		'9x kubejs:raw_silver'
+	]
+	)
+	event.shapeless('9x kubejs:raw_silver', [
+		'kubejs:raw_silver_block'
+	]
+	)
+
+	event.shapeless('create:experience_block', [
+		'9x create_sa:heap_of_experience'
+	]
+	)
+	event.shapeless('9x create_sa:heap_of_experience', [
+		'create:experience_block'
+	]
+	)
+
+	event.shapeless('kubejs:refined_radiance_block', [
+		'9x create:refined_radiance'
+	]
+	)
+	event.shapeless('9x create:refined_radiance', [
+		'kubejs:refined_radiance_block'
+	]
+	)
+
+	event.shapeless('kubejs:shadow_steel_block', [
+		'9x create:shadow_steel'
+	]
+	)
+	event.shapeless('9x create:shadow_steel', [
+		'kubejs:shadow_steel_block'
+	]
+	)
 	event.smelting('minecraft:bread', 'create:dough')
 	event.smoking('minecraft:bread', 'create:dough')
+	event.custom({
+		type: "create_enchantment_industry:disenchanting",
+			ingredients: [
+				{
+					item: 'create:experience_block'
+				}
+			],
+				results: [
+					{
+						"fluid": "create_enchantment_industry:experience",
+						"amount": 108
+					}
+				]
+	})
 
 });
 

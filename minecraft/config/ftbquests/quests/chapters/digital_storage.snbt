@@ -1046,8 +1046,18 @@
 				item: "refinedstorage:crafting_upgrade"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.0d
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "2DA0D9DF0ED63653"
+			tasks: [{
+				id: "53C9400EBC8E07D3"
+				item: "refinedstorage:upgrade"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
 		}
 	]
 	title: "Digital Storage"

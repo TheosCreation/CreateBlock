@@ -142,8 +142,8 @@
 			description: ["Now you're getting started! Let's go a step further. Find and mine up 8 Iron Ore."]
 			id: "000000000000001E"
 			rewards: [{
-				id: "01A5D75FACC57F6A"
-				item: "drinkbeer:beer_mug"
+				id: "4CF45FB345F40C6B"
+				item: "brewinandchewin:beer"
 				type: "item"
 			}]
 			tasks: [{

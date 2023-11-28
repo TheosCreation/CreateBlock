@@ -1,0 +1,257 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "and_so_on"
+	group: "4AA931E23612708F"
+	icon: "createdieselgenerators:diesel_engine"
+	id: "3908E836212459DE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"To find crude oil you will have to find a badlands, desert or savanna island."
+				""
+				"Tip: Consider using a Natures Compass"
+			]
+			id: "7FFCA3BF91A78BBE"
+			tasks: [{
+				id: "652CFD5E44B0386C"
+				item: "createindustry:crude_oil_fluid_bucket"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3473378634ED899A"]
+			id: "76B26F5C1363A3E1"
+			tasks: [{
+				id: "589DBA1127770EC5"
+				item: "createindustry:cast_iron_distillation_controller"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7FFCA3BF91A78BBE"]
+			id: "0B4AA55E820CEBBB"
+			tasks: [{
+				id: "3F3B367CD7F3D199"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B4AA55E820CEBBB"]
+			id: "3473378634ED899A"
+			tasks: [{
+				amount: 1000L
+				fluid: "createindustry:heavy_oil"
+				id: "6F9B61A4DDBE6D67"
+				type: "fluid"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B4AA55E820CEBBB"]
+			id: "5BA5965219663A69"
+			tasks: [{
+				amount: 1000L
+				fluid: "createdieselgenerators:diesel"
+				id: "74E613237FF44DEB"
+				type: "fluid"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B4AA55E820CEBBB"]
+			id: "5DE6B5C0232659D7"
+			tasks: [{
+				amount: 1000L
+				fluid: "createdieselgenerators:gasoline"
+				id: "53EC9A27D8D64112"
+				type: "fluid"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B4AA55E820CEBBB"]
+			id: "7B69221230F3A4B4"
+			tasks: [{
+				amount: 1000L
+				fluid: "createindustry:naphtha"
+				id: "0D6AFEFD66A531BB"
+				type: "fluid"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			id: "48291FB30A6F3524"
+			tasks: [{
+				id: "456265B8EF7FBE86"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3A9724483E0641AA"]
+			id: "1CFD81A643E0D3E0"
+			tasks: [
+				{
+					id: "4BC19062652750B4"
+					item: "createindustry:casting_spout"
+					type: "item"
+				}
+				{
+					id: "29AC5BA643EB380E"
+					item: "createindustry:casting_basin"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CFD81A643E0D3E0"]
+			id: "43F44E9E6D3A750E"
+			tasks: [{
+				id: "406807B1338D8D8B"
+				item: "createindustry:steel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2D3DAE1A7278AFF5"]
+			id: "3A9724483E0641AA"
+			tasks: [
+				{
+					id: "7EB529F58C5926E2"
+					item: "createindustry:blast_furnace_output"
+					type: "item"
+				}
+				{
+					id: "06A90941CF2DB908"
+					item: "createindustry:fireproof_bricks"
+					type: "item"
+				}
+				{
+					id: "026B1396AADD20A0"
+					item: "createindustry:fireproof_brick_reinforcement"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			id: "2D3DAE1A7278AFF5"
+			tasks: [{
+				id: "5B70EB7F72D8CD4A"
+				item: "createindustry:coke_oven"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48291FB30A6F3524"]
+			id: "6B02BCC9F6CA7CC3"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:beer"
+				id: "622442BFC75F5FE3"
+				type: "fluid"
+			}]
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["48291FB30A6F3524"]
+			id: "25EEB8F37E89CA64"
+			tasks: [{
+				amount: 1000L
+				fluid: "createdieselgenerators:ethanol"
+				id: "5910A04D9D2A065A"
+				type: "fluid"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			id: "75D44D63BBCAF8AA"
+			tasks: [{
+				id: "088F09081A7D74C3"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["75D44D63BBCAF8AA"]
+			id: "33852AE650F719E9"
+			tasks: [{
+				id: "40A8F8EE90CC3E25"
+				item: "createdieselgenerators:engine_turbocharger"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["75D44D63BBCAF8AA"]
+			id: "297F71CBBDF2D2C7"
+			tasks: [{
+				id: "2CB38B260289F557"
+				item: "createdieselgenerators:engine_silencer"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75D44D63BBCAF8AA"]
+			id: "46BA84B7EA10CF80"
+			tasks: [{
+				id: "1C505F53CCC119FE"
+				item: "createdieselgenerators:engine_piston"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			id: "4ECFF8C8FCDCB63C"
+			tasks: [{
+				id: "01A655EB574D769F"
+				item: "createdieselgenerators:canister"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			id: "62DA8C5F62D583E5"
+			tasks: [{
+				id: "74B4FCAB0EBB2FD5"
+				item: "createdieselgenerators:oil_barrel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+	]
+	title: "And so on"
+}

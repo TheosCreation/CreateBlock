@@ -12,13 +12,16 @@ Platform.mods.kubejs.name = 'Create Block'
 
 // Temp fix 
 StartupEvents.registry('block', event => {
-    event.create('crushed_netherrack').material('clay').hardness(0.5).displayName('Crushed Netherrack');
-    event.create('cracked_stone').material('stone').displayName('Cracked Stone');
-    event.create('reactive_bricks').material('stone').displayName('Reactive Bricks');
-    event.create('soulless_soil').material('dirt').displayName('Soulless Soil');
-    event.create('warping_block').material('metal').displayName('Warping Block');
-    event.create('nether_star_block').material('metal').displayName('Nether Star Block').hardness(1.5).lightLevel(1);;
-    //event.create('crushed_end_stone').texture('createsifter:block/crushed_end_stone').displayName('Crushed End Stone');
+    event.create('crushed_netherrack').material('clay').tagBlock("mineable/shovel").hardness(0.5).resistance(0.5).displayName('Crushed Netherrack');
+    event.create('cracked_stone').material('stone').hardness(1.5).resistance(6.0).tagBlock("mineable/pickaxe").displayName('Cracked Stone');
+    event.create('reactive_bricks').material('stone').hardness(2.0).resistance(6.0).tagBlock("mineable/pickaxe").displayName('Reactive Bricks');
+    event.create('soulless_soil').material('dirt').hardness(0.5).resistance(0.5).tagBlock("mineable/shovel").displayName('Soulless Soil');
+    event.create('warping_block').requiresTool(true).hardness(1.5).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('metal').displayName('Warping Block');
+    event.create('silver_block').requiresTool(true).hardness(5.0).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('metal').displayName('Block of Silver');
+    event.create('raw_silver_block').requiresTool(true).hardness(5.0).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('stone').displayName('Block of Raw Silver');
+    event.create('nether_star_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Nether Star Block').lightLevel(1);
+    event.create('refined_radiance_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Block of Refined Radience').lightLevel(1);
+    event.create('shadow_steel_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Block of Shadow Steel');
 })
 StartupEvents.registry('item', event => {
     let item = (name) => {
@@ -36,14 +39,15 @@ StartupEvents.registry('item', event => {
     event.create("worldshaper_cogwheel").displayName(`Worldshaper Cogwheel`).parentModel("kubejs:item/worldshaper_cogwheel")
     event.create("worldshaper_barrel").displayName(`Worldshaper Barrel`).parentModel("kubejs:item/worldshaper_barrel")
     event.create("worldshaper_handle").displayName(`Worldshaper Handle`).parentModel("kubejs:item/worldshaper_handle")
+    //item that looks like a block
     event.create('incomplete_cracked_stone', 'create:sequenced_assembly').parentModel("minecraft:block/cube_all").displayName('Incomplete Cracked Stone').texture('all', 'kubejs:item/incomplete_cracked_stone');
     event.create('incomplete_netherrack', 'create:sequenced_assembly').parentModel("minecraft:block/cube_all").displayName('Incomplete Netherrack').texture('all', 'kubejs:item/incomplete_netherrack');
 
     event.create('chromatic_tube').displayName('Chromatic Tube').texture('kubejs:item/chromatic_tube').rarity('RARE')
     event.create('rad_star').displayName('Radiating Star').texture('kubejs:item/rad_star').rarity('RARE').glow(true)
+    event.create('warden_heart').displayName('Warden Heart').texture('kubejs:item/warden_heart').rarity('UNCOMMON');
     event.create('chromatic_dust').displayName('Chromatic Dust').texture('kubejs:item/chromatic_dust').rarity('UNCOMMON').glow(true)
-    event.create('chromatic_shard').displayName('Chromatic Shard').texture('kubejs:item/chromatic_shard').rarity('UNCOMMON').glow(true)
-    event.create('create_ingot').displayName('Create Ingot').rarity('UNCOMMON').rarity('RARE').glow(true)
+    event.create('create_ingot').displayName('Create Ingot').rarity('RARE').glow(true)
     itemTrasitional("Incomplete Machine Casing");
     itemTrasitional("Incomplete Raw Advanced Processor");
     itemTrasitional("Incomplete Raw Improved Processor");
@@ -51,6 +55,9 @@ StartupEvents.registry('item', event => {
     itemTrasitional("Incomplete Raw Super Advanced Processor");
     itemTrasitional("Incomplete");
     itemTrasitional("Incomplete Processor");
+    itemTrasitional("Incomplete Xpetrified Orb");
+    itemTrasitional("Incomplete Incomplete Soul Scorched Metal");
+    item("Incomplete Soul Scorched Metal");
     item("Corruption Bottle");
     item("Raw Silver");
     item("Silver Ingot");
@@ -59,9 +66,10 @@ StartupEvents.registry('item', event => {
     item("Warped Nylium Spores");
     item("Crimson Nylium Spores");
     item("Mycelium Spores");
+    
 })
 StartupEvents.registry('fluid', event => {
-    event.create('refined_fluid').displayName('Refined Essence')
+    event.create('liquid_light').displayName('Liquid Light')
         .stillTexture('kubejs:fluid/refined_fluid_still')
         .flowingTexture('kubejs:fluid/refined_fluid_flow')
         .bucketColor(0xFFFAF0)
@@ -82,8 +90,8 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x641FBB)
 
     event.create('magebloom').displayName('Magebloom Juice')
-        .stillTexture('kubejs:fluid/magic_still')
-        .flowingTexture('kubejs:fluid/magic_flowing')
+        .stillTexture('kubejs:fluid/magebloom_juice_still')
+        .flowingTexture('kubejs:fluid/magebloom_juice_flow')
         .bucketColor(0xF036DA)
 
     event.create('source').displayName('Liquid Source')

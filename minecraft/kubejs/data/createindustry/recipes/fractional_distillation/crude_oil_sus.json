@@ -1,0 +1,4 @@
+{
+  "type": "createindustry:advanced_distillation",
+  "conditions": [ { "type": "forge:false" } ]
+}
