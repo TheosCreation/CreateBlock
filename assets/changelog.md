@@ -4,19 +4,41 @@
 Nov. 28, 2023
 
 - Mods Added:
-  - 
-  - 
+  - BrewinAndChewin-1.19-2.0.jar
+  - NaturesCompass-1.19.2-1.10.0-forge.jar
+  - createindustry-0.6.0b-1.19.2.jar
+  - CTM-1.19.2-1.1.6+8.jar
+  - AEInfinityBooster-1.19.2-1.2.0+11.jar
+  - create_central_kitchen-1.19.2-for-create-0.5.1.f-1.3.9.e.jar
+  - createdieselgenerators-1.19.2-1.2c.jar
+  - megacells-forge-2.0.1-1.19.2.jar
+  - merequester-forge-1.19.2-1.1.4.jar
 - Mods Updated:
-  - 
-  - 
-  - 
+  - Jade-1.19.1-forge-8.9.1.jar
+  - JadeAddons-1.19.2-forge-3.6.0.jar
+  - JustEnoughResources-1.19.2-1.2.3.243.jar
+  - ShiftedLib-1.1.1-1.19.2.jar
+  - SimpleDiscordRichPresence-forge-3.0.5-build.37+mc1.19.2.jar
+  - Steam_Rails-1.5.3+forge-mc1.19.2.jar
+  - Witherproofed-2.7.7-1.19.2.jar
+  - YungsApi-1.19.2-Forge-3.8.10.jar
+  - cabletiers-1.19.2-0.6.jar
+  - create-1.19.2-0.5.1.f.jar
+  - create_enchantment_industry-1.19.2-for-create-0.5.1.f-1.2.7.d.jar
+  - createaddition-1.19.2-1.2.0.jar
+  - createdieselgenerators-1.19.2-1.2e.jar
+  - forbidden_arcanus-1.19.2-2.1.5.jar
+  - overloadedarmorbar-1.19.3-7.2.jar
+  - refinedstorage-1.11.7.jar
 - Mods Removed:
-  - 
+  - drinkbeer-refill-1.19.2-1.0.3.jar
 - Other Changes:
-  - 
-  - 
-  - 
-  - 
+  - Updated Compressed blocks
+  - Updated Textures
+  - Added Desert, Savanna and Badlands islands to worldgen
+  - New Bee Bait
+  - added travalers backpack recreated
+
 
 ## Create Block-4.4.0
 Oct. 25, 2023
