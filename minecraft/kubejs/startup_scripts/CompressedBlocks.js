@@ -14,6 +14,27 @@ StartupEvents.registry('block', event => {
     for (let i = 1; i < 10; i++) {
         event.create(`obsidian_${i}x`).displayName(`Compressed Obsidian (${i}x)`).material('stone').hardness(50 * (i + 1)).resistance(1200).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_diamond_tool');
     }
+    for (let i = 1; i < 10; i++) {
+        event.create(`amethyst_${i}x`).displayName(`Compressed Amethyst (${i}x)`).material('amethyst').hardness(1.5 * (i + 1)).resistance(1.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`hay_${i}x`).displayName(`Compressed Hay (${i}x)`).material('grass').hardness(0.5 * (i + 1)).resistance(0.5).tagBlock('minecraft:mineable/hoe');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`grass_${i}x`).displayName(`Compressed Grass (${i}x)`).material('grass').hardness(0.6 * (i + 1)).resistance(0.6).tagBlock('minecraft:mineable/hoe');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`melon_${i}x`).displayName(`Compressed Melon (${i}x)`).material('wood').hardness(1 * (i + 1)).resistance(1).tagBlock('minecraft:mineable/axe');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`pumpkin_${i}x`).displayName(`Compressed Pumpkin (${i}x)`).material('wood').hardness(1 * (i + 1)).resistance(1).tagBlock('minecraft:mineable/axe');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`soul_soil_${i}x`).displayName(`Compressed Soul Soil (${i}x)`).material('soul_soil').hardness(0.5 * (i + 1)).resistance(0.5).tagBlock('minecraft:mineable/shovel');
+    }
+    for (let i = 1; i < 10; i++) {
+        event.create(`terracotta_${i}x`).displayName(`Compressed Terracotta (${i}x)`).material('stone').hardness(1.25 * (i + 1)).resistance(4.2).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool');;
+    }
 
     const Sand = ['Sand', 'Red Sand']
     Sand.forEach(item => {
@@ -75,7 +96,14 @@ StartupEvents.registry('block', event => {
     Netherrack.forEach(item => {
         let name = item.toLowerCase().replace(/ /g, "_");
         for (let i = 1; i < 10; i++) {
-            event.create(name + `_${i}x`).displayName('Compressed ' + item + ` (${i}x)`).material('netherrack').hardness(0.4 * (i + 1)).resistance(0.4).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_diamond_tool');
+            event.create(name + `_${i}x`).displayName('Compressed ' + item + ` (${i}x)`).material('netherrack').hardness(0.4 * (i + 1)).resistance(0.4).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool');
+        }
+    })
+    let Basalt = ['Basalt']
+    Basalt.forEach(item => {
+        let name = item.toLowerCase().replace(/ /g, "_");
+        for (let i = 1; i < 10; i++) {
+            event.create(name + `_${i}x`).displayName('Compressed ' + item + ` (${i}x)`).material('basalt').hardness(1.25 * (i + 1)).resistance(4.2).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool');
         }
     })
     let Soulsand = ['Soul Sand']
@@ -111,11 +139,6 @@ StartupEvents.registry('block', event => {
         let name = item.toLowerCase().replace(/ /g, "_");
         for (let i = 1; i < 10; i++) {
             event.create(name + `planks_${i}x`).displayName('Compressed ' + item + ` Planks (${i}x)`).material('wood').hardness(2 * (i + 1)).resistance(3).tagBlock('minecraft:mineable/axe');
-        }
-    })
-    Wood.forEach(item => {
-        let name = item.toLowerCase().replace(/ /g, "_");
-        for (let i = 1; i < 10; i++) {
             event.create(name + `log_${i}x`).displayName('Compressed ' + item + ` Log (${i}x)`).material('wood').hardness(2 * (i + 1)).resistance(2).tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS);
         }
     })
@@ -124,6 +147,7 @@ StartupEvents.registry('block', event => {
         let name = item.toLowerCase().replace(/ /g, "_");
         for (let i = 1; i < 10; i++) {
             event.create(name + `stem_${i}x`).displayName('Compressed ' + item + ` Stem (${i}x)`).material('wood').hardness(2 * (i + 1)).resistance(2).tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS);
+            event.create(name + `planks_${i}x`).displayName('Compressed ' + item + ` Planks (${i}x)`).material('wood').hardness(2 * (i + 1)).resistance(3).tagBlock('minecraft:mineable/axe');
         }
     })
 })

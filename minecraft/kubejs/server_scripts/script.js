@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
 	event.blasting('kubejs:silver_ingot', 'create:crushed_raw_silver')
 	event.blasting('witherproofed:soul_scorched_metal', 'kubejs:incomplete_soul_scorched_metal')
 
-	let Blocks = ['Coal', 'Quartz', 'Lapis', 'Snow', 'Iron', 'Diamond', 'Gold', 'Emerald', 'Netherite', 'Copper', 'Honey', 'Dripstone']
+	let Blocks = ['Coal', 'Quartz', 'Lapis', 'Snow', 'Iron', 'Diamond', 'Gold', 'Emerald', 'Netherite', 'Copper', 'Honey', 'Dripstone', 'Amethyst', 'Grass', 'Hay']
 	Blocks.forEach(item => {
 		let name = item.toLowerCase().replace(/ /g, "_");
 		event.shaped('kubejs:' + name + '_1x', [
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
 			}
 		}
 	})
-	let Others = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Diorite', 'Granite', 'Obsidian', 'End Stone', 'Sand', 'Red Sand', 'Gravel', 'Dirt', 'Clay', 'Netherrack', 'Soul Sand', 'Glass', 'Glowstone', 'Packed Ice', 'Tuff', 'Nether Bricks']
+	let Others = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Diorite', 'Granite', 'Obsidian', 'End Stone', 'Sand', 'Red Sand', 'Gravel', 'Dirt', 'Clay', 'Netherrack', 'Soul Sand', 'Glass', 'Glowstone', 'Packed Ice', 'Tuff', 'Nether Bricks', 'Basalt', 'Melon', 'Pumpkin', 'Soul Soil', 'Terracotta']
 	Others.forEach(item => {
 		let name = item.toLowerCase().replace(/ /g, "_");
 		event.shaped('kubejs:' + name + '_1x', [
@@ -132,6 +132,140 @@ ServerEvents.recipes(event => {
 			if (i < 9) {
 				event.shapeless('9x kubejs:' + name + `_${i}x`, [
 					'kubejs:' + name + `_${i + 1}x`
+				]
+				)
+			}
+		}
+
+	})
+
+	let Wood = ['Oak', 'Birch', 'Spruce', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove']
+	Wood.forEach(item => {
+		let name = item.toLowerCase().replace(/ /g, "_");
+		event.shaped('kubejs:' + name + 'log_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name + '_log'
+		})
+		event.shaped('kubejs:' + name + 'planks_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name + '_planks'
+		})
+		event.shapeless('9x kubejs:' + name + 'log_1x', [
+			'kubejs:' + name + 'log_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name + '_log', [
+			'kubejs:' + name + 'log_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `log_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `log_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `log_${i}x`, [
+					'kubejs:' + name + `log_${i + 1}x`
+				]
+				)
+			}
+		}
+
+		event.shapeless('9x kubejs:' + name + 'planks_1x', [
+			'kubejs:' + name + 'planks_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name + '_planks', [
+			'kubejs:' + name + 'planks_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `planks_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `planks_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `planks_${i}x`, [
+					'kubejs:' + name + `planks_${i + 1}x`
+				]
+				)
+			}
+		}
+
+	})
+
+	let Stem = ['Crimson', 'Warped']
+	Stem.forEach(item => {
+		let name = item.toLowerCase().replace(/ /g, "_");
+		event.shaped('kubejs:' + name + 'stem_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name + '_stem'
+		})
+		event.shaped('kubejs:' + name + 'planks_1x', [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: 'minecraft:' + name + '_planks'
+		})
+		event.shapeless('9x kubejs:' + name + 'stem_1x', [
+			'kubejs:' + name + 'stem_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name + '_stem', [
+			'kubejs:' + name + 'stem_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `stem_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `stem_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `stem_${i}x`, [
+					'kubejs:' + name + `stem_${i + 1}x`
+				]
+				)
+			}
+		}
+
+		event.shapeless('9x kubejs:' + name + 'planks_1x', [
+			'kubejs:' + name + 'planks_2x'
+		]
+		)
+		event.shapeless('9x minecraft:' + name + '_planks', [
+			'kubejs:' + name + 'planks_1x'
+		]
+		)
+		for (let i = 2; i < 10; i++) {
+			event.shaped('kubejs:' + name + `planks_${i}x`, [
+				'AAA',
+				'AAA',
+				'AAA'
+			], {
+				A: 'kubejs:' + name + `planks_${i - 1}x`
+			})
+			if (i < 9) {
+				event.shapeless('9x kubejs:' + name + `planks_${i}x`, [
+					'kubejs:' + name + `planks_${i + 1}x`
 				]
 				)
 			}

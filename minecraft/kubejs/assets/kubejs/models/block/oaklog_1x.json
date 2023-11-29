@@ -1,5 +1,5 @@
 {
-	"parent": "minecraft:block/block",
+	"parent": "minecraft:block/cube_column",
 	"loader": "forge:composite",
 	"textures": {
 		"particle": "minecraft:block/oak_log"

@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"axis=y": { "model": "kubejs:block/oaklog_1x" },
+		"axis=z": {
+			"model": "kubejs:block/oaklog_1x",
+			"x": 90
+		},
+		"axis=x": {
+			"model": "kubejs:block/oaklog_1x",
+			"z": 90
+		}
+	}
+}
