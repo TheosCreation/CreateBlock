@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
 		}
 
 	})
-	/*
+	
 	event.shaped('createindustry:steel_fluid_tank', [
 		' S ',
 		' B ',
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
 		B: 'minecraft:barrel',
 		S: 'createindustry:heavy_plate'
 	})
-	*/
+	
 	event.shaped('createindustry:machine_input', [
 		'SC',
 		'G '
@@ -458,96 +458,12 @@ ServerEvents.recipes(event => {
 		X: 'create:brass_tunnel'
 	})
 
-	event.shaped('minecraft:zombie_spawn_egg', [
-		'FFF',
-		'FEF',
-		'FFF'
-	], {
-		E: 'minecraft:egg',
-		F: 'minecraft:rotten_flesh'
-	})
-
-	event.shaped('minecraft:spider_spawn_egg', [
-		'SSS',
-		'SES',
-		'SSS'
-	], {
-		E: 'minecraft:egg',
-		S: 'minecraft:string'
-	})
-
-	event.shaped('minecraft:skeleton_spawn_egg', [
-		'BBB',
-		'BEB',
-		'BBB'
-	], {
-		E: 'minecraft:egg',
-		B: 'minecraft:bone'
-	})
-
-	event.shaped('minecraft:creeper_spawn_egg', [
-		'GGG',
-		'GEG',
-		'GGG'
-	], {
-		E: 'minecraft:egg',
-		G: 'minecraft:gunpowder'
-	})
-
-	event.shaped('minecraft:enderman_spawn_egg', [
-		'PPP',
-		'PEP',
-		'PPP'
-	], {
-		E: 'minecraft:egg',
-		P: 'minecraft:ender_pearl'
-	})
-
-	event.shaped('minecraft:wither_skeleton_spawn_egg', [
-		'FFF',
-		'FEF',
-		'FFF'
-	], {
-		E: 'minecraft:egg',
-		F: 'wstweaks:fragment'
-	})
-
-	event.shaped('minecraft:blaze_spawn_egg', [
-		'BBB',
-		'BEB',
-		'BBB'
-	], {
-		E: 'minecraft:egg',
-		B: 'minecraft:blaze_powder'
-	})
-
-	// Craft shaped end portal frame	
-	event.shaped('minecraft:end_portal_frame', [
-		'SSS',
-		'SES',
-		'SSS'
-	], {
-		S: 'minecraft:end_stone',
-		E: 'minecraft:ender_eye'
-	})
-
 	// craft hanging_roots
 	event.shaped('minecraft:hanging_roots', [
 		' S ',
 		'S S'
 	], {
 		S: 'minecraft:stick'
-	})
-
-	// Craft shaped sculk catalyst 	
-	event.shaped('minecraft:sculk_catalyst', [
-		'SQS',
-		'QDQ',
-		'SQS'
-	], {
-		S: 'minecraft:sculk',
-		Q: 'minecraft:quartz',
-		D: 'minecraft:diamond'
 	})
 
 	// Craft shaped rooted_dirt 	
@@ -567,24 +483,6 @@ ServerEvents.recipes(event => {
 	], {
 		B: 'createdeco:netherite_bars',
 		S: 'minecraft:nether_star'
-	})
-
-	// Pillager spawn egg recipe
-	event.shaped('minecraft:pillager_spawn_egg', [
-		'W',
-		'A'
-	], {
-		W: 'minecraft:witch_spawn_egg',
-		A: 'minecraft:crossbow'
-	})
-
-	// Evoker spawn egg recipe
-	event.shaped('minecraft:evoker_spawn_egg', [
-		'W',
-		'A'
-	], {
-		W: 'minecraft:pillager_spawn_egg',
-		A: 'minecraft:iron_axe'
 	})
 
 	event.shapeless('toms_storage:ts.inventory_cable_connector', [
