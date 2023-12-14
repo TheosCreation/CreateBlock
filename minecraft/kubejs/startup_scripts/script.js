@@ -19,9 +19,6 @@ StartupEvents.registry('block', event => {
     event.create('warping_block').requiresTool(true).hardness(1.5).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('metal').displayName('Warping Block');
     event.create('silver_block').requiresTool(true).hardness(5.0).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('metal').displayName('Block of Silver');
     event.create('raw_silver_block').requiresTool(true).hardness(5.0).resistance(6.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_stone_tool').material('stone').displayName('Block of Raw Silver');
-    event.create('nether_star_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Nether Star Block').lightLevel(1);
-    event.create('refined_radiance_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Block of Refined Radience').lightLevel(1);
-    event.create('shadow_steel_block').requiresTool(true).hardness(25.0).resistance(800.0).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_diamond_tool').material('metal').displayName('Block of Shadow Steel');
 })
 StartupEvents.registry('item', event => {
     let item = (name) => {
@@ -85,14 +82,12 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0xE891E5)
 
     event.create('sourceberry').displayName('Sourceberry Juice')
-        .stillTexture('kubejs:fluid/magic_still')
-        .flowingTexture('kubejs:fluid/magic_flowing')
-        .bucketColor(0x641FBB)
+        .stillTexture('kubejs:fluid/sourceberry_juice_still')
+        .flowingTexture('kubejs:fluid/sourceberry_juice_flow')
 
     event.create('magebloom').displayName('Magebloom Juice')
         .stillTexture('kubejs:fluid/magebloom_juice_still')
         .flowingTexture('kubejs:fluid/magebloom_juice_flow')
-        .bucketColor(0xF036DA)
 
     event.create('source').displayName('Liquid Source')
         .stillTexture('kubejs:fluid/source_still')

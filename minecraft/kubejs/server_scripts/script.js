@@ -34,244 +34,6 @@ ServerEvents.recipes(event => {
 	event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver')
 	event.blasting('kubejs:silver_ingot', 'create:crushed_raw_silver')
 	event.blasting('witherproofed:soul_scorched_metal', 'kubejs:incomplete_soul_scorched_metal')
-
-	let Blocks = ['Coal', 'Quartz', 'Lapis', 'Snow', 'Iron', 'Diamond', 'Gold', 'Emerald', 'Netherite', 'Copper', 'Honey', 'Dripstone', 'Amethyst', 'Grass', 'Hay']
-	Blocks.forEach(item => {
-		let name = item.toLowerCase().replace(/ /g, "_");
-		event.shaped('kubejs:' + name + '_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name + '_block'
-		})
-		event.shapeless('9x kubejs:' + name + '_1x', [
-			'kubejs:' + name + '_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name + '_block', [
-			'kubejs:' + name + '_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `_${i}x`, [
-					'kubejs:' + name + `_${i + 1}x`
-				]
-				)
-			}
-		}
-	})
-	let CreateBlocks = ['Brass', 'Zinc']
-	CreateBlocks.forEach(item => {
-		let name = item.toLowerCase().replace(/ /g, "_");
-		event.shaped('kubejs:' + name + '_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'create:' + name + '_block'
-		})
-		event.shapeless('9x kubejs:' + name + '_1x', [
-			'kubejs:' + name + '_2x'
-		]
-		)
-		event.shapeless('9x create:' + name + '_block', [
-			'kubejs:' + name + '_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `_${i}x`, [
-					'kubejs:' + name + `_${i + 1}x`
-				]
-				)
-			}
-		}
-	})
-	let Others = ['Andesite', 'Cobbled Deepslate', 'Cobblestone', 'Deepslate', 'Stone', 'Diorite', 'Granite', 'Obsidian', 'End Stone', 'Sand', 'Red Sand', 'Gravel', 'Dirt', 'Clay', 'Netherrack', 'Soul Sand', 'Glass', 'Glowstone', 'Packed Ice', 'Tuff', 'Nether Bricks', 'Basalt', 'Melon', 'Pumpkin', 'Soul Soil', 'Terracotta']
-	Others.forEach(item => {
-		let name = item.toLowerCase().replace(/ /g, "_");
-		event.shaped('kubejs:' + name + '_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name
-		})
-		event.shapeless('9x kubejs:' + name + '_1x', [
-			'kubejs:' + name + '_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name, [
-			'kubejs:' + name + '_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `_${i}x`, [
-					'kubejs:' + name + `_${i + 1}x`
-				]
-				)
-			}
-		}
-
-	})
-
-	let Wood = ['Oak', 'Birch', 'Spruce', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove']
-	Wood.forEach(item => {
-		let name = item.toLowerCase().replace(/ /g, "_");
-		event.shaped('kubejs:' + name + 'log_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name + '_log'
-		})
-		event.shaped('kubejs:' + name + 'planks_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name + '_planks'
-		})
-		event.shapeless('9x kubejs:' + name + 'log_1x', [
-			'kubejs:' + name + 'log_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name + '_log', [
-			'kubejs:' + name + 'log_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `log_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `log_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `log_${i}x`, [
-					'kubejs:' + name + `log_${i + 1}x`
-				]
-				)
-			}
-		}
-
-		event.shapeless('9x kubejs:' + name + 'planks_1x', [
-			'kubejs:' + name + 'planks_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name + '_planks', [
-			'kubejs:' + name + 'planks_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `planks_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `planks_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `planks_${i}x`, [
-					'kubejs:' + name + `planks_${i + 1}x`
-				]
-				)
-			}
-		}
-
-	})
-
-	let Stem = ['Crimson', 'Warped']
-	Stem.forEach(item => {
-		let name = item.toLowerCase().replace(/ /g, "_");
-		event.shaped('kubejs:' + name + 'stem_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name + '_stem'
-		})
-		event.shaped('kubejs:' + name + 'planks_1x', [
-			'AAA',
-			'AAA',
-			'AAA'
-		], {
-			A: 'minecraft:' + name + '_planks'
-		})
-		event.shapeless('9x kubejs:' + name + 'stem_1x', [
-			'kubejs:' + name + 'stem_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name + '_stem', [
-			'kubejs:' + name + 'stem_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `stem_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `stem_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `stem_${i}x`, [
-					'kubejs:' + name + `stem_${i + 1}x`
-				]
-				)
-			}
-		}
-
-		event.shapeless('9x kubejs:' + name + 'planks_1x', [
-			'kubejs:' + name + 'planks_2x'
-		]
-		)
-		event.shapeless('9x minecraft:' + name + '_planks', [
-			'kubejs:' + name + 'planks_1x'
-		]
-		)
-		for (let i = 2; i < 10; i++) {
-			event.shaped('kubejs:' + name + `planks_${i}x`, [
-				'AAA',
-				'AAA',
-				'AAA'
-			], {
-				A: 'kubejs:' + name + `planks_${i - 1}x`
-			})
-			if (i < 9) {
-				event.shapeless('9x kubejs:' + name + `planks_${i}x`, [
-					'kubejs:' + name + `planks_${i + 1}x`
-				]
-				)
-			}
-		}
-
-	})
 	
 	event.shaped('createindustry:steel_fluid_tank', [
 		' S ',
@@ -485,6 +247,23 @@ ServerEvents.recipes(event => {
 		S: 'minecraft:nether_star'
 	})
 
+	event.shapeless('4x create:experience_nugget', [
+		'create_sa:heap_of_experience'
+	]
+	)
+	event.shapeless('createcompression:compressed_experience_1x', [
+		'9x create:experience_block'
+	]
+	)
+	event.shapeless('9x create:experience_block', [
+		'createcompression:compressed_experience_1x'
+	]
+	)
+	event.shapeless('2x createindustry:fireclay_ball', [
+		'minecraft:clay_ball',
+		'create:cinder_flour'
+	]
+	)
 	event.shapeless('toms_storage:ts.inventory_cable_connector', [
 		'toms_storage:ts.inventory_cable',
 		'create:chute'
@@ -596,10 +375,6 @@ ServerEvents.recipes(event => {
 		'#forge:dyes/red'
 	]
 	)
-	event.shapeless('kubejs:nether_star_block', [
-		'9x minecraft:nether_star'
-	]
-	)
 	event.shapeless('kubejs:cat_bait', [
 		'2x minecraft:carrot',
 		'minecraft:lead'
@@ -633,7 +408,14 @@ ServerEvents.recipes(event => {
 		'kubejs:silver_block'
 	]
 	)
-
+	event.shapeless('9x kubejs:silver_nugget', [
+		'kubejs:silver_ingot'
+	]
+	)
+	event.shapeless('kubejs:silver_ingot', [
+		'9x kubejs:silver_nugget'
+	]
+	)
 	event.shapeless('kubejs:raw_silver_block', [
 		'9x kubejs:raw_silver'
 	]
@@ -649,24 +431,6 @@ ServerEvents.recipes(event => {
 	)
 	event.shapeless('9x create_sa:heap_of_experience', [
 		'create:experience_block'
-	]
-	)
-
-	event.shapeless('kubejs:refined_radiance_block', [
-		'9x create:refined_radiance'
-	]
-	)
-	event.shapeless('9x create:refined_radiance', [
-		'kubejs:refined_radiance_block'
-	]
-	)
-
-	event.shapeless('kubejs:shadow_steel_block', [
-		'9x create:shadow_steel'
-	]
-	)
-	event.shapeless('9x create:shadow_steel', [
-		'kubejs:shadow_steel_block'
 	]
 	)
 	event.smelting('minecraft:bread', 'create:dough')
