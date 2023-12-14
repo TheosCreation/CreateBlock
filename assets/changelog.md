@@ -1,5 +1,17 @@
 # Create Block Change Log
 
+## Create Block-4.6.0
+Dec. 14, 2023
+
+- Mods Added:
+  - CreateCompression-1.19.2-1.1.0.jar
+- Mods Updated:
+  - Updated all mods to most recent update
+- Mods Removed:
+  -
+- Other Changes:
+  - Coverted over from kubejs compressed block to my new mod
+
 ## Create Block-4.5.0
 Nov. 28, 2023
 
