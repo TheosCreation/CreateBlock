@@ -1,5 +1,20 @@
 # Create Block Change Log
 
+## Create Block-4.7.0
+Jan. 1, 2024
+
+- Mods Added:
+  - 
+- Mods Updated:
+  - createdieselgenerators-1.19.2-1.2f.jar
+  - create_enchantment_industry-1.19.2-for-create-0.5.1.f-1.2.7.f.jar
+  - create_central_kitchen-1.19.2-for-create-0.5.1.f-1.3.9.f.jar
+  - CreateCompression-1.19.2-1.4.0.jar
+- Mods Removed:
+  -
+- Other Changes:
+  - Downgraded witherproofed and shiftedlib to fix server crashing
+
 ## Create Block-4.6.0
 Dec. 14, 2023
 
