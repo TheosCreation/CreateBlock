@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 		I: 'createindustry:industrial_pipe',
 		S: 'minecraft:string'
 	})
-	event.recipes.create.mechanical_crafting('createindustry:pumpjack_hammer_holder', [
+	event.recipes.create.mechanical_crafting('createindustry:pumpjack_hammer', [
 		'SSSSB',
 		' GT B'
 	], {
