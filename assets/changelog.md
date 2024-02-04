@@ -1,5 +1,25 @@
 # Create Block Change Log
 
+## Create Block-4.8.0
+Feb. 4, 2024
+
+- Mods Added:
+  - pneumaticcraft-repressurized-1.19.2-4.3.14-49.jar
+  - dynamicvillage-0.2.1.jar
+  - createmoredrillheads-2.0.2-1.19.2.jar
+  - compressedcreativity-1.19.2-0.1.8.jar
+  - CreateUnbreakableTools-1.0+forge-1.19.2.jar
+- Mods Updated:
+  - appliedenergistics2-forge-12.9.9.jar
+  - CreateCompression-1.19.2-1.6.0.jar
+  - create_central_kitchen-1.19.2-for-create-0.5.1.f-1.3.9.g.jar
+  - createaddition-1.19.2-1.2.2.jar
+  - createindustry-0.8.0-1.19.2.jar
+- Mods Removed:
+  -
+- Other Changes:
+  - 
+
 ## Create Block-4.7.0
 Jan. 1, 2024
 
